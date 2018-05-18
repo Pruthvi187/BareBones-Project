@@ -10,6 +10,8 @@
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D720AE657300451FE7 /* LandingViewController.m */; };
 		3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D820AE657300451FE7 /* LandingViewController.xib */; };
+		3DCBB59320AE6CBF00C41537 /* MainTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBB59120AE6CBF00C41537 /* MainTabsViewController.m */; };
+		3DCBB59420AE6CBF00C41537 /* MainTabsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DCBB59220AE6CBF00C41537 /* MainTabsViewController.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FCE20AE406C00746B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCD20AE406C00746B5E /* ViewController.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -27,6 +29,9 @@
 		3DC3E5D720AE657300451FE7 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		3DC3E5D820AE657300451FE7 /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		3DC3E5D920AE657300451FE7 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		3DCBB59020AE6CBF00C41537 /* MainTabsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabsViewController.h; sourceTree = "<group>"; };
+		3DCBB59120AE6CBF00C41537 /* MainTabsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabsViewController.m; sourceTree = "<group>"; };
+		3DCBB59220AE6CBF00C41537 /* MainTabsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabsViewController.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +77,16 @@
 				3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */,
 			);
 			path = "navigation for test screens";
+			sourceTree = "<group>";
+		};
+		3DCBB59520AE6CC600C41537 /* main tabs */ = {
+			isa = PBXGroup;
+			children = (
+				3DCBB59020AE6CBF00C41537 /* MainTabsViewController.h */,
+				3DCBB59120AE6CBF00C41537 /* MainTabsViewController.m */,
+				3DCBB59220AE6CBF00C41537 /* MainTabsViewController.xib */,
+			);
+			path = "main tabs";
 			sourceTree = "<group>";
 		};
 		AC065FBD20AE406C00746B5E = {
@@ -125,6 +140,7 @@
 				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
 				3DC3E5DD20AE659200451FE7 /* navigation for test screens */,
 				3DC3E5DC20AE658700451FE7 /* landing */,
+				3DCBB59520AE6CC600C41537 /* main tabs */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -188,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
+				3DCBB59420AE6CBF00C41537 /* MainTabsViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
@@ -203,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
+				3DCBB59320AE6CBF00C41537 /* MainTabsViewController.m in Sources */,
 				3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,

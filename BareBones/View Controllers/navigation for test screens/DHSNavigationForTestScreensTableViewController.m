@@ -45,16 +45,16 @@
  
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"Welcome";
+            cell.textLabel.text = @"Main Tabs";
             break;
         case 1:
-            cell.textLabel.text = @"AOC";
+            cell.textLabel.text = @"Welcome";
             break;
         case 2:
-            cell.textLabel.text = @"Landing";
+            cell.textLabel.text = @"AOC";
             break;
         case 3:
-            cell.textLabel.text = @"Modal";
+            cell.textLabel.text = @"Landing";
             break;
     }
  
@@ -66,22 +66,29 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
+    LandingViewController *landingViewController;
+    MainTabsViewController *mainTabsViewController;
+    
     switch (indexPath.row) {
-        case 0: // welcome
+        case 0: // main tabs
+            // must present this modally
+            mainTabsViewController = [[MainTabsViewController alloc] initWithNibName:@"MainTabsViewController" bundle:nil];
+            mainTabsViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+            [self presentViewController:mainTabsViewController animated:NO completion:nil];
             break;
-        case 1: // AOC
+            
+        case 1: // welcome
             break;
-        case 2: // landing
+            
+        case 2: // AOC
             break;
-        case 3: // modal
+            
+        case 3: // landing
+            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+            [self.navigationController pushViewController:landingViewController animated:YES];
             break;
     }
-    
-    LandingViewController *landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:landingViewController animated:YES];
-}
 
+}
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LandingViewController.h"
+#import "MainTabsViewController.h"
 
 @interface DHSNavigationForTestScreensTableViewController : UITableViewController
 
