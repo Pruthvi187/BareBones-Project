@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DHSColorPool.h"
+#import "DHSActivityVC.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,15 @@
     // TODO: Remove this when not needed.
     UIColor *primaryColor = [[DHSColorPool defaultColorPool] primaryColor];
     [self.view setBackgroundColor:primaryColor];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    DHSActivityVC *activityVC = [DHSActivityVC new];
+    activityVC.modalTransitionStyle = UIModalPresentationOverCurrentContext;
+    self.definesPresentationContext = YES;
+    [self presentViewController:activityVC animated:true completion:nil];
 }
 
 

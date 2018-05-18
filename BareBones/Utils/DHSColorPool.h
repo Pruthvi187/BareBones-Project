@@ -17,6 +17,7 @@
 #pragma mark - Color Defintions
 
 @property (nonatomic, strong, readonly) UIColor *primaryColor;
+@property (nonatomic, strong, readonly) UIColor *modalPopOverBGColor;
 
 #pragma mark - UIFont Definitions
 
