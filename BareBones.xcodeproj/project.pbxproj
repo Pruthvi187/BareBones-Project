@@ -20,8 +20,13 @@
 		AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD420AE406F00746B5E /* LaunchScreen.storyboard */; };
 		AC065FD920AE406F00746B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FD820AE406F00746B5E /* main.m */; };
 		AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FE620AE4ECE00746B5E /* DHSColorPool.m */; };
-		AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FEA20AE524800746B5E /* DHSActivityVC.m */; };
 		AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC065FEB20AE524800746B5E /* DHSActivityVC.xib */; };
+		AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */; };
+		AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */; };
+		AC26C53D20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */; };
+		AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */; };
+		AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */; };
+		AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54520AE88B9001415E8 /* DHSActivityVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +52,16 @@
 		AC065FE520AE4ECE00746B5E /* DHSColorPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSColorPool.h; sourceTree = "<group>"; };
 		AC065FE620AE4ECE00746B5E /* DHSColorPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSColorPool.m; sourceTree = "<group>"; };
 		AC065FE920AE524800746B5E /* DHSActivityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSActivityVC.h; sourceTree = "<group>"; };
-		AC065FEA20AE524800746B5E /* DHSActivityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSActivityVC.m; sourceTree = "<group>"; };
 		AC065FEB20AE524800746B5E /* DHSActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSActivityVC.xib; sourceTree = "<group>"; };
+		AC26C53520AE80BF001415E8 /* DHSOfficeLocatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorVC.h; sourceTree = "<group>"; };
+		AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorVC.m; sourceTree = "<group>"; };
+		AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSOfficeLocatorVC.xib; sourceTree = "<group>"; };
+		AC26C53B20AE8174001415E8 /* DHSOfficeLocatorListDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorListDelegate.h; sourceTree = "<group>"; };
+		AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorListDelegate.m; sourceTree = "<group>"; };
+		AC26C53F20AE823E001415E8 /* DHSOfficeLocatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorCell.h; sourceTree = "<group>"; };
+		AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorCell.m; sourceTree = "<group>"; };
+		AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSOfficeLocatorCell.xib; sourceTree = "<group>"; };
+		AC26C54520AE88B9001415E8 /* DHSActivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSActivityVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,15 +158,55 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC26C52F20AE8012001415E8 /* Office Locator */,
+				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
 				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
-				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
-				AC065FEA20AE524800746B5E /* DHSActivityVC.m */,
-				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
 				3DC3E5DD20AE659200451FE7 /* navigation for test screens */,
 				3DC3E5DC20AE658700451FE7 /* landing */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC26C52E20AE7FDA001415E8 /* Activity Modal */ = {
+			isa = PBXGroup;
+			children = (
+				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
+				AC26C54520AE88B9001415E8 /* DHSActivityVC.m */,
+				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
+			);
+			path = "Activity Modal";
+			sourceTree = "<group>";
+		};
+		AC26C52F20AE8012001415E8 /* Office Locator */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53E20AE8217001415E8 /* Custom Cell */,
+				AC26C53A20AE8159001415E8 /* Delegates */,
+				AC26C53520AE80BF001415E8 /* DHSOfficeLocatorVC.h */,
+				AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */,
+				AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */,
+			);
+			path = "Office Locator";
+			sourceTree = "<group>";
+		};
+		AC26C53A20AE8159001415E8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53B20AE8174001415E8 /* DHSOfficeLocatorListDelegate.h */,
+				AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AC26C53E20AE8217001415E8 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53F20AE823E001415E8 /* DHSOfficeLocatorCell.h */,
+				AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */,
+				AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,11 +269,13 @@
 			files = (
 				5EC7D98520AE6F8300A5BC42 /* DHSAocVC.xib in Resources */,
 				5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */,
+				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
 				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
 				AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */,
+				AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,12 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
+				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
+				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				5EC7D97920AE6AE800A5BC42 /* DHSSignInVC.m in Sources */,
-				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
 				3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
-				AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */,
+				AC26C53D20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m in Sources */,
 				5EC7D98420AE6F8300A5BC42 /* DHSAocVC.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
 				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,

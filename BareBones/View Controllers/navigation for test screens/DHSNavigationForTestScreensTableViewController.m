@@ -9,6 +9,7 @@
 #import "DHSNavigationForTestScreensTableViewController.h"
 #import "DHSSignInVC.h"
 #import "DHSAocVC.h"
+#import "DHSOfficeLocatorVC.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -39,7 +40,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,6 +58,9 @@
             break;
         case 3:
             cell.textLabel.text = @"Modal";
+            break;
+        case 4:
+            cell.textLabel.text = @"Office Locator";
             break;
     }
  
@@ -79,6 +83,9 @@
             break;
         case 3: // modal
             break;
+        case 4:
+            [self displayOfficeLocator];
+            return;
     }
     
     LandingViewController *landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
@@ -95,6 +102,11 @@
 - (void) displayAOC {
     DHSAocVC *aocVC = [DHSAocVC new];
     [self.navigationController pushViewController:aocVC animated:YES];
+}
+
+- (void) displayOfficeLocator {
+    DHSOfficeLocatorVC *officeLocatorVC = [DHSOfficeLocatorVC new];
+    [self.navigationController pushViewController:officeLocatorVC animated:YES];
 }
 
 
