@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D127BBE20AE4FDE00265713 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D127BBC20AE4FDE00265713 /* LandingViewController.m */; };
+		3D127BBF20AE4FDE00265713 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D127BBD20AE4FDE00265713 /* LandingViewController.xib */; };
+		3D127BC320AE51E800265713 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D127BC120AE51E800265713 /* DHSNavigationForTestScreensTableViewController.m */; };
+		3D127BC420AE51E800265713 /* DHSNavigationForTestScreensTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D127BC220AE51E800265713 /* DHSNavigationForTestScreensTableViewController.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FCE20AE406C00746B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCD20AE406C00746B5E /* ViewController.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -16,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D127BBB20AE4FDE00265713 /* LandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		3D127BBC20AE4FDE00265713 /* LandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		3D127BBD20AE4FDE00265713 /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
+		3D127BC020AE51E800265713 /* DHSNavigationForTestScreensTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSNavigationForTestScreensTableViewController.h; sourceTree = "<group>"; };
+		3D127BC120AE51E800265713 /* DHSNavigationForTestScreensTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSNavigationForTestScreensTableViewController.m; sourceTree = "<group>"; };
+		3D127BC220AE51E800265713 /* DHSNavigationForTestScreensTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSNavigationForTestScreensTableViewController.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +77,12 @@
 				AC065FD420AE406F00746B5E /* LaunchScreen.storyboard */,
 				AC065FD720AE406F00746B5E /* Info.plist */,
 				AC065FD820AE406F00746B5E /* main.m */,
+				3D127BBB20AE4FDE00265713 /* LandingViewController.h */,
+				3D127BBC20AE4FDE00265713 /* LandingViewController.m */,
+				3D127BBD20AE4FDE00265713 /* LandingViewController.xib */,
+				3D127BC020AE51E800265713 /* DHSNavigationForTestScreensTableViewController.h */,
+				3D127BC120AE51E800265713 /* DHSNavigationForTestScreensTableViewController.m */,
+				3D127BC220AE51E800265713 /* DHSNavigationForTestScreensTableViewController.xib */,
 			);
 			path = BareBones;
 			sourceTree = "<group>";
@@ -130,6 +146,8 @@
 			files = (
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
+				3D127BC420AE51E800265713 /* DHSNavigationForTestScreensTableViewController.xib in Resources */,
+				3D127BBF20AE4FDE00265713 /* LandingViewController.xib in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +161,9 @@
 			files = (
 				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
+				3D127BBE20AE4FDE00265713 /* LandingViewController.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
+				3D127BC320AE51E800265713 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
