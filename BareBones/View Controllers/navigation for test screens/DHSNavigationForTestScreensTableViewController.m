@@ -7,7 +7,8 @@
 //
 
 #import "DHSNavigationForTestScreensTableViewController.h"
-
+#import "DHSSignInVC.h"
+#import "DHSAocVC.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -23,6 +24,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,7 +47,7 @@
  
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"Welcome";
+            cell.textLabel.text = @"Sign In";
             break;
         case 1:
             cell.textLabel.text = @"AOC";
@@ -66,11 +68,13 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
-    switch (indexPath.row) {
+        switch (indexPath.row) {
         case 0: // welcome
-            break;
+            [self displaySigninVC];
+            return;
         case 1: // AOC
-            break;
+            [self displayAOC];
+            return;
         case 2: // landing
             break;
         case 3: // modal
@@ -82,6 +86,17 @@
     // Push the view controller.
     [self.navigationController pushViewController:landingViewController animated:YES];
 }
+
+- (void) displaySigninVC {
+    DHSSignInVC *signInVC = [DHSSignInVC new];
+    [self.navigationController pushViewController:signInVC animated:YES];    
+}
+
+- (void) displayAOC {
+    DHSAocVC *aocVC = [DHSAocVC new];
+    [self.navigationController pushViewController:aocVC animated:YES];
+}
+
 
 
 @end
