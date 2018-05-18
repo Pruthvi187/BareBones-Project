@@ -13,6 +13,7 @@
 		AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD220AE406F00746B5E /* Assets.xcassets */; };
 		AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD420AE406F00746B5E /* LaunchScreen.storyboard */; };
 		AC065FD920AE406F00746B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FD820AE406F00746B5E /* main.m */; };
+		AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FE620AE4ECE00746B5E /* DHSColorPool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AC065FD520AE406F00746B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC065FD720AE406F00746B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC065FD820AE406F00746B5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC065FE520AE4ECE00746B5E /* DHSColorPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSColorPool.h; sourceTree = "<group>"; };
+		AC065FE620AE4ECE00746B5E /* DHSColorPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSColorPool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		AC065FC820AE406C00746B5E /* BareBones */ = {
 			isa = PBXGroup;
 			children = (
+				AC065FE420AE4EB900746B5E /* Utils */,
 				AC065FC920AE406C00746B5E /* AppDelegate.h */,
 				AC065FCA20AE406C00746B5E /* AppDelegate.m */,
 				AC065FCC20AE406C00746B5E /* ViewController.h */,
@@ -69,6 +73,15 @@
 				AC065FD820AE406F00746B5E /* main.m */,
 			);
 			path = BareBones;
+			sourceTree = "<group>";
+		};
+		AC065FE420AE4EB900746B5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC065FE520AE4ECE00746B5E /* DHSColorPool.h */,
+				AC065FE620AE4ECE00746B5E /* DHSColorPool.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
+				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DHSColorPool.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //Sample usage of the color pool.
+    // TODO: Remove this when not needed.
+    UIColor *primaryColor = [[DHSColorPool defaultColorPool] primaryColor];
+    [self.view setBackgroundColor:primaryColor];
 }
 
 
