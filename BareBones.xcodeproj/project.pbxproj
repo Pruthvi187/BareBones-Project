@@ -10,6 +10,8 @@
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D720AE657300451FE7 /* LandingViewController.m */; };
 		3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D820AE657300451FE7 /* LandingViewController.xib */; };
+		5EC7D97920AE6AE800A5BC42 /* DHSSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC7D97720AE6AE800A5BC42 /* DHSSignInVC.m */; };
+		5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC7D97820AE6AE800A5BC42 /* DHSSignInVC.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FCE20AE406C00746B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCD20AE406C00746B5E /* ViewController.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -27,6 +29,9 @@
 		3DC3E5D720AE657300451FE7 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		3DC3E5D820AE657300451FE7 /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		3DC3E5D920AE657300451FE7 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		5EC7D97620AE6AE800A5BC42 /* DHSSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSSignInVC.h; sourceTree = "<group>"; };
+		5EC7D97720AE6AE800A5BC42 /* DHSSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSSignInVC.m; sourceTree = "<group>"; };
+		5EC7D97820AE6AE800A5BC42 /* DHSSignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSSignInVC.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +77,16 @@
 				3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */,
 			);
 			path = "navigation for test screens";
+			sourceTree = "<group>";
+		};
+		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				5EC7D97620AE6AE800A5BC42 /* DHSSignInVC.h */,
+				5EC7D97720AE6AE800A5BC42 /* DHSSignInVC.m */,
+				5EC7D97820AE6AE800A5BC42 /* DHSSignInVC.xib */,
+			);
+			name = SignIn;
 			sourceTree = "<group>";
 		};
 		AC065FBD20AE406C00746B5E = {
@@ -120,6 +135,7 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
 				AC065FEA20AE524800746B5E /* DHSActivityVC.m */,
 				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
@@ -187,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */,
 				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
@@ -202,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC7D97920AE6AE800A5BC42 /* DHSSignInVC.m in Sources */,
 				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
 				3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
