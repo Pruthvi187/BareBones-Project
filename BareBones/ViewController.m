@@ -24,6 +24,9 @@
     // TODO: Remove this when not needed.
     UIColor *primaryColor = [[DHSColorPool defaultColorPool] primaryColor];
     [self.view setBackgroundColor:primaryColor];
+    
+    self.definesPresentationContext = YES;
+
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -31,7 +34,6 @@
     
     DHSActivityVC *activityVC = [DHSActivityVC new];
     activityVC.modalTransitionStyle = UIModalPresentationOverCurrentContext;
-    self.definesPresentationContext = YES;
     [self presentViewController:activityVC animated:true completion:nil];
 }
 
