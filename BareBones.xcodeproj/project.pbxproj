@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
+		3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D720AE657300451FE7 /* LandingViewController.m */; };
+		3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D820AE657300451FE7 /* LandingViewController.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FCE20AE406C00746B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCD20AE406C00746B5E /* ViewController.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -19,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DC3E5D220AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSNavigationForTestScreensTableViewController.h; sourceTree = "<group>"; };
+		3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSNavigationForTestScreensTableViewController.m; sourceTree = "<group>"; };
+		3DC3E5D720AE657300451FE7 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		3DC3E5D820AE657300451FE7 /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
+		3DC3E5D920AE657300451FE7 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +55,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DC3E5DC20AE658700451FE7 /* landing */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3E5D920AE657300451FE7 /* LandingViewController.h */,
+				3DC3E5D720AE657300451FE7 /* LandingViewController.m */,
+				3DC3E5D820AE657300451FE7 /* LandingViewController.xib */,
+			);
+			path = landing;
+			sourceTree = "<group>";
+		};
+		3DC3E5DD20AE659200451FE7 /* navigation for test screens */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3E5D220AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.h */,
+				3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */,
+			);
+			path = "navigation for test screens";
+			sourceTree = "<group>";
+		};
 		AC065FBD20AE406C00746B5E = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +123,8 @@
 				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
 				AC065FEA20AE524800746B5E /* DHSActivityVC.m */,
 				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
+				3DC3E5DD20AE659200451FE7 /* navigation for test screens */,
+				3DC3E5DC20AE658700451FE7 /* landing */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -158,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
@@ -173,10 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC065FCE20AE406C00746B5E /* ViewController.m in Sources */,
+				3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
 				AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
+				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MPH356C628;
+				DEVELOPMENT_TEAM = 6KWN4YPXHT;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -332,7 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MPH356C628;
+				DEVELOPMENT_TEAM = 6KWN4YPXHT;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
