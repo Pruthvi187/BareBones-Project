@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DHSRemoveModalVCDelegate<NSObject>
+-(void) removeModalVC;
+@end
+
 @interface DHSActivityVC : UIViewController
+
+@property (weak, nonatomic) id<DHSRemoveModalVCDelegate> modalCloseDelegate;
+
 
 @end

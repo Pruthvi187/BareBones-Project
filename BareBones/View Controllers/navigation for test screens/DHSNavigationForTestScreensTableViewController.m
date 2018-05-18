@@ -7,7 +7,8 @@
 //
 
 #import "DHSNavigationForTestScreensTableViewController.h"
-
+#import "DHSSignInVC.h"
+#import "DHSAocVC.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -23,6 +24,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +50,7 @@
             cell.textLabel.text = @"Main Tabs";
             break;
         case 1:
-            cell.textLabel.text = @"Welcome";
+            cell.textLabel.text = @"Sign In";
             break;
         case 2:
             cell.textLabel.text = @"AOC";
@@ -77,18 +79,30 @@
             [self presentViewController:mainTabsViewController animated:NO completion:nil];
             break;
             
-        case 1: // welcome
+        case 1: // sign in
+            [self displaySigninVC];
             break;
             
         case 2: // AOC
-            break;
+            [self displayAOC];
+            return;
             
         case 3: // landing
             landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
             [self.navigationController pushViewController:landingViewController animated:YES];
             break;
     }
-
 }
+
+- (void) displaySigninVC {
+    DHSSignInVC *signInVC = [DHSSignInVC new];
+    [self.navigationController pushViewController:signInVC animated:YES];    
+}
+
+- (void) displayAOC {
+    DHSAocVC *aocVC = [DHSAocVC new];
+    [self.navigationController pushViewController:aocVC animated:YES];
+}
+
 
 @end

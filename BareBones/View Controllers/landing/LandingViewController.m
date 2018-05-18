@@ -7,9 +7,11 @@
 //
 
 #import "LandingViewController.h"
+#import "DHSActivityVC.h"
 
-@interface LandingViewController ()
 
+@interface LandingViewController()<DHSRemoveModalVCDelegate>
+@property (nonatomic, strong) DHSActivityVC *activityVC;
 @end
 
 @implementation LandingViewController
@@ -19,19 +21,35 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    self.activityVC = [DHSActivityVC new];
+    self.activityVC.modalCloseDelegate = self;
+    [self.activityVC.view setFrame:self.view.bounds];
+    [self addChildViewController:self.activityVC];
+    [self.activityVC didMoveToParentViewController:self];
+    
+    [self.view addSubview:self.activityVC.view];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - DHSRemoveModalVC
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) removeModalVC {
+    
+    if (self.activityVC != nil) {
+        
+        [self.activityVC willMoveToParentViewController:nil];
+        [self.activityVC.view removeFromSuperview];
+        [self.activityVC removeFromParentViewController];
+        self.activityVC = nil;
+    }
+    
 }
-*/
 
 @end
