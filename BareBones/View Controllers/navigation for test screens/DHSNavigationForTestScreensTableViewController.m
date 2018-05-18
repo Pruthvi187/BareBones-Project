@@ -8,6 +8,7 @@
 
 #import "DHSNavigationForTestScreensTableViewController.h"
 #import "DHSSignInVC.h"
+#import "DHSAocVC.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -72,7 +73,8 @@
             [self displaySigninVC];
             return;
         case 1: // AOC
-            break;
+            [self displayAOC];
+            return;
         case 2: // landing
             break;
         case 3: // modal
@@ -89,6 +91,12 @@
     DHSSignInVC *signInVC = [DHSSignInVC new];
     [self.navigationController pushViewController:signInVC animated:YES];    
 }
+
+- (void) displayAOC {
+    DHSAocVC *aocVC = [DHSAocVC new];
+    [self.navigationController pushViewController:aocVC animated:YES];
+}
+
 
 
 @end

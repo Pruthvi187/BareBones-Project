@@ -12,6 +12,8 @@
 		3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D820AE657300451FE7 /* LandingViewController.xib */; };
 		5EC7D97920AE6AE800A5BC42 /* DHSSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC7D97720AE6AE800A5BC42 /* DHSSignInVC.m */; };
 		5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC7D97820AE6AE800A5BC42 /* DHSSignInVC.xib */; };
+		5EC7D98420AE6F8300A5BC42 /* DHSAocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC7D98220AE6F8300A5BC42 /* DHSAocVC.m */; };
+		5EC7D98520AE6F8300A5BC42 /* DHSAocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC7D98320AE6F8300A5BC42 /* DHSAocVC.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FCE20AE406C00746B5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCD20AE406C00746B5E /* ViewController.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -32,6 +34,9 @@
 		5EC7D97620AE6AE800A5BC42 /* DHSSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSSignInVC.h; sourceTree = "<group>"; };
 		5EC7D97720AE6AE800A5BC42 /* DHSSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSSignInVC.m; sourceTree = "<group>"; };
 		5EC7D97820AE6AE800A5BC42 /* DHSSignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSSignInVC.xib; sourceTree = "<group>"; };
+		5EC7D98120AE6F8300A5BC42 /* DHSAocVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSAocVC.h; sourceTree = "<group>"; };
+		5EC7D98220AE6F8300A5BC42 /* DHSAocVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSAocVC.m; sourceTree = "<group>"; };
+		5EC7D98320AE6F8300A5BC42 /* DHSAocVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSAocVC.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +94,16 @@
 			name = SignIn;
 			sourceTree = "<group>";
 		};
+		5EC7D98620AE6F8B00A5BC42 /* AOC */ = {
+			isa = PBXGroup;
+			children = (
+				5EC7D98120AE6F8300A5BC42 /* DHSAocVC.h */,
+				5EC7D98220AE6F8300A5BC42 /* DHSAocVC.m */,
+				5EC7D98320AE6F8300A5BC42 /* DHSAocVC.xib */,
+			);
+			name = AOC;
+			sourceTree = "<group>";
+		};
 		AC065FBD20AE406C00746B5E = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +152,7 @@
 			children = (
 				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
+				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				AC065FEA20AE524800746B5E /* DHSActivityVC.m */,
 				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
 				3DC3E5DD20AE659200451FE7 /* navigation for test screens */,
@@ -203,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC7D98520AE6F8300A5BC42 /* DHSAocVC.xib in Resources */,
 				5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */,
 				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
@@ -225,6 +242,7 @@
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
 				AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */,
+				5EC7D98420AE6F8300A5BC42 /* DHSAocVC.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
 				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
 			);
