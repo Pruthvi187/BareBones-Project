@@ -94,7 +94,7 @@ typedef NS_ENUM(NSInteger, SectionType) {
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger hgt;
+    NSInteger hgt = 0;
     switch (indexPath.section) {
         case paymentsSection:
             hgt = 150;
@@ -105,8 +105,8 @@ typedef NS_ENUM(NSInteger, SectionType) {
         case appointmentSection:
             hgt = 80;
             break;
-        default:
-            hgt = 180;
+        case frequentlyUsedSection:
+            hgt = 120;
             break;
     }
     return hgt;
