@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DHSPaymentsCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *streetAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *suburbAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *openDaysLabel;
-@property (weak, nonatomic) IBOutlet UILabel *openAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *locationDistanceLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *lastPaymentAmountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastPaymentSummaryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nextPaymentAmountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nextPaymentSummaryLabel;
 
 @end

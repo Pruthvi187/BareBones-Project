@@ -11,104 +11,64 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentscell" id="KGk-i7-Jjw" userLabel="paymentscell" customClass="DHSOfficeLocatorCell">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentscell" id="KGk-i7-Jjw" userLabel="paymentscell" customClass="DHSPaymentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="179.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R64-Io-SYG">
-                        <rect key="frame" x="15" y="15" width="345" height="20"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R64-Io-SYG" userLabel="Last Payment Label">
+                        <rect key="frame" x="20" y="15" width="88" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Ye-cFb">
-                        <rect key="frame" x="15" y="45" width="345" height="17"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT4-Ye-cFb" userLabel="Last Payment Amount Label">
+                        <rect key="frame" x="20" y="55" width="140" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-f9-Ysh">
-                        <rect key="frame" x="15" y="66" width="345" height="17"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lp2-f9-Ysh" userLabel="Last Payment Summary Label">
+                        <rect key="frame" x="20" y="101" width="140" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJI-ul-Fcu">
-                        <rect key="frame" x="15" y="98" width="345" height="17"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-gL-wCa" userLabel="Next Payment Label">
+                        <rect key="frame" x="189" y="15" width="90" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJI-ul-Fcu" userLabel="Next Payment Amount Label">
+                        <rect key="frame" x="189" y="55" width="140" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndi-fH-NKn" userLabel="Next Payment Summary Label">
+                        <rect key="frame" x="189" y="101" width="140" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndi-fH-NKn">
-                        <rect key="frame" x="15" y="119" width="345" height="17"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_marker_icon" translatesAutoresizingMaskIntoConstraints="NO" id="BaR-eT-cIl">
-                        <rect key="frame" x="15" y="150" width="13" height="15"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="15" id="GYE-Er-w3V"/>
-                            <constraint firstAttribute="width" constant="13" id="z1l-eW-JO5"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-Q7-5iu">
-                        <rect key="frame" x="33" y="151" width="29.5" height="14"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx9-2G-PdJ">
-                        <rect key="frame" x="306" y="144.5" width="54" height="26"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                        <state key="normal" title="Directions">
-                            <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                        <connections>
-                            <action selector="startDirections:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BGf-wT-fpm"/>
-                        </connections>
-                    </button>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="lp2-f9-Ysh" firstAttribute="leading" secondItem="UT4-Ye-cFb" secondAttribute="leading" id="049-D5-X9h"/>
-                    <constraint firstItem="BaR-eT-cIl" firstAttribute="leading" secondItem="ndi-fH-NKn" secondAttribute="leading" id="0YE-Pa-HcY"/>
-                    <constraint firstAttribute="trailing" secondItem="UT4-Ye-cFb" secondAttribute="trailing" constant="15" id="1Bs-jP-xj2"/>
-                    <constraint firstItem="UT4-Ye-cFb" firstAttribute="top" secondItem="R64-Io-SYG" secondAttribute="bottom" constant="10" id="B8J-FT-hUW"/>
-                    <constraint firstItem="R64-Io-SYG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GgZ-8c-4Pa"/>
-                    <constraint firstItem="lp2-f9-Ysh" firstAttribute="trailing" secondItem="UT4-Ye-cFb" secondAttribute="trailing" id="LmS-4w-Vpp"/>
-                    <constraint firstItem="ndi-fH-NKn" firstAttribute="top" secondItem="ZJI-ul-Fcu" secondAttribute="bottom" constant="4" id="RPk-pB-vHD"/>
-                    <constraint firstItem="R64-Io-SYG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="S1S-qL-OcH"/>
-                    <constraint firstAttribute="trailing" secondItem="R64-Io-SYG" secondAttribute="trailing" constant="15" id="Vw3-Jm-vm1"/>
-                    <constraint firstItem="ZJI-ul-Fcu" firstAttribute="top" secondItem="lp2-f9-Ysh" secondAttribute="bottom" constant="15" id="W1P-Hu-qsX"/>
-                    <constraint firstItem="ndi-fH-NKn" firstAttribute="trailing" secondItem="ZJI-ul-Fcu" secondAttribute="trailing" id="XJC-da-VRN"/>
-                    <constraint firstItem="Yck-Q7-5iu" firstAttribute="leading" secondItem="BaR-eT-cIl" secondAttribute="trailing" constant="5" id="YRB-KZ-fE8"/>
-                    <constraint firstItem="UT4-Ye-cFb" firstAttribute="leading" secondItem="R64-Io-SYG" secondAttribute="leading" id="maB-e6-y1T"/>
-                    <constraint firstItem="ZJI-ul-Fcu" firstAttribute="leading" secondItem="lp2-f9-Ysh" secondAttribute="leading" id="mzu-dS-jBv"/>
-                    <constraint firstItem="ndi-fH-NKn" firstAttribute="leading" secondItem="ZJI-ul-Fcu" secondAttribute="leading" id="oYt-iO-emX"/>
-                    <constraint firstItem="ZJI-ul-Fcu" firstAttribute="trailing" secondItem="lp2-f9-Ysh" secondAttribute="trailing" id="sMm-ff-PWs"/>
-                    <constraint firstItem="mx9-2G-PdJ" firstAttribute="centerY" secondItem="Yck-Q7-5iu" secondAttribute="centerY" id="uca-AH-5WG"/>
-                    <constraint firstItem="Yck-Q7-5iu" firstAttribute="centerY" secondItem="BaR-eT-cIl" secondAttribute="centerY" id="wD2-Ub-An3"/>
-                    <constraint firstAttribute="trailing" secondItem="mx9-2G-PdJ" secondAttribute="trailing" constant="15" id="wfp-xE-HDR"/>
-                    <constraint firstItem="lp2-f9-Ysh" firstAttribute="top" secondItem="UT4-Ye-cFb" secondAttribute="bottom" constant="4" id="xYX-oX-EDE"/>
-                </constraints>
             </tableViewCellContentView>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="BaR-eT-cIl" secondAttribute="bottom" constant="15" id="Mfx-yD-Z0S"/>
-            </constraints>
             <connections>
-                <outlet property="locationDistanceLabel" destination="Yck-Q7-5iu" id="tlw-Ua-wmy"/>
-                <outlet property="locationNameLabel" destination="R64-Io-SYG" id="0Lo-fi-iIr"/>
-                <outlet property="openAddressLabel" destination="ndi-fH-NKn" id="XdC-Pb-2g7"/>
-                <outlet property="openDaysLabel" destination="ZJI-ul-Fcu" id="4qj-Vl-tQo"/>
-                <outlet property="streetAddressLabel" destination="UT4-Ye-cFb" id="4LZ-iP-x0J"/>
-                <outlet property="suburbAddressLabel" destination="lp2-f9-Ysh" id="VVU-n9-ZDr"/>
+                <outlet property="lastPaymentAmountLabel" destination="UT4-Ye-cFb" id="dfJ-Cw-yOo"/>
+                <outlet property="lastPaymentSummaryLabel" destination="lp2-f9-Ysh" id="ntR-wp-RMR"/>
+                <outlet property="nextPaymentAmountLabel" destination="ZJI-ul-Fcu" id="1Px-ix-5V4"/>
+                <outlet property="nextPaymentSummaryLabel" destination="ndi-fH-NKn" id="wcX-Ew-Wor"/>
             </connections>
+            <point key="canvasLocation" x="33.5" y="150"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="map_marker_icon" width="13" height="15"/>
-    </resources>
 </document>

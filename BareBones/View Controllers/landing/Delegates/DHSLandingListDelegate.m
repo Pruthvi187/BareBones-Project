@@ -12,6 +12,13 @@
 #import "DHSAppointmentCell.h"
 #import "DHSFrequentlyUsedCell.h"
 
+typedef NS_ENUM(NSInteger, SectionType) {
+    paymentsSection,
+    tasksSection,
+    appointmentSection,
+    frequentlyUsedSection
+};
+
 @interface DHSLandingListDelegate()
 @property (nonatomic) NSInteger numTasks;
 @end
@@ -25,13 +32,13 @@
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *sectionTitle;
     switch (section) {
-        case 0:
+        case paymentsSection:
             sectionTitle = @"Payments";
             break;
-        case 1:
+        case tasksSection:
             sectionTitle = @"Tasks";
             break;
-        case 2:
+        case appointmentSection:
             sectionTitle = @"Next Appointment";
             break;
         case 3:
@@ -43,15 +50,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger numRows = 0;
-    
     switch (section) {
-    case 0:
+    case paymentsSection:
         numRows = 1;
         break;
-    case 1:
+    case tasksSection:
         numRows = 2;
         break;
-    case 2:
+    case appointmentSection:
         numRows = 1;
         break;
     case 3:
@@ -62,36 +68,42 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     NSString *reuseIdentifier;
     UITableViewCell *cell;
     
     switch (indexPath.section) {
-        case 0:
+        case paymentsSection:
             reuseIdentifier = @"paymentscell";
             cell = (DHSPaymentsCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
 
             break;
-        case 1:
+        case tasksSection:
             reuseIdentifier = @"taskcell";
             cell = (DHSTaskCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
             break;
-        case 2:
+        case appointmentSection:
             reuseIdentifier = @"appointmentcell";
             cell = (DHSAppointmentCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
             break;
-        case 3:
+        case frequentlyUsedSection:
             reuseIdentifier = @"frequentlyusedcell";
             cell = (DHSFrequentlyUsedCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
             break;
     }
-    
-                return cell;
-
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 180;
+    NSInteger hgt;
+    switch (indexPath.section) {
+        case paymentsSection:
+            hgt = 150;
+            break;
+        default:
+            hgt = 180;
+            break;
+    }
+    return hgt;
 }
 
 @end
