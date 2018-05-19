@@ -40,7 +40,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -57,9 +57,12 @@
             cell.textLabel.text = @"AOC";
             break;
         case 3:
-            cell.textLabel.text = @"Landing";
+            cell.textLabel.text = @"Landing2";
             break;
         case 4:
+            cell.textLabel.text = @"Landing";
+            break;
+        case 5:
             cell.textLabel.text = @"Office Locator";
             break;
     }
@@ -72,7 +75,7 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
-    LandingViewController *landingViewController;
+    Landing2ViewController *landingViewController;
     MainTabsTabBarController *mainTabsTabBarController;
     AppDelegate *appDelegate;
     
@@ -82,26 +85,29 @@
 
 //            mainTabsTabBarController = [[MainTabsTabBarController alloc] initWithNibName:@"MainTabsTabBarViewController" bundle:nil];
             
-            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+            landingViewController = [[Landing2ViewController alloc] initWithNibName:@"Landing2ViewController" bundle:nil];
 
             appDelegate.window.rootViewController = landingViewController;
             // note: landing vc works here with root view controller
-        
             break;
             
         case 1: // sign in
             [self displaySigninVC];
-            break;
+            return;
             
         case 2: // AOC
             [self displayAOC];
             return;
             
-        case 3: // landing
-            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+        case 3: // landing2
+            landingViewController = [[Landing2ViewController alloc] initWithNibName:@"Landing2ViewController" bundle:nil];
+            return;
             
-            break;
-        case 4:
+        case 4: // landing
+            [self displayLanding];
+            return;
+            
+        case 5:
             [self displayOfficeLocator];
             return;
     }
@@ -120,6 +126,11 @@
 - (void) displayOfficeLocator {
     DHSOfficeLocatorVC *officeLocatorVC = [DHSOfficeLocatorVC new];
     [self.navigationController pushViewController:officeLocatorVC animated:YES];
+}
+
+- (void) displayLanding {
+    DHSLandingVC *landingVC = [DHSLandingVC new];
+    [self.navigationController pushViewController:landingVC animated:YES];
 }
 
 

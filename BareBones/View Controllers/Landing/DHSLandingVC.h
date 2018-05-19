@@ -1,5 +1,5 @@
 //
-//  LandingTableViewController.h
+//  DHSLandingVC.h
 //  BareBones
 //
 //  Created by Ian Craigmile on 19/5/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandingTableViewController : UITableViewController
+@interface DHSLandingVC : UIViewController
 
 @end

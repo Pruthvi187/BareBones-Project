@@ -1,20 +1,20 @@
 //
-//  LandingViewController.m
+//  Landing2ViewController.m
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
 //  Copyright © 2018 Pruthvi Henly Onkar. All rights reserved.
 //
 
-#import "LandingViewController.h"
+#import "Landing2ViewController.h"
 #import "DHSActivityVC.h"
 
 
-@interface LandingViewController()<DHSRemoveModalVCDelegate>
+@interface Landing2ViewController()<DHSRemoveModalVCDelegate>
 @property (nonatomic, strong) DHSActivityVC *activityVC;
 @end
 
-@implementation LandingViewController
+@implementation Landing2ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

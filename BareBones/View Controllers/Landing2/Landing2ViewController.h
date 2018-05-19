@@ -1,5 +1,5 @@
 //
-//  LandingViewController.h
+//  Landing2ViewController.h
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandingViewController : UIViewController
+@interface Landing2ViewController : UIViewController
 
 @end
