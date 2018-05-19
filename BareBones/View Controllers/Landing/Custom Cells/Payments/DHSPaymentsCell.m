@@ -21,8 +21,4 @@
     // Configure the view for the selected state
 }
 
-#pragma mark - IBActions
-- (IBAction)startDirections:(id)sender {
-}
-
 @end
