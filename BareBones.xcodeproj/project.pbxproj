@@ -20,6 +20,12 @@
 		3DBF742920AFCCDF006D795A /* DHSPaymentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */; };
 		3DBF742A20AFCCDF006D795A /* DHSLandingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF742220AFCCDF006D795A /* DHSLandingVC.xib */; };
 		3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF742520AFCCDF006D795A /* DHSLandingListDelegate.m */; };
+		3DBF742F20AFD1D6006D795A /* DHSTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF742C20AFD1D6006D795A /* DHSTaskCell.xib */; };
+		3DBF743020AFD1D6006D795A /* DHSTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF742E20AFD1D6006D795A /* DHSTaskCell.m */; };
+		3DBF743720AFD344006D795A /* DHSAppointmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF743420AFD344006D795A /* DHSAppointmentCell.xib */; };
+		3DBF743820AFD344006D795A /* DHSAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF743620AFD344006D795A /* DHSAppointmentCell.m */; };
+		3DBF743D20AFD403006D795A /* DHSFrequentlyUsedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF743B20AFD402006D795A /* DHSFrequentlyUsedCell.xib */; };
+		3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF743C20AFD402006D795A /* DHSFrequentlyUsedCell.m */; };
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
@@ -57,6 +63,15 @@
 		3DBF742320AFCCDF006D795A /* DHSLandingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSLandingVC.h; sourceTree = "<group>"; };
 		3DBF742520AFCCDF006D795A /* DHSLandingListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSLandingListDelegate.m; sourceTree = "<group>"; };
 		3DBF742620AFCCDF006D795A /* DHSLandingListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSLandingListDelegate.h; sourceTree = "<group>"; };
+		3DBF742C20AFD1D6006D795A /* DHSTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSTaskCell.xib; sourceTree = "<group>"; };
+		3DBF742D20AFD1D6006D795A /* DHSTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSTaskCell.h; sourceTree = "<group>"; };
+		3DBF742E20AFD1D6006D795A /* DHSTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSTaskCell.m; sourceTree = "<group>"; };
+		3DBF743420AFD344006D795A /* DHSAppointmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSAppointmentCell.xib; sourceTree = "<group>"; };
+		3DBF743520AFD344006D795A /* DHSAppointmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSAppointmentCell.h; sourceTree = "<group>"; };
+		3DBF743620AFD344006D795A /* DHSAppointmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSAppointmentCell.m; sourceTree = "<group>"; };
+		3DBF743A20AFD402006D795A /* DHSFrequentlyUsedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSFrequentlyUsedCell.h; sourceTree = "<group>"; };
+		3DBF743B20AFD402006D795A /* DHSFrequentlyUsedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSFrequentlyUsedCell.xib; sourceTree = "<group>"; };
+		3DBF743C20AFD402006D795A /* DHSFrequentlyUsedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSFrequentlyUsedCell.m; sourceTree = "<group>"; };
 		3DC3E5D220AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSNavigationForTestScreensTableViewController.h; sourceTree = "<group>"; };
 		3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSNavigationForTestScreensTableViewController.m; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,23 +131,24 @@
 		3DBF741C20AFCCDF006D795A /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				3DBF741D20AFCCDF006D795A /* DHSLandingVC.m */,
-				3DBF741E20AFCCDF006D795A /* Custom Cell */,
+				3DBF741E20AFCCDF006D795A /* Custom Cells */,
 				3DBF742220AFCCDF006D795A /* DHSLandingVC.xib */,
 				3DBF742320AFCCDF006D795A /* DHSLandingVC.h */,
+				3DBF741D20AFCCDF006D795A /* DHSLandingVC.m */,
 				3DBF742420AFCCDF006D795A /* Delegates */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
 		};
-		3DBF741E20AFCCDF006D795A /* Custom Cell */ = {
+		3DBF741E20AFCCDF006D795A /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3DBF741F20AFCCDF006D795A /* DHSPaymentsCell.m */,
-				3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */,
-				3DBF742120AFCCDF006D795A /* DHSPaymentsCell.h */,
+				3DBF743220AFD236006D795A /* Payments */,
+				3DBF743120AFD22E006D795A /* Task */,
+				3DBF743320AFD344006D795A /* Appointment */,
+				3DBF743920AFD402006D795A /* Frequently Used */,
 			);
-			path = "Custom Cell";
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 		3DBF742420AFCCDF006D795A /* Delegates */ = {
@@ -142,6 +158,46 @@
 				3DBF742620AFCCDF006D795A /* DHSLandingListDelegate.h */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3DBF743120AFD22E006D795A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF742D20AFD1D6006D795A /* DHSTaskCell.h */,
+				3DBF742E20AFD1D6006D795A /* DHSTaskCell.m */,
+				3DBF742C20AFD1D6006D795A /* DHSTaskCell.xib */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		3DBF743220AFD236006D795A /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF741F20AFCCDF006D795A /* DHSPaymentsCell.m */,
+				3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */,
+				3DBF742120AFCCDF006D795A /* DHSPaymentsCell.h */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		3DBF743320AFD344006D795A /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF743420AFD344006D795A /* DHSAppointmentCell.xib */,
+				3DBF743520AFD344006D795A /* DHSAppointmentCell.h */,
+				3DBF743620AFD344006D795A /* DHSAppointmentCell.m */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		3DBF743920AFD402006D795A /* Frequently Used */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF743A20AFD402006D795A /* DHSFrequentlyUsedCell.h */,
+				3DBF743B20AFD402006D795A /* DHSFrequentlyUsedCell.xib */,
+				3DBF743C20AFD402006D795A /* DHSFrequentlyUsedCell.m */,
+			);
+			path = "Frequently Used";
 			sourceTree = "<group>";
 		};
 		3DC3E5DD20AE659200451FE7 /* Navigation for test screens */ = {
@@ -328,7 +384,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBF743D20AFD403006D795A /* DHSFrequentlyUsedCell.xib in Resources */,
 				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
+				3DBF743720AFD344006D795A /* DHSAppointmentCell.xib in Resources */,
 				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
@@ -337,6 +395,7 @@
 				3DBF742A20AFCCDF006D795A /* DHSLandingVC.xib in Resources */,
 				AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */,
 				3DBF742920AFCCDF006D795A /* DHSPaymentsCell.xib in Resources */,
+				3DBF742F20AFD1D6006D795A /* DHSTaskCell.xib in Resources */,
 				3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */,
 				AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */,
 				3DBF741A20AFCB95006D795A /* Landing2ViewController.xib in Resources */,
@@ -355,15 +414,18 @@
 				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
 				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
 				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
+				3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */,
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,
 				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
+				3DBF743020AFD1D6006D795A /* DHSTaskCell.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
 				3DBF742720AFCCDF006D795A /* DHSLandingVC.m in Sources */,
 				AC26C53D20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
+				3DBF743820AFD344006D795A /* DHSAppointmentCell.m in Sources */,
 				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
