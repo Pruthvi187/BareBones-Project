@@ -8,22 +8,63 @@
 
 #import "DHSLandingListDelegate.h"
 #import "DHSPaymentsCell.h"
+#import "DHSTaskCell.h"
+#import "DHSAppointmentCell.h"
+#import "DHSFrequentlyUsedCell.h"
 
 @implementation DHSLandingListDelegate
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    NSInteger numRows = 0;
+    
+    switch (section) {
+    case 0:
+        numRows = 1;
+        break;
+    case 1:
+        numRows = 2;
+        break;
+    case 2:
+        numRows = 1;
+        break;
+    case 3:
+        numRows = 1;
+        break;
+    }
+    return numRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *reuseIdentifier = @"paymentscell";
-    DHSPaymentsCell *cell = (DHSPaymentsCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];    
-    return cell;
+    NSString *reuseIdentifier;
+    UITableViewCell *cell;
+    
+    switch (indexPath.section) {
+        case 0:
+            reuseIdentifier = @"paymentscell";
+            cell = (DHSPaymentsCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+
+            break;
+        case 1:
+            reuseIdentifier = @"taskcell";
+            cell = (DHSTaskCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+            break;
+        case 2:
+            reuseIdentifier = @"appointmentcell";
+            cell = (DHSAppointmentCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+            break;
+        case 3:
+            reuseIdentifier = @"frequentlyusedcell";
+            cell = (DHSFrequentlyUsedCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+            break;
+    }
+    
+                return cell;
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
