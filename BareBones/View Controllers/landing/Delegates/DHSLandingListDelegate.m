@@ -12,10 +12,33 @@
 #import "DHSAppointmentCell.h"
 #import "DHSFrequentlyUsedCell.h"
 
+@interface DHSLandingListDelegate()
+@property (nonatomic) NSInteger numTasks;
+@end
+
 @implementation DHSLandingListDelegate
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;
+}
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *sectionTitle;
+    switch (section) {
+        case 0:
+            sectionTitle = @"Payments";
+            break;
+        case 1:
+            sectionTitle = @"Tasks";
+            break;
+        case 2:
+            sectionTitle = @"Next Appointment";
+            break;
+        case 3:
+            sectionTitle = @"Frequently Used";
+            break;
+    }
+    return sectionTitle;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

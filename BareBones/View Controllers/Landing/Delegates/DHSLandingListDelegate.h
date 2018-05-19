@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface DHSLandingListDelegate : NSObject<UITableViewDataSource, UITableViewDelegate>
-
 @end
