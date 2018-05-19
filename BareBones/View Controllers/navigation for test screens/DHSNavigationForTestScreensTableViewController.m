@@ -9,6 +9,7 @@
 #import "DHSNavigationForTestScreensTableViewController.h"
 #import "DHSSignInVC.h"
 #import "DHSAocVC.h"
+#import "DHSOfficeLocatorVC.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -39,7 +40,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -58,6 +59,9 @@
         case 3:
             cell.textLabel.text = @"Landing";
             break;
+        case 4:
+            cell.textLabel.text = @"Office Locator";
+            break;
     }
  
     return cell;
@@ -69,7 +73,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
     LandingViewController *landingViewController;
-    LandingTableViewController *landingTableViewController;
     MainTabsTabBarController *mainTabsTabBarController;
     AppDelegate *appDelegate;
     
@@ -95,11 +98,12 @@
             return;
             
         case 3: // landing
-//            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
             
-            landingTableViewController = [[LandingTableViewController alloc] initWithNibName:@"LandingTableViewController" bundle:nil];
-            [self.navigationController pushViewController:landingTableViewController animated:YES];
             break;
+        case 4:
+            [self displayOfficeLocator];
+            return;
     }
 }
 
@@ -111,6 +115,11 @@
 - (void) displayAOC {
     DHSAocVC *aocVC = [DHSAocVC new];
     [self.navigationController pushViewController:aocVC animated:YES];
+}
+
+- (void) displayOfficeLocator {
+    DHSOfficeLocatorVC *officeLocatorVC = [DHSOfficeLocatorVC new];
+    [self.navigationController pushViewController:officeLocatorVC animated:YES];
 }
 
 

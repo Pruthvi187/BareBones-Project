@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LandingViewController.h"
-#import "LandingTableViewController.h"
 #import "MainTabsTabBarController.h"
 #import "AppDelegate.h"
 

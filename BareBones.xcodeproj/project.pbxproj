@@ -7,46 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D4A5A1F20AE914E00AE70BD /* DHSSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5A1D20AE914E00AE70BD /* DHSSignInVC.m */; };
-		3D4A5A2020AE914E00AE70BD /* DHSSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A5A1E20AE914E00AE70BD /* DHSSignInVC.xib */; };
-		3D4A5A2520AE917400AE70BD /* DHSAocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5A2320AE917400AE70BD /* DHSAocVC.m */; };
-		3D4A5A2620AE917400AE70BD /* DHSAocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A5A2420AE917400AE70BD /* DHSAocVC.xib */; };
-		3D4A5A2E20AEA56B00AE70BD /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A5A2D20AEA56B00AE70BD /* LandingViewController.xib */; };
-		3D4A5A3320AEAF5300AE70BD /* MainTabsTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A5A3220AEAF5300AE70BD /* MainTabsTabBarController.xib */; };
-		3D4A5A3620AEAFCF00AE70BD /* MainTabsTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A5A3520AEAFCF00AE70BD /* MainTabsTabBarController.m */; };
-		3DBF740220AFC2AF006D795A /* LandingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF740020AFC2AF006D795A /* LandingTableViewController.m */; };
-		3DBF740320AFC2AF006D795A /* LandingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740120AFC2AF006D795A /* LandingTableViewController.xib */; };
-		3DBF740520AFC69E006D795A /* LandingPaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740420AFC69E006D795A /* LandingPaymentsTableViewCell.xib */; };
+		3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF740620AFC883006D795A /* DHSSignInVC.m */; };
+		3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740720AFC883006D795A /* DHSSignInVC.xib */; };
+		3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF740C20AFC8A8006D795A /* DHSAocVC.m */; };
+		3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740D20AFC8A8006D795A /* DHSAocVC.xib */; };
+		3DBF741420AFC943006D795A /* MainTabsTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF741220AFC943006D795A /* MainTabsTabBarController.m */; };
+		3DBF741520AFC943006D795A /* MainTabsTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */; };
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D720AE657300451FE7 /* LandingViewController.m */; };
+		3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D820AE657300451FE7 /* LandingViewController.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
 		AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD220AE406F00746B5E /* Assets.xcassets */; };
 		AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD420AE406F00746B5E /* LaunchScreen.storyboard */; };
 		AC065FD920AE406F00746B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FD820AE406F00746B5E /* main.m */; };
 		AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FE620AE4ECE00746B5E /* DHSColorPool.m */; };
-		AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FEA20AE524800746B5E /* DHSActivityVC.m */; };
 		AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC065FEB20AE524800746B5E /* DHSActivityVC.xib */; };
+		AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */; };
+		AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */; };
+		AC26C53D20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */; };
+		AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */; };
+		AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */; };
+		AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54520AE88B9001415E8 /* DHSActivityVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D4A5A1C20AE914E00AE70BD /* DHSSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSSignInVC.h; sourceTree = "<group>"; };
-		3D4A5A1D20AE914E00AE70BD /* DHSSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSSignInVC.m; sourceTree = "<group>"; };
-		3D4A5A1E20AE914E00AE70BD /* DHSSignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSSignInVC.xib; sourceTree = "<group>"; };
-		3D4A5A2220AE917300AE70BD /* DHSAocVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSAocVC.h; sourceTree = "<group>"; };
-		3D4A5A2320AE917400AE70BD /* DHSAocVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSAocVC.m; sourceTree = "<group>"; };
-		3D4A5A2420AE917400AE70BD /* DHSAocVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSAocVC.xib; sourceTree = "<group>"; };
-		3D4A5A2D20AEA56B00AE70BD /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
-		3D4A5A3220AEAF5300AE70BD /* MainTabsTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabsTabBarController.xib; sourceTree = "<group>"; };
-		3D4A5A3420AEAFCF00AE70BD /* MainTabsTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabsTabBarController.h; sourceTree = "<group>"; };
-		3D4A5A3520AEAFCF00AE70BD /* MainTabsTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabsTabBarController.m; sourceTree = "<group>"; };
-		3DBF73FF20AFC2AF006D795A /* LandingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandingTableViewController.h; sourceTree = "<group>"; };
-		3DBF740020AFC2AF006D795A /* LandingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandingTableViewController.m; sourceTree = "<group>"; };
-		3DBF740120AFC2AF006D795A /* LandingTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingTableViewController.xib; sourceTree = "<group>"; };
-		3DBF740420AFC69E006D795A /* LandingPaymentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingPaymentsTableViewCell.xib; sourceTree = "<group>"; };
+		3DBF740620AFC883006D795A /* DHSSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSSignInVC.m; path = "Sign In/DHSSignInVC.m"; sourceTree = "<group>"; };
+		3DBF740720AFC883006D795A /* DHSSignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DHSSignInVC.xib; path = "Sign In/DHSSignInVC.xib"; sourceTree = "<group>"; };
+		3DBF740820AFC883006D795A /* DHSSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSignInVC.h; path = "Sign In/DHSSignInVC.h"; sourceTree = "<group>"; };
+		3DBF740B20AFC8A8006D795A /* DHSAocVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSAocVC.h; path = AOC/DHSAocVC.h; sourceTree = "<group>"; };
+		3DBF740C20AFC8A8006D795A /* DHSAocVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSAocVC.m; path = AOC/DHSAocVC.m; sourceTree = "<group>"; };
+		3DBF740D20AFC8A8006D795A /* DHSAocVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DHSAocVC.xib; path = AOC/DHSAocVC.xib; sourceTree = "<group>"; };
+		3DBF741120AFC943006D795A /* MainTabsTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabsTabBarController.h; sourceTree = "<group>"; };
+		3DBF741220AFC943006D795A /* MainTabsTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabsTabBarController.m; sourceTree = "<group>"; };
+		3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabsTabBarController.xib; sourceTree = "<group>"; };
 		3DC3E5D220AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSNavigationForTestScreensTableViewController.h; sourceTree = "<group>"; };
 		3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSNavigationForTestScreensTableViewController.m; sourceTree = "<group>"; };
 		3DC3E5D720AE657300451FE7 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		3DC3E5D820AE657300451FE7 /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingViewController.xib; sourceTree = "<group>"; };
 		3DC3E5D920AE657300451FE7 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +57,16 @@
 		AC065FE520AE4ECE00746B5E /* DHSColorPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSColorPool.h; sourceTree = "<group>"; };
 		AC065FE620AE4ECE00746B5E /* DHSColorPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSColorPool.m; sourceTree = "<group>"; };
 		AC065FE920AE524800746B5E /* DHSActivityVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSActivityVC.h; sourceTree = "<group>"; };
-		AC065FEA20AE524800746B5E /* DHSActivityVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSActivityVC.m; sourceTree = "<group>"; };
 		AC065FEB20AE524800746B5E /* DHSActivityVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSActivityVC.xib; sourceTree = "<group>"; };
+		AC26C53520AE80BF001415E8 /* DHSOfficeLocatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorVC.h; sourceTree = "<group>"; };
+		AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorVC.m; sourceTree = "<group>"; };
+		AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSOfficeLocatorVC.xib; sourceTree = "<group>"; };
+		AC26C53B20AE8174001415E8 /* DHSOfficeLocatorListDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorListDelegate.h; sourceTree = "<group>"; };
+		AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorListDelegate.m; sourceTree = "<group>"; };
+		AC26C53F20AE823E001415E8 /* DHSOfficeLocatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSOfficeLocatorCell.h; sourceTree = "<group>"; };
+		AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorCell.m; sourceTree = "<group>"; };
+		AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSOfficeLocatorCell.xib; sourceTree = "<group>"; };
+		AC26C54520AE88B9001415E8 /* DHSActivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSActivityVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,24 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D4A5A2120AE915500AE70BD /* Sign In */ = {
+		3DBF741020AFC943006D795A /* main tabs */ = {
 			isa = PBXGroup;
 			children = (
-				3D4A5A1C20AE914E00AE70BD /* DHSSignInVC.h */,
-				3D4A5A1D20AE914E00AE70BD /* DHSSignInVC.m */,
-				3D4A5A1E20AE914E00AE70BD /* DHSSignInVC.xib */,
+				3DBF741120AFC943006D795A /* MainTabsTabBarController.h */,
+				3DBF741220AFC943006D795A /* MainTabsTabBarController.m */,
+				3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */,
 			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		3D4A5A2720AE917C00AE70BD /* AOC */ = {
-			isa = PBXGroup;
-			children = (
-				3D4A5A2220AE917300AE70BD /* DHSAocVC.h */,
-				3D4A5A2320AE917400AE70BD /* DHSAocVC.m */,
-				3D4A5A2420AE917400AE70BD /* DHSAocVC.xib */,
-			);
-			path = AOC;
+			path = "main tabs";
 			sourceTree = "<group>";
 		};
 		3DC3E5DC20AE658700451FE7 /* landing */ = {
@@ -99,11 +95,7 @@
 			children = (
 				3DC3E5D920AE657300451FE7 /* LandingViewController.h */,
 				3DC3E5D720AE657300451FE7 /* LandingViewController.m */,
-				3D4A5A2D20AEA56B00AE70BD /* LandingViewController.xib */,
-				3DBF73FF20AFC2AF006D795A /* LandingTableViewController.h */,
-				3DBF740020AFC2AF006D795A /* LandingTableViewController.m */,
-				3DBF740120AFC2AF006D795A /* LandingTableViewController.xib */,
-				3DBF740420AFC69E006D795A /* LandingPaymentsTableViewCell.xib */,
+				3DC3E5D820AE657300451FE7 /* LandingViewController.xib */,
 			);
 			path = landing;
 			sourceTree = "<group>";
@@ -117,14 +109,24 @@
 			path = "navigation for test screens";
 			sourceTree = "<group>";
 		};
-		3DCBB59520AE6CC600C41537 /* main tabs */ = {
+		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				3D4A5A3220AEAF5300AE70BD /* MainTabsTabBarController.xib */,
-				3D4A5A3420AEAFCF00AE70BD /* MainTabsTabBarController.h */,
-				3D4A5A3520AEAFCF00AE70BD /* MainTabsTabBarController.m */,
+				3DBF740820AFC883006D795A /* DHSSignInVC.h */,
+				3DBF740620AFC883006D795A /* DHSSignInVC.m */,
+				3DBF740720AFC883006D795A /* DHSSignInVC.xib */,
 			);
-			path = "main tabs";
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		5EC7D98620AE6F8B00A5BC42 /* AOC */ = {
+			isa = PBXGroup;
+			children = (
+				3DBF740B20AFC8A8006D795A /* DHSAocVC.h */,
+				3DBF740C20AFC8A8006D795A /* DHSAocVC.m */,
+				3DBF740D20AFC8A8006D795A /* DHSAocVC.xib */,
+			);
+			name = AOC;
 			sourceTree = "<group>";
 		};
 		AC065FBD20AE406C00746B5E = {
@@ -171,16 +173,56 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D4A5A2720AE917C00AE70BD /* AOC */,
-				3D4A5A2120AE915500AE70BD /* Sign In */,
-				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
-				AC065FEA20AE524800746B5E /* DHSActivityVC.m */,
-				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
+				AC26C52F20AE8012001415E8 /* Office Locator */,
+				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
+				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
+				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DC3E5DD20AE659200451FE7 /* navigation for test screens */,
+				3DBF741020AFC943006D795A /* main tabs */,
 				3DC3E5DC20AE658700451FE7 /* landing */,
-				3DCBB59520AE6CC600C41537 /* main tabs */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC26C52E20AE7FDA001415E8 /* Activity Modal */ = {
+			isa = PBXGroup;
+			children = (
+				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
+				AC26C54520AE88B9001415E8 /* DHSActivityVC.m */,
+				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
+			);
+			path = "Activity Modal";
+			sourceTree = "<group>";
+		};
+		AC26C52F20AE8012001415E8 /* Office Locator */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53E20AE8217001415E8 /* Custom Cell */,
+				AC26C53A20AE8159001415E8 /* Delegates */,
+				AC26C53520AE80BF001415E8 /* DHSOfficeLocatorVC.h */,
+				AC26C53620AE80BF001415E8 /* DHSOfficeLocatorVC.m */,
+				AC26C53720AE80BF001415E8 /* DHSOfficeLocatorVC.xib */,
+			);
+			path = "Office Locator";
+			sourceTree = "<group>";
+		};
+		AC26C53A20AE8159001415E8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53B20AE8174001415E8 /* DHSOfficeLocatorListDelegate.h */,
+				AC26C53C20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AC26C53E20AE8217001415E8 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC26C53F20AE823E001415E8 /* DHSOfficeLocatorCell.h */,
+				AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */,
+				AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,16 +283,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4A5A2620AE917400AE70BD /* DHSAocVC.xib in Resources */,
+				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
+				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
+				3DC3E5DB20AE657300451FE7 /* LandingViewController.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
-				3D4A5A2020AE914E00AE70BD /* DHSSignInVC.xib in Resources */,
-				3D4A5A3320AEAF5300AE70BD /* MainTabsTabBarController.xib in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
-				3DBF740520AFC69E006D795A /* LandingPaymentsTableViewCell.xib in Resources */,
-				3DBF740320AFC2AF006D795A /* LandingTableViewController.xib in Resources */,
-				3D4A5A2E20AEA56B00AE70BD /* LandingViewController.xib in Resources */,
+				3DBF741520AFC943006D795A /* MainTabsTabBarController.xib in Resources */,
 				AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */,
+				3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */,
+				AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,14 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4A5A3620AEAFCF00AE70BD /* MainTabsTabBarController.m in Sources */,
-				3DBF740220AFC2AF006D795A /* LandingTableViewController.m in Sources */,
-				3D4A5A1F20AE914E00AE70BD /* DHSSignInVC.m in Sources */,
+				3DBF741420AFC943006D795A /* MainTabsTabBarController.m in Sources */,
+				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
+				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
+				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
+				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
+				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
 				3DC3E5DA20AE657300451FE7 /* LandingViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				AC065FD920AE406F00746B5E /* main.m in Sources */,
-				AC065FEC20AE524800746B5E /* DHSActivityVC.m in Sources */,
-				3D4A5A2520AE917400AE70BD /* DHSAocVC.m in Sources */,
+				AC26C53D20AE8174001415E8 /* DHSOfficeLocatorListDelegate.m in Sources */,
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
 				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
 			);
