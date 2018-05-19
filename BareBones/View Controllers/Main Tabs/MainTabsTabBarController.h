@@ -1,5 +1,5 @@
 //
-//  LandingViewController.h
+//  MainTabsTabBarController.h
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LandingViewController : UIViewController
+@interface MainTabsTabBarController : UITabBarController
 
 @end
