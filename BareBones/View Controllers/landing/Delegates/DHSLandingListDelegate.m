@@ -102,6 +102,9 @@ typedef NS_ENUM(NSInteger, SectionType) {
         case tasksSection:
             hgt = 80;
             break;
+        case appointmentSection:
+            hgt = 80;
+            break;
         default:
             hgt = 180;
             break;

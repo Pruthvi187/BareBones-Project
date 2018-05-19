@@ -9,12 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DHSAppointmentCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *locationNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *streetAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *suburbAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *openDaysLabel;
-@property (weak, nonatomic) IBOutlet UILabel *openAddressLabel;
-@property (weak, nonatomic) IBOutlet UILabel *locationDistanceLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *appointmentTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *appointmentPlaceLabel;
 
 @end
