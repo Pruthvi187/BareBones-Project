@@ -1,18 +1,18 @@
 //
-//  MainTabsViewController.m
+//  MainTabsTabBarController.m
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
 //  Copyright © 2018 Pruthvi Henly Onkar. All rights reserved.
 //
 
-#import "MainTabsViewController.h"
+#import "MainTabsTabBarController.h"
 
-@interface MainTabsViewController ()
+@interface MainTabsTabBarController ()
 
 @end
 
-@implementation MainTabsViewController // UITabBarControllerDelegate
+@implementation MainTabsTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 //
-//  MainTabsViewController.h
+//  MainTabsTabBarController.h
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTabsViewController : UITabBarController
+@interface MainTabsTabBarController : UITabBarController
 
 @end

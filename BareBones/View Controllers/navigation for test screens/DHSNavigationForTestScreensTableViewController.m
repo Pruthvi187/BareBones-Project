@@ -69,14 +69,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
     LandingViewController *landingViewController;
-    MainTabsViewController *mainTabsViewController;
+    LandingTableViewController *landingTableViewController;
+    MainTabsTabBarController *mainTabsTabBarController;
+    AppDelegate *appDelegate;
     
     switch (indexPath.row) {
         case 0: // main tabs
-            // must present this modally
-            mainTabsViewController = [[MainTabsViewController alloc] initWithNibName:@"MainTabsViewController" bundle:nil];
-            mainTabsViewController.modalPresentationStyle = UIModalPresentationOverFullScreen;
-            [self presentViewController:mainTabsViewController animated:NO completion:nil];
+            appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+//            mainTabsTabBarController = [[MainTabsTabBarController alloc] initWithNibName:@"MainTabsTabBarViewController" bundle:nil];
+            
+            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+
+            appDelegate.window.rootViewController = landingViewController;
+            // note: landing vc works here with root view controller
+        
             break;
             
         case 1: // sign in
@@ -88,8 +95,10 @@
             return;
             
         case 3: // landing
-            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
-            [self.navigationController pushViewController:landingViewController animated:YES];
+//            landingViewController = [[LandingViewController alloc] initWithNibName:@"LandingViewController" bundle:nil];
+            
+            landingTableViewController = [[LandingTableViewController alloc] initWithNibName:@"LandingTableViewController" bundle:nil];
+            [self.navigationController pushViewController:landingTableViewController animated:YES];
             break;
     }
 }
