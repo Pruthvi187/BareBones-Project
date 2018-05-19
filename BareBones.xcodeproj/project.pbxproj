@@ -13,8 +13,6 @@
 		3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740D20AFC8A8006D795A /* DHSAocVC.xib */; };
 		3DBF741420AFC943006D795A /* MainTabsTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF741220AFC943006D795A /* MainTabsTabBarController.m */; };
 		3DBF741520AFC943006D795A /* MainTabsTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */; };
-		3DBF741A20AFCB95006D795A /* Landing2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF741820AFCB95006D795A /* Landing2ViewController.xib */; };
-		3DBF741B20AFCB95006D795A /* Landing2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF741920AFCB95006D795A /* Landing2ViewController.m */; };
 		3DBF742720AFCCDF006D795A /* DHSLandingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF741D20AFCCDF006D795A /* DHSLandingVC.m */; };
 		3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF741F20AFCCDF006D795A /* DHSPaymentsCell.m */; };
 		3DBF742920AFCCDF006D795A /* DHSPaymentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */; };
@@ -52,9 +50,6 @@
 		3DBF741120AFC943006D795A /* MainTabsTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabsTabBarController.h; sourceTree = "<group>"; };
 		3DBF741220AFC943006D795A /* MainTabsTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabsTabBarController.m; sourceTree = "<group>"; };
 		3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabsTabBarController.xib; sourceTree = "<group>"; };
-		3DBF741720AFCB95006D795A /* Landing2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Landing2ViewController.h; sourceTree = "<group>"; };
-		3DBF741820AFCB95006D795A /* Landing2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Landing2ViewController.xib; sourceTree = "<group>"; };
-		3DBF741920AFCB95006D795A /* Landing2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Landing2ViewController.m; sourceTree = "<group>"; };
 		3DBF741D20AFCCDF006D795A /* DHSLandingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSLandingVC.m; sourceTree = "<group>"; };
 		3DBF741F20AFCCDF006D795A /* DHSPaymentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSPaymentsCell.m; sourceTree = "<group>"; };
 		3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSPaymentsCell.xib; sourceTree = "<group>"; };
@@ -116,16 +111,6 @@
 				3DBF741320AFC943006D795A /* MainTabsTabBarController.xib */,
 			);
 			path = "Main Tabs";
-			sourceTree = "<group>";
-		};
-		3DBF741620AFCB95006D795A /* Landing2 */ = {
-			isa = PBXGroup;
-			children = (
-				3DBF741720AFCB95006D795A /* Landing2ViewController.h */,
-				3DBF741820AFCB95006D795A /* Landing2ViewController.xib */,
-				3DBF741920AFCB95006D795A /* Landing2ViewController.m */,
-			);
-			path = Landing2;
 			sourceTree = "<group>";
 		};
 		3DBF741C20AFCCDF006D795A /* Landing */ = {
@@ -278,7 +263,6 @@
 				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
-				3DBF741620AFCB95006D795A /* Landing2 */,
 				3DC3E5DD20AE659200451FE7 /* Navigation for test screens */,
 				3DBF741020AFC943006D795A /* Main Tabs */,
 			);
@@ -398,7 +382,6 @@
 				3DBF742F20AFD1D6006D795A /* DHSTaskCell.xib in Resources */,
 				3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */,
 				AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */,
-				3DBF741A20AFCB95006D795A /* Landing2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +393,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBF741420AFC943006D795A /* MainTabsTabBarController.m in Sources */,
-				3DBF741B20AFCB95006D795A /* Landing2ViewController.m in Sources */,
 				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
 				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
 				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Landing2ViewController.h"
 #import "DHSLandingVC.h"
 #import "MainTabsTabBarController.h"
 #import "AppDelegate.h"
