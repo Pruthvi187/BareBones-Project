@@ -9,8 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabsTabBarController"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSMainTabsTabBarController"/>
         <tabBarController id="RA8-Z8-k0J">
             <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wN-EX-AXp">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -45,5 +44,6 @@
             </viewControllers>
             <point key="canvasLocation" x="-26" y="232"/>
         </tabBarController>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
 </document>

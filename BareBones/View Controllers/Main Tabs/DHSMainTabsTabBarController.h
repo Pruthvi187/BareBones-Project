@@ -1,5 +1,5 @@
 //
-//  MainTabsTabBarController.h
+//  DHSMainTabsTabBarController.h
 //  BareBones
 //
 //  Created by Ian Craigmile on 18/5/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTabsTabBarController : UITabBarController
+@interface DHSMainTabsTabBarController : UITabBarController
 
 @end
