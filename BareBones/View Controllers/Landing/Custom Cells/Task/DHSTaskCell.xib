@@ -40,7 +40,7 @@
                             <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
                         <connections>
-                            <action selector="startDirections:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BGf-wT-fpm"/>
+                            <action selector="onViewTask:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jrx-F9-ZwL"/>
                         </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hui-aP-WU5">

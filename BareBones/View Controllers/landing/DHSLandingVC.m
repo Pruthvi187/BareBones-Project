@@ -9,12 +9,12 @@
 #import "DHSLandingVC.h"
 #import "DHSLandingListDelegate.h"
 #import "DHSActivityVC.h"
+#import "Constants.h"
 
 @interface DHSLandingVC()<DHSRemoveModalVCDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tView;
 @property (nonatomic, strong) DHSLandingListDelegate *listDelegate;
 @property (nonatomic, strong) DHSActivityVC *activityVC;
-
 @end
 
 @implementation DHSLandingVC
@@ -24,10 +24,16 @@
     // Do any additional setup after loading the view from its nib.
     [self setUpTableView];
     
-    [self createActivityModal];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayTaskAsModal:) name:NOTIF_VIEW_TASK object:nil];
 }
 
-- (void) createActivityModal {
+- (void) dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver: self];
+}
+
+#pragma mark - Tasks
+
+- (void) displayTaskAsModal: (NSNotification*) notification {
     self.activityVC = [DHSActivityVC new];
     self.activityVC.modalCloseDelegate = self;
     [self.activityVC.view setFrame:self.view.bounds];
@@ -57,7 +63,7 @@
 
 #pragma mark - DHSRemoveModalVCDelegate
 
--(void) removeModalVC {
+- (void) removeModalVC {
     if (self.activityVC != nil) {
         [self.activityVC willMoveToParentViewController:nil];
         [self.activityVC.view removeFromSuperview];

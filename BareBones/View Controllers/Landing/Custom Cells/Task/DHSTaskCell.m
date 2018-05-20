@@ -7,6 +7,7 @@
 //
 
 #import "DHSTaskCell.h"
+#import "Constants.h"
 
 @implementation DHSTaskCell
 
@@ -15,14 +16,10 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 #pragma mark - IBActions
-- (IBAction)startDirections:(id)sender {
+
+- (IBAction)onViewTask:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_VIEW_TASK object:self];
 }
 
 @end

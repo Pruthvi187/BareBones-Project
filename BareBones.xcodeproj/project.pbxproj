@@ -26,6 +26,7 @@
 		3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF743C20AFD402006D795A /* DHSFrequentlyUsedCell.m */; };
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DFB3D3A20B0E7F9002F346C /* DHSMainTabsBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3920B0E7F9002F346C /* DHSMainTabsBarDelegate.m */; };
+		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
 		AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD220AE406F00746B5E /* Assets.xcassets */; };
@@ -72,6 +73,8 @@
 		3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSNavigationForTestScreensTableViewController.m; sourceTree = "<group>"; };
 		3DFB3D3820B0E7F9002F346C /* DHSMainTabsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSMainTabsDelegate.h; sourceTree = "<group>"; };
 		3DFB3D3920B0E7F9002F346C /* DHSMainTabsBarDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSMainTabsBarDelegate.m; sourceTree = "<group>"; };
+		3DFB3D3B20B0F471002F346C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3DFB3D3C20B0F611002F346C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 			children = (
 				AC065FE520AE4ECE00746B5E /* DHSColorPool.h */,
 				AC065FE620AE4ECE00746B5E /* DHSColorPool.m */,
+				3DFB3D3B20B0F471002F346C /* Constants.h */,
+				3DFB3D3C20B0F611002F346C /* Constants.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 				AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */,
 				3DBF743820AFD344006D795A /* DHSAppointmentCell.m in Sources */,
 				3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */,
+				3DFB3D3D20B0F611002F346C /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
