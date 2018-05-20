@@ -249,6 +249,8 @@
 		AC065FC820AE406C00746B5E /* BareBones */ = {
 			isa = PBXGroup;
 			children = (
+				3DC3E5DD20AE659200451FE7 /* Navigation for test screens */,
+				3DBF741020AFC943006D795A /* Main Tabs */,
 				AC065FE820AE51BD00746B5E /* View Controllers */,
 				AC065FE420AE4EB900746B5E /* Utils */,
 				AC065FC920AE406C00746B5E /* AppDelegate.h */,
@@ -281,8 +283,6 @@
 				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
-				3DC3E5DD20AE659200451FE7 /* Navigation for test screens */,
-				3DBF741020AFC943006D795A /* Main Tabs */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

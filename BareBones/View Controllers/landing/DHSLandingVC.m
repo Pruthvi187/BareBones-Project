@@ -19,10 +19,18 @@
 
 @implementation DHSLandingVC
 
+//- (void)awakeFromNib {
+//    [super awakeFromNib];UITabBarItem *customTab = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
+//    self.tabBarItem = customTab;
+//    [super awakeFromNib];
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setUpTableView];
+    
+    self.navigationItem.title = @"John Citizen";
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayTaskAsModal:) name:NOTIF_VIEW_TASK object:nil];
 }
