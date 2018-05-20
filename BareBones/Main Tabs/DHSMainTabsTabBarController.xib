@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabsTabBarController"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tabBarController id="RA8-Z8-k0J">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSMainTabsTabBarController"/>
+        <tabBarController title="John" nibName="DHSLandingVC" id="RA8-Z8-k0J">
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wN-EX-AXp">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             </tabBar>
             <viewControllers>
-                <viewController id="Dl9-yO-ZH2">
+                <viewController title="Home" nibName="DHSLandingVC" id="Dl9-yO-ZH2" customClass="DHSLandingVC">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0oJ-eo-yUr"/>
                         <viewControllerLayoutGuide type="bottom" id="QTg-06-z3s"/>
@@ -28,9 +28,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="uIB-vy-jUH"/>
+                    <tabBarItem key="tabBarItem" title="Home" badgeValue="2" id="uIB-vy-jUH"/>
                 </viewController>
-                <viewController id="Lji-Sh-I6s">
+                <viewController title="Office" nibName="DHSOfficeLocatorVC" id="Lji-Sh-I6s" customClass="DHSOfficeLocatorVC">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ODJ-4a-RUj"/>
                         <viewControllerLayoutGuide type="bottom" id="o6F-3y-PmO"/>
@@ -40,10 +40,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4V5-jE-Biq"/>
+                    <tabBarItem key="tabBarItem" title="Office" id="4V5-jE-Biq"/>
                 </viewController>
             </viewControllers>
             <point key="canvasLocation" x="-26" y="232"/>
         </tabBarController>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
 </document>

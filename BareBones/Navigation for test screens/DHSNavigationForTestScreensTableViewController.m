@@ -74,16 +74,17 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create the next view controller.
-    MainTabsTabBarController *mainTabsTabBarController;
+    DHSMainTabsTabBarController *mainTabsTabBarController;
     AppDelegate *appDelegate;
     
     switch (indexPath.row) {
         case 0: // main tabs
             appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 
-//            mainTabsTabBarController = [[MainTabsTabBarController alloc] initWithNibName:@"MainTabsTabBarViewController" bundle:nil];
+            mainTabsTabBarController = [[DHSMainTabsTabBarController alloc] initWithNibName:@"MainTabsTabBarViewController" bundle:nil];
 
-            // appDelegate.window.rootViewController = landingViewController;
+            appDelegate.window.rootViewController = mainTabsTabBarController;
+            
             // note: landing vc works here with root view controller
             break;
             

@@ -25,6 +25,10 @@ typedef NS_ENUM(NSInteger, SectionType) {
 
 @implementation DHSLandingListDelegate
 
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
+
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;
 }
