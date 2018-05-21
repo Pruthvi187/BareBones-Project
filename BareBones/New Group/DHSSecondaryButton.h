@@ -1,8 +1,8 @@
 //
-//  DHSAocVC.h
+//  DHSSecondaryButton.h
 //  BareBones
 //
-//  Created by Alexander Jaroszewicz on 18/5/18.
+//  Created by Alexander Jaroszewicz on 21/5/18.
 //  Copyright © 2018 Pruthvi Henly Onkar. All rights reserved.
 //
 
@@ -10,6 +10,5 @@
 #import <QuartzCore/QuartzCore.h>
 #import "DHSColorPool.h"
 
-@interface DHSAocVC : UIViewController
-
+@interface DHSSecondaryButton : UIButton
 @end
