@@ -37,31 +37,12 @@ CGFloat sectionHeaderHeight = 60.0f;
     return 4;
 }
 
-//- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    NSString *sectionTitle;
-//    switch (section) {
-//        case paymentsSection:
-//            sectionTitle = @"Payments";
-//            break;
-//        case tasksSection:
-//            sectionTitle = @"Tasks";
-//            break;
-//        case appointmentSection:
-//            sectionTitle = @"Next Appointment";
-//            break;
-//        case frequentlyUsedSection:
-//            sectionTitle = @"Frequently Used";
-//            break;
-//    }
-//    return sectionTitle;
-//}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return sectionHeaderHeight;
 }
 
 //
-// We have some custom headers: with the odd badge or button, as well as text
+// Custom headers: with the odd badge or button, as well as text
 //
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *sectionHeaderView;
@@ -74,6 +55,10 @@ CGFloat sectionHeaderHeight = 60.0f;
         case tasksSection:
             [[NSBundle mainBundle] loadNibNamed:@"DHSTasksSectionHeader" owner:self options:nil];
             sectionHeaderView = self.tasksHeaderView;
+            // add a "badge"
+            if (self.numTasks > 0) {
+                
+            }
             break;
         case appointmentSection:
             [[NSBundle mainBundle] loadNibNamed:@"DHSTextSectionHeader" owner:self options:nil];
