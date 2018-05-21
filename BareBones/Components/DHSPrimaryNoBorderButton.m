@@ -32,11 +32,9 @@
     CGRect buttonFrame = self.frame;
     buttonFrame.size = CGSizeMake(148, 48);
     self.frame = buttonFrame;
-    _borderColor = DHSColorPool.defaultColorPool.whiteColor;
-    _backgroundColor = DHSColorPool.defaultColorPool.urgentRedColor;
-    _cornerRadius = 4.0;
-    _borderWidth = 1.0;
-}
+    self.layer.backgroundColor = DHSColorPool.defaultColorPool.primaryColor.CGColor;
+    self.layer.cornerRadius = 4.0;
+    [self setTitleColor:DHSColorPool.defaultColorPool.whiteColor forState:UIControlStateNormal];}
 
 /*
 // Only override drawRect: if you perform custom drawing.

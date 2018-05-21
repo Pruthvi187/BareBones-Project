@@ -11,6 +11,7 @@
 @interface DHSAocVC ()
 @property (weak, nonatomic) IBOutlet UIButton *continueButton;
 @property (weak, nonatomic) IBOutlet UIView *textBackground;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end
 
@@ -19,11 +20,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textBackground.backgroundColor = DHSColorPool.defaultColorPool.primaryColor;
+    
+    // TODO: update the background image view for the theme.
+//    self.backgroundImageView.image = theme_image;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)continueButtonAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

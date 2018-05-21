@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSAocVC">
             <connections>
+                <outlet property="backgroundImageView" destination="FxJ-SD-3aR" id="aeI-oc-1q3"/>
                 <outlet property="continueButton" destination="pdX-59-dPf" id="Jrs-bu-JMT"/>
                 <outlet property="textBackground" destination="LAd-Jo-fq0" id="0XD-JK-wlu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -37,13 +38,16 @@
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-59-dPf" customClass="DHSButton">
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-59-dPf" customClass="DHSButton">
                     <rect key="frame" x="123" y="396" width="128" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="JhS-W9-6e9"/>
                         <constraint firstAttribute="width" constant="128" id="nyv-ht-oci"/>
                     </constraints>
                     <state key="normal" title="Continue"/>
+                    <connections>
+                        <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="Euv-Pp-Til"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi9-16-bWj">
                     <rect key="frame" x="48" y="294" width="279" height="78"/>

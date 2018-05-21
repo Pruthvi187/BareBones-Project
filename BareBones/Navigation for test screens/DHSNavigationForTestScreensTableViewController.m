@@ -112,14 +112,12 @@
 - (void) displaySigninVC {
     DHSSignInVC *signInVC = [DHSSignInVC new];
     signInVC.modalTransitionStyle = UIModalPresentationFullScreen;
-    signInVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentViewController:signInVC animated:YES completion:nil];
 }
 
 - (void) displayAOC {
     DHSAocVC *aocVC = [DHSAocVC new];
     aocVC.modalTransitionStyle = UIModalPresentationFullScreen;
-    aocVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self presentViewController:aocVC animated:YES completion:nil];
 }
 
