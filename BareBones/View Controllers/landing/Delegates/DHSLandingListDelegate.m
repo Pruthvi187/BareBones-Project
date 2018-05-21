@@ -20,9 +20,12 @@ typedef NS_ENUM(NSInteger, SectionType) {
 };
 
 @interface DHSLandingListDelegate()
+@property (strong, nonatomic) IBOutlet UIView *tasksHeaderView;
+@property (strong, nonatomic) IBOutlet UIView *paymentsHeaderView;
 @end
 
 @implementation DHSLandingListDelegate
+CGFloat sectionHeaderHeight = 60.0f;
 
 #pragma mark - UITableViewDataSource
 
@@ -32,23 +35,54 @@ typedef NS_ENUM(NSInteger, SectionType) {
     return 4;
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    NSString *sectionTitle;
+//- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    NSString *sectionTitle;
+//    switch (section) {
+//        case paymentsSection:
+//            sectionTitle = @"Payments";
+//            break;
+//        case tasksSection:
+//            sectionTitle = @"Tasks";
+//            break;
+//        case appointmentSection:
+//            sectionTitle = @"Next Appointment";
+//            break;
+//        case frequentlyUsedSection:
+//            sectionTitle = @"Frequently Used";
+//            break;
+//    }
+//    return sectionTitle;
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return sectionHeaderHeight;
+}
+
+//
+// We have some custom headers: with the odd badge or button, as well as text
+//
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *sectionHeaderView;
+    
     switch (section) {
         case paymentsSection:
-            sectionTitle = @"Payments";
+            [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.paymentsHeaderView;
             break;
         case tasksSection:
-            sectionTitle = @"Tasks";
+            [[NSBundle mainBundle] loadNibNamed:@"DHSTasksSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.tasksHeaderView;
             break;
         case appointmentSection:
-            sectionTitle = @"Next Appointment";
+            [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.paymentsHeaderView;
             break;
         case frequentlyUsedSection:
-            sectionTitle = @"Frequently Used";
+            [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.paymentsHeaderView;
             break;
     }
-    return sectionTitle;
+    return sectionHeaderView;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -94,10 +128,10 @@ typedef NS_ENUM(NSInteger, SectionType) {
             hgt = 130;
             break;
         case tasksSection:
-            hgt = 80;
+            hgt = 70;
             break;
         case appointmentSection:
-            hgt = 80;
+            hgt = 70;
             break;
         case frequentlyUsedSection:
             hgt = 120;
@@ -108,8 +142,7 @@ typedef NS_ENUM(NSInteger, SectionType) {
 
 //
 // Programmatically create a view to be used as the background view of the cell
-// Round the corners
-// Draw a shadow
+// Rounded corners with a shadow
 //
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat cornerRadius = 10.0;
@@ -119,10 +152,12 @@ typedef NS_ENUM(NSInteger, SectionType) {
     
     // create a layer for a "background view" for the cell
     CAShapeLayer *newLayer = [[CAShapeLayer alloc] init];
+    
     CGMutablePathRef pathRef = CGPathCreateMutable();
     CGRect indentedBounds = CGRectInset(cell.bounds, leftAndRightMargin, 0.0f); // space left and right
-    BOOL addLine = NO;
+    BOOL addSeparatorLine = NO;
     
+    // cell rounded and indented rectangle
     if (indexPath.row == 0 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) { // a section with 1 row
         CGPathAddRoundedRect(pathRef, nil, indentedBounds, cornerRadius, cornerRadius);
     }
@@ -132,7 +167,7 @@ typedef NS_ENUM(NSInteger, SectionType) {
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(indentedBounds), CGRectGetMinY(indentedBounds), CGRectGetMidX(indentedBounds), CGRectGetMinY(indentedBounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMinY(indentedBounds), CGRectGetMaxX(indentedBounds), CGRectGetMidY(indentedBounds), cornerRadius);
         CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMaxY(indentedBounds));
-        addLine = YES;
+        addSeparatorLine = YES;
     }
     else
     if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) { // bottom cell
@@ -143,26 +178,43 @@ typedef NS_ENUM(NSInteger, SectionType) {
     }
     else { // a cell in the middle somewhere
         CGPathAddRect(pathRef, nil, indentedBounds);
-        addLine = YES;
+        addSeparatorLine = YES;
     }
     newLayer.path = pathRef;
     CFRelease(pathRef);
-    newLayer.fillColor = [UIColor colorWithWhite:1.0f alpha:0.8f].CGColor;
     
-    // create the separator
-    if (addLine == YES) {
-        CALayer *lineLayer = [[CALayer alloc] init];
+    newLayer.fillColor = [UIColor whiteColor].CGColor; // @IC[UIColor colorWithWhite:1.0f alpha:0.8f].CGColor;
+
+
+    // cell shadow
+    newLayer.masksToBounds = NO;
+
+    newLayer.shadowOffset = CGSizeMake(0, 3);
+    newLayer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
+    newLayer.shadowRadius = 2.0f;
+    newLayer.shadowOpacity = 0.35f;
+    newLayer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
+    
+    // cell separator
+            CALayer *lineLayer = [[CALayer alloc] init];
+    if (addSeparatorLine == YES) {
+
         CGFloat lineHeight = (1.0f / [UIScreen mainScreen].scale);
         lineLayer.frame = CGRectMake(CGRectGetMinX(indentedBounds)+5, indentedBounds.size.height-lineHeight, indentedBounds.size.width-5, lineHeight);
         lineLayer.backgroundColor = tableView.separatorColor.CGColor;
-        [newLayer addSublayer:lineLayer];
+        
+        // [newLayer addSublayer:lineLayer]; // xxxxxx
     }
     
     // create a new "background view" using this programmatically created layer
     UIView *roundedShadowView = [[UIView alloc] initWithFrame:indentedBounds];
-    [roundedShadowView.layer insertSublayer:newLayer atIndex:0];
-    roundedShadowView.backgroundColor = UIColor.clearColor;
-        
+    [roundedShadowView.layer insertSublayer:newLayer atIndex:0]; // rounded rect with shadow
+    
+        [roundedShadowView.layer insertSublayer:lineLayer atIndex:1]; // xxxxxxxx
+    
+    roundedShadowView.backgroundColor = nil; // xxxxx UIColor.clearColor;
+    
+
 //        // shadow: start
 //        CALayer *layer = roundedShadowView.layer;
 //        layer.masksToBounds = NO;

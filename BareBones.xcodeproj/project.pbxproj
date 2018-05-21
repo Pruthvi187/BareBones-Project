@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3D55D820B2911600CE3CEE /* DHSPaymentsSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D55D720B2911600CE3CEE /* DHSPaymentsSectionHeader.xib */; };
+		3D3D55DD20B2957B00CE3CEE /* DHSTasksSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D3D55DC20B2957B00CE3CEE /* DHSTasksSectionHeader.xib */; };
 		3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF740620AFC883006D795A /* DHSSignInVC.m */; };
 		3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF740720AFC883006D795A /* DHSSignInVC.xib */; };
 		3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF740C20AFC8A8006D795A /* DHSAocVC.m */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3D55D720B2911600CE3CEE /* DHSPaymentsSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSPaymentsSectionHeader.xib; sourceTree = "<group>"; };
+		3D3D55DC20B2957B00CE3CEE /* DHSTasksSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSTasksSectionHeader.xib; sourceTree = "<group>"; };
 		3DBF740620AFC883006D795A /* DHSSignInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSSignInVC.m; path = "Sign In/DHSSignInVC.m"; sourceTree = "<group>"; };
 		3DBF740720AFC883006D795A /* DHSSignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DHSSignInVC.xib; path = "Sign In/DHSSignInVC.xib"; sourceTree = "<group>"; };
 		3DBF740820AFC883006D795A /* DHSSignInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSignInVC.h; path = "Sign In/DHSSignInVC.h"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				3DBF742D20AFD1D6006D795A /* DHSTaskCell.h */,
 				3DBF742E20AFD1D6006D795A /* DHSTaskCell.m */,
 				3DBF742C20AFD1D6006D795A /* DHSTaskCell.xib */,
+				3D3D55DC20B2957B00CE3CEE /* DHSTasksSectionHeader.xib */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				3DBF741F20AFCCDF006D795A /* DHSPaymentsCell.m */,
 				3DBF742020AFCCDF006D795A /* DHSPaymentsCell.xib */,
 				3DBF742120AFCCDF006D795A /* DHSPaymentsCell.h */,
+				3D3D55D720B2911600CE3CEE /* DHSPaymentsSectionHeader.xib */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -395,10 +401,12 @@
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
 				3DBF741520AFC943006D795A /* DHSMainTabsTabBarController.xib in Resources */,
 				3DBF742A20AFCCDF006D795A /* DHSLandingVC.xib in Resources */,
+				3D3D55DD20B2957B00CE3CEE /* DHSTasksSectionHeader.xib in Resources */,
 				AC065FED20AE524800746B5E /* DHSActivityVC.xib in Resources */,
 				3DBF742920AFCCDF006D795A /* DHSPaymentsCell.xib in Resources */,
 				3DBF742F20AFD1D6006D795A /* DHSTaskCell.xib in Resources */,
 				3DBF740F20AFC8A8006D795A /* DHSAocVC.xib in Resources */,
+				3D3D55D820B2911600CE3CEE /* DHSPaymentsSectionHeader.xib in Resources */,
 				AC26C53920AE80BF001415E8 /* DHSOfficeLocatorVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
