@@ -7,9 +7,10 @@
 //
 
 #import "DHSAocVC.h"
-#import "DHSColorPool.h"
 
 @interface DHSAocVC ()
+@property (weak, nonatomic) IBOutlet UIButton *continueButton;
+@property (weak, nonatomic) IBOutlet UIView *textBackground;
 
 @end
 
@@ -17,8 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [self.view setBackgroundColor:[DHSColorPool.defaultColorPool primaryColor]];
+    self.textBackground.backgroundColor = DHSColorPool.defaultColorPool.primaryColor;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -111,12 +111,16 @@
 
 - (void) displaySigninVC {
     DHSSignInVC *signInVC = [DHSSignInVC new];
-    [self.navigationController pushViewController:signInVC animated:YES];    
+    signInVC.modalTransitionStyle = UIModalPresentationFullScreen;
+    signInVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:signInVC animated:YES completion:nil];
 }
 
 - (void) displayAOC {
     DHSAocVC *aocVC = [DHSAocVC new];
-    [self.navigationController pushViewController:aocVC animated:YES];
+    aocVC.modalTransitionStyle = UIModalPresentationFullScreen;
+    aocVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:aocVC animated:YES completion:nil];
 }
 
 - (void) displayOfficeLocator {

@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSAocVC">
             <connections>
+                <outlet property="continueButton" destination="pdX-59-dPf" id="Jrs-bu-JMT"/>
+                <outlet property="textBackground" destination="LAd-Jo-fq0" id="0XD-JK-wlu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,42 +21,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baban_IND_Art_DHS story" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-SD-3aR">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Baban_IND_Art_DHS story" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-SD-3aR">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Jo-fq0">
-                    <rect key="frame" x="0.0" y="183" width="375" height="262"/>
-                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="0.0" y="183" width="375" height="283"/>
+                    <color key="backgroundColor" red="0.0" green="0.43137254901960786" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="The Department of Human Services acknowledges the Traditional Custodians of the lands we live on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8W-Dt-gsX">
                     <rect key="frame" x="48" y="208.5" width="279" height="78"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="78" id="NHs-eY-DfH"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-59-dPf">
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-59-dPf" customClass="DHSButton">
                     <rect key="frame" x="123" y="396" width="128" height="30"/>
                     <constraints>
+                        <constraint firstAttribute="height" constant="48" id="JhS-W9-6e9"/>
                         <constraint firstAttribute="width" constant="128" id="nyv-ht-oci"/>
                     </constraints>
-                    <state key="normal" title="Continue">
-                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
+                    <state key="normal" title="Continue"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi9-16-bWj">
                     <rect key="frame" x="48" y="294" width="279" height="78"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="78" id="Bx6-1H-KFt"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="LAd-Jo-fq0" secondAttribute="trailing" id="3jl-6Q-hzh"/>
                 <constraint firstItem="Wi9-16-bWj" firstAttribute="top" secondItem="y8W-Dt-gsX" secondAttribute="bottom" constant="8" id="3ou-M1-MMQ"/>
@@ -66,9 +66,9 @@
                 <constraint firstItem="y8W-Dt-gsX" firstAttribute="trailing" secondItem="Wi9-16-bWj" secondAttribute="trailing" id="WRz-1O-ZEz"/>
                 <constraint firstAttribute="bottom" secondItem="FxJ-SD-3aR" secondAttribute="bottom" id="X0y-W6-sgA"/>
                 <constraint firstItem="Wi9-16-bWj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="XEg-in-BZd"/>
-                <constraint firstItem="FxJ-SD-3aR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ZA0-so-gqX"/>
+                <constraint firstItem="FxJ-SD-3aR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="ZA0-so-gqX"/>
                 <constraint firstItem="pdX-59-dPf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZoQ-gf-dGf"/>
-                <constraint firstItem="pdX-59-dPf" firstAttribute="top" secondItem="LAd-Jo-fq0" secondAttribute="bottom" constant="-49" id="ofN-JZ-vJz"/>
+                <constraint firstItem="pdX-59-dPf" firstAttribute="top" secondItem="LAd-Jo-fq0" secondAttribute="bottom" constant="-70" id="ofN-JZ-vJz"/>
                 <constraint firstItem="y8W-Dt-gsX" firstAttribute="leading" secondItem="Wi9-16-bWj" secondAttribute="leading" id="ooO-OK-j7F"/>
                 <constraint firstItem="pdX-59-dPf" firstAttribute="top" secondItem="Wi9-16-bWj" secondAttribute="bottom" constant="23.5" id="xGi-V6-eKR"/>
                 <constraint firstAttribute="trailing" secondItem="FxJ-SD-3aR" secondAttribute="trailing" id="zwV-R1-cCQ"/>
