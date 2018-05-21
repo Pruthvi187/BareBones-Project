@@ -33,6 +33,8 @@
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
+		5EC837DB20B2A39700357C88 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D920B2A39700357C88 /* SettingsViewController.m */; };
+		5EC837DC20B2A39700357C88 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC837DA20B2A39700357C88 /* SettingsViewController.xib */; };
 		AC065FCB20AE406C00746B5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC065FCA20AE406C00746B5E /* AppDelegate.m */; };
 		AC065FD120AE406C00746B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC065FCF20AE406C00746B5E /* Main.storyboard */; };
 		AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC065FD220AE406F00746B5E /* Assets.xcassets */; };
@@ -85,11 +87,14 @@
 		3DFB3D3B20B0F471002F346C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		3DFB3D3C20B0F611002F346C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
-		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
+		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
 		5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSSecondaryButton.m; sourceTree = "<group>"; };
 		5EC837D520B28EF900357C88 /* DHSPrimaryNoBorderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSPrimaryNoBorderButton.h; path = BareBones/Components/DHSPrimaryNoBorderButton.h; sourceTree = SOURCE_ROOT; };
 		5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DHSPrimaryNoBorderButton.m; path = BareBones/Components/DHSPrimaryNoBorderButton.m; sourceTree = SOURCE_ROOT; };
+		5EC837D820B2A39700357C88 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5EC837D920B2A39700357C88 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		5EC837DA20B2A39700357C88 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -270,6 +275,17 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		5EC837DD20B2A3A500357C88 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5EC837D820B2A39700357C88 /* SettingsViewController.h */,
+				5EC837D920B2A39700357C88 /* SettingsViewController.m */,
+				5EC837DA20B2A39700357C88 /* SettingsViewController.xib */,
+			);
+			name = Settings;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AC065FBD20AE406C00746B5E = {
 			isa = PBXGroup;
 			children = (
@@ -319,11 +335,12 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC26C52F20AE8012001415E8 /* Office Locator */,
 				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
-				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
+				AC26C52F20AE8012001415E8 /* Office Locator */,
+				5EC837DD20B2A3A500357C88 /* Settings */,
+				5EC7D97B20AE6AF300A5BC42 /* SignIn */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -428,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBF743D20AFD403006D795A /* DHSFrequentlyUsedCell.xib in Resources */,
+				5EC837DC20B2A39700357C88 /* SettingsViewController.xib in Resources */,
 				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
 				3DBF743720AFD344006D795A /* DHSAppointmentCell.xib in Resources */,
 				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
@@ -465,6 +483,7 @@
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,
 				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
+				5EC837DB20B2A39700357C88 /* SettingsViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
 				3DBF743020AFD1D6006D795A /* DHSTaskCell.m in Sources */,
 				5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */,
