@@ -20,6 +20,8 @@ typedef NS_ENUM(NSInteger, SectionType) {
 };
 
 @interface DHSLandingListDelegate()
+@property (weak, nonatomic) IBOutlet UILabel *textHeaderViewLabel;
+@property (strong, nonatomic) IBOutlet UIView *textHeaderView;
 @property (strong, nonatomic) IBOutlet UIView *tasksHeaderView;
 @property (strong, nonatomic) IBOutlet UIView *paymentsHeaderView;
 @end
@@ -74,12 +76,14 @@ CGFloat sectionHeaderHeight = 60.0f;
             sectionHeaderView = self.tasksHeaderView;
             break;
         case appointmentSection:
-            [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
-            sectionHeaderView = self.paymentsHeaderView;
+            [[NSBundle mainBundle] loadNibNamed:@"DHSTextSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.textHeaderView;
+            self.textHeaderViewLabel.text = @"Next Appointment";
             break;
         case frequentlyUsedSection:
-            [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
-            sectionHeaderView = self.paymentsHeaderView;
+            [[NSBundle mainBundle] loadNibNamed:@"DHSTextSectionHeader" owner:self options:nil];
+            sectionHeaderView = self.textHeaderView;
+            self.textHeaderViewLabel.text = @"Frequently Used";
             break;
     }
     return sectionHeaderView;
