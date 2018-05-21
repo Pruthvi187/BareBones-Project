@@ -19,19 +19,12 @@
 
 @implementation DHSLandingVC
 
-//- (void)awakeFromNib {
-//    [super awakeFromNib];UITabBarItem *customTab = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
-//    self.tabBarItem = customTab;
-//    [super awakeFromNib];
-//}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
     [self setUpTableView];
     
-    self.navigationItem.title = @"John Citizen";
-    
+    // notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayTaskAsModal:) name:NOTIF_VIEW_TASK object:nil];
 }
 
@@ -55,16 +48,17 @@
 
 - (void) setUpTableView {
     [self.tView registerNib:[UINib nibWithNibName:@"DHSPaymentsCell" bundle:[NSBundle bundleForClass:[DHSLandingVC class]]] forCellReuseIdentifier:@"paymentscell"];
-    
     [self.tView registerNib:[UINib nibWithNibName:@"DHSTaskCell" bundle:[NSBundle bundleForClass:[DHSLandingVC class]]] forCellReuseIdentifier:@"taskcell"];
-
     [self.tView registerNib:[UINib nibWithNibName:@"DHSAppointmentCell" bundle:[NSBundle bundleForClass:[DHSLandingVC class]]] forCellReuseIdentifier:@"appointmentcell"];
-
     [self.tView registerNib:[UINib nibWithNibName:@"DHSFrequentlyUsedCell" bundle:[NSBundle bundleForClass:[DHSLandingVC class]]] forCellReuseIdentifier:@"frequentlyusedcell"];
     
     self.listDelegate = [DHSLandingListDelegate new];
     self.tView.dataSource = self.listDelegate;
     self.tView.delegate = self.listDelegate;
+    
+    // TODO: populate UI - access the view model
+    self.listDelegate.numTasks = 2;
+    self.navigationItem.title = @"John Citizen";
     
     [self.tView reloadData];
 }

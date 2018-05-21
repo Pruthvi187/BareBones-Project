@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DHSLandingListDelegate : NSObject<UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic) NSInteger numTasks;
 @end

@@ -20,7 +20,6 @@ typedef NS_ENUM(NSInteger, SectionType) {
 };
 
 @interface DHSLandingListDelegate()
-@property (nonatomic) NSInteger numTasks;
 @end
 
 @implementation DHSLandingListDelegate
@@ -45,7 +44,7 @@ typedef NS_ENUM(NSInteger, SectionType) {
         case appointmentSection:
             sectionTitle = @"Next Appointment";
             break;
-        case 3:
+        case frequentlyUsedSection:
             sectionTitle = @"Frequently Used";
             break;
     }
@@ -53,20 +52,12 @@ typedef NS_ENUM(NSInteger, SectionType) {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger numRows = 0;
-    switch (section) {
-    case paymentsSection:
+    NSInteger numRows;
+    if (section == tasksSection) {
+        numRows = self.numTasks;
+    }
+    else {
         numRows = 1;
-        break;
-    case tasksSection:
-        numRows = 2;
-        break;
-    case appointmentSection:
-        numRows = 1;
-        break;
-    case 3:
-        numRows = 1;
-        break;
     }
     return numRows;
 }
