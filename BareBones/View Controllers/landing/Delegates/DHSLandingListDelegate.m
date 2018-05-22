@@ -156,6 +156,8 @@ CGFloat sectionHeaderHeight = 60.0f;
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMinY(indentedBounds), CGRectGetMaxX(indentedBounds), CGRectGetMidY(indentedBounds), cornerRadius);
         CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMaxY(indentedBounds));
         addSeparatorLine = YES;
+        
+        // TODO: create shadow on everything except the bottom line
     }
     else
     if (indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) { // bottom cell
@@ -168,6 +170,8 @@ CGFloat sectionHeaderHeight = 60.0f;
     else { // a cell in the middle somewhere
         CGPathAddRect(pathRef, nil, indentedBounds);
         addSeparatorLine = YES;
+        
+        // TODO: add shadow on left and right edges only
     }
     newLayer.path = pathRef;
     CFRelease(pathRef);
