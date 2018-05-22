@@ -172,13 +172,21 @@ CGFloat sectionHeaderHeight = 60.0f;
     newLayer.fillColor = [UIColor whiteColor].CGColor;
 
     // cell shadow
-    newLayer.masksToBounds = NO;
-
-    newLayer.shadowOffset = CGSizeMake(0, 3);
-    newLayer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
-    newLayer.shadowRadius = 2.0f;
-    newLayer.shadowOpacity = 0.35f;
-    newLayer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
+//    newLayer.masksToBounds = NO;
+//    newLayer.shadowOffset = CGSizeMake(0, 3);
+//    newLayer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
+//    newLayer.shadowRadius = 2.0f;
+//    newLayer.shadowOpacity = 0.35f;
+//    newLayer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
+    
+    if (addSeparatorLine == YES) {
+        CGFloat lineHeight = (1.0f / [UIScreen mainScreen].scale);
+        CGRect separatorRect = CGRectMake(CGRectGetMinX(indentedBounds)+5, indentedBounds.size.height-lineHeight, indentedBounds.size.width-5, lineHeight);
+        CALayer *lineLayer = [[CALayer alloc] init];
+        lineLayer.frame = separatorRect;
+        lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+        [newLayer addSublayer:lineLayer];
+    }
     
     // create a new "background view" using this programmatically created layer
     UIView *roundedShadowView = [[UIView alloc] initWithFrame:indentedBounds];
@@ -186,19 +194,6 @@ CGFloat sectionHeaderHeight = 60.0f;
     roundedShadowView.backgroundColor = nil;
     
     cell.backgroundView = roundedShadowView;
-    
-    // create a new "cell separator" view
-//    if (addSeparatorLine == YES) {
-//        CGFloat lineHeight = (1.0f / [UIScreen mainScreen].scale);
-//        CGRect separatorRect = CGRectMake(CGRectGetMinX(indentedBounds)+5, indentedBounds.size.height-lineHeight, indentedBounds.size.width-5, lineHeight);
-//        UIView *separatorView = [[UIView alloc] initWithFrame:separatorRect];
-//        CALayer *lineLayer = [[CALayer alloc] init];
-//        lineLayer.frame = separatorRect;
-//        lineLayer.backgroundColor = [UIColor redColor].CGColor; // tableView.separatorColor.CGColor;
-//        [separatorView.layer insertSublayer:lineLayer atIndex:0];
-//        
-//        [cell.backgroundView addSubview:separatorView];
-//    }
     
 //        // shadow: start
 //        CALayer *layer = roundedShadowView.layer;
