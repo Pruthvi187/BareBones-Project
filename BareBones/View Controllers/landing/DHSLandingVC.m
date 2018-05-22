@@ -22,14 +22,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
+    [self createCustomNavRightButtons];
     
-    // notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayTaskAsModal:) name:NOTIF_VIEW_TASK object:nil];
 }
 
 - (void) dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver: self];
 }
+
+- (void)createCustomNavRightButtons {
+    NSMutableArray* buttons = [[NSMutableArray alloc] initWithCapacity:3];
+    UIBarButtonItem* bi;
+    UIImage *img;
+    
+    img = [UIImage imageNamed:@"help"];
+    bi = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(helpPressed)];
+    bi.tintColor = [UIColor whiteColor];
+    [buttons addObject:bi];
+    
+    bi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    [buttons addObject:bi];
+    
+    img = [UIImage imageNamed:@"setting"];
+    bi = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(settingPressed)];
+    bi.tintColor = [UIColor whiteColor];
+    [buttons addObject:bi];
+    
+    self.navigationItem.rightBarButtonItems = buttons;
+}
+
+-(void)helpPressed {}
+
+-(void)settingPressed {}
 
 #pragma mark - Tasks
 
