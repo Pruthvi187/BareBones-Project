@@ -37,14 +37,6 @@
     self.officeLocatorImage.isAccessibilityElement = YES;
     self.officeLocatorImage.accessibilityValue = @"Office Locator";
     
-    // Dynamic font sizes
-//    self.welcomeLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
-//    self.welcomeLabel.minimumScaleFactor = 50;
-//    self.welcomeLabel.adjustsFontForContentSizeCategory = YES;
-    [self.signinButton sizeToFit];
-//
-//    self.nameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-//    self.nameLabel.adjustsFontForContentSizeCategory = YES;
 }
 
 - (void)didReceiveMemoryWarning {
