@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,35 +21,29 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="aoc-image-3" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-SD-3aR">
-                    <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                    <rect key="frame" x="0.0" y="37" width="414" height="699"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Jo-fq0">
-                    <rect key="frame" x="0.0" y="95" width="320" height="290"/>
+                    <rect key="frame" x="0.0" y="223" width="414" height="290"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-FS-Jzv">
-                            <rect key="frame" x="20" y="8" width="280" height="274"/>
+                            <rect key="frame" x="20" y="8" width="374" height="274"/>
                             <subviews>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="274" directionalLockEnabled="YES" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-DU-fXY">
-                                    <rect key="frame" x="0.0" y="0.0" width="280" height="274"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="274"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="The Department of Human Services acknowledges the Traditional Custodians of the lands we live on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-PA-8Yh">
-                                            <rect key="frame" x="20" y="24" width="248" height="21"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-ia-L7W">
-                                            <rect key="frame" x="8" y="42" width="260" height="34"/>
+                                            <rect key="frame" x="20" y="24" width="342" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-pv-OiZ" customClass="DHSButton">
-                                            <rect key="frame" x="59" y="84" width="162" height="52"/>
+                                            <rect key="frame" x="110" y="111" width="162" height="52"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="lyw-Xb-xPQ"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ufW-u6-NRf"/>
@@ -60,17 +54,23 @@
                                                 <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="Bej-sr-avx"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-ia-L7W">
+                                            <rect key="frame" x="10" y="60" width="354" height="34"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="tnF-pv-OiZ" firstAttribute="top" secondItem="EXC-ia-L7W" secondAttribute="bottom" constant="24" id="0yo-1q-bDB"/>
-                                        <constraint firstItem="EXC-ia-L7W" firstAttribute="leading" secondItem="sbl-DU-fXY" secondAttribute="leading" constant="20" symbolic="YES" id="D8y-HJ-gSL"/>
+                                        <constraint firstItem="EXC-ia-L7W" firstAttribute="leading" secondItem="sbl-DU-fXY" secondAttribute="leading" constant="8" id="D8y-HJ-gSL"/>
                                         <constraint firstItem="EXC-ia-L7W" firstAttribute="top" secondItem="fqa-PA-8Yh" secondAttribute="bottom" constant="24" id="e33-50-cEi"/>
                                         <constraint firstItem="fqa-PA-8Yh" firstAttribute="top" secondItem="sbl-DU-fXY" secondAttribute="top" constant="24" id="feg-OX-kRF"/>
                                         <constraint firstItem="fqa-PA-8Yh" firstAttribute="leading" secondItem="sbl-DU-fXY" secondAttribute="leading" constant="20" symbolic="YES" id="ger-AV-4Ta"/>
                                         <constraint firstItem="tnF-pv-OiZ" firstAttribute="centerX" secondItem="sbl-DU-fXY" secondAttribute="centerX" id="lJt-Pk-NgG"/>
                                         <constraint firstAttribute="height" constant="274" id="u9Z-Z1-pOh"/>
-                                        <constraint firstAttribute="bottom" secondItem="tnF-pv-OiZ" secondAttribute="bottom" constant="20" symbolic="YES" id="vAP-1i-wIN"/>
+                                        <constraint firstAttribute="bottom" secondItem="tnF-pv-OiZ" secondAttribute="bottom" constant="138" id="vAP-1i-wIN"/>
                                         <constraint firstAttribute="trailing" secondItem="fqa-PA-8Yh" secondAttribute="trailing" priority="750" constant="12" id="xSF-X6-gWf"/>
                                     </constraints>
                                     <connections>
@@ -128,9 +128,9 @@
                 <constraint firstAttribute="trailing" secondItem="LAd-Jo-fq0" secondAttribute="trailing" id="R5R-ER-Apm"/>
                 <constraint firstItem="LAd-Jo-fq0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SyH-cb-eSU"/>
                 <constraint firstItem="LAd-Jo-fq0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uig-9g-Ovf"/>
-                <constraint firstAttribute="trailing" secondItem="EXC-ia-L7W" secondAttribute="trailing" constant="32" id="W8p-BZ-XC7"/>
+                <constraint firstAttribute="trailing" secondItem="EXC-ia-L7W" secondAttribute="trailing" constant="28" id="W8p-BZ-XC7"/>
                 <constraint firstAttribute="bottom" secondItem="FxJ-SD-3aR" secondAttribute="bottom" id="X0y-W6-sgA"/>
-                <constraint firstItem="FxJ-SD-3aR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="ZA0-so-gqX"/>
+                <constraint firstItem="FxJ-SD-3aR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="ZA0-so-gqX"/>
                 <constraint firstItem="psK-eD-SC5" firstAttribute="top" secondItem="iOp-LD-dSa" secondAttribute="top" id="ah5-bd-hhL"/>
                 <constraint firstItem="aHa-av-sce" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="gc4-YP-lDE"/>
                 <constraint firstItem="aHa-av-sce" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="kax-mD-Nb7"/>
@@ -138,7 +138,7 @@
                 <constraint firstAttribute="trailing" secondItem="fqa-PA-8Yh" secondAttribute="trailing" constant="32" id="xm5-zu-6eF"/>
                 <constraint firstAttribute="trailing" secondItem="FxJ-SD-3aR" secondAttribute="trailing" id="zwV-R1-cCQ"/>
             </constraints>
-            <point key="canvasLocation" x="33" y="54"/>
+            <point key="canvasLocation" x="32" y="54"/>
         </view>
     </objects>
     <resources>

@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[[DHSColorPool defaultColorPool] primaryColor]];
     [self applyAccessibility];
     
 }
