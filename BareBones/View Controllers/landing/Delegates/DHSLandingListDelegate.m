@@ -142,10 +142,12 @@ CGFloat sectionHeaderHeight = 60.0f;
     CGMutablePathRef pathRef = CGPathCreateMutable();
     CGRect indentedBounds = CGRectInset(cell.bounds, leftAndRightMargin, 0.0f); // space left and right
     BOOL addSeparatorLine = NO;
+    BOOL addShadow = NO;
     
     // cell rounded and indented rectangle
     if (indexPath.row == 0 && indexPath.row == [tableView numberOfRowsInSection:indexPath.section]-1) { // a section with 1 row
         CGPathAddRoundedRect(pathRef, nil, indentedBounds, cornerRadius, cornerRadius);
+        addShadow = YES;
     }
     else
     if (indexPath.row == 0) { // top cell
@@ -161,6 +163,7 @@ CGFloat sectionHeaderHeight = 60.0f;
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMinX(indentedBounds), CGRectGetMaxY(indentedBounds), CGRectGetMidX(indentedBounds), CGRectGetMaxY(indentedBounds), cornerRadius);
         CGPathAddArcToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMaxY(indentedBounds), CGRectGetMaxX(indentedBounds), CGRectGetMidY(indentedBounds), cornerRadius);
         CGPathAddLineToPoint(pathRef, nil, CGRectGetMaxX(indentedBounds), CGRectGetMinY(indentedBounds));
+        addShadow = YES;
     }
     else { // a cell in the middle somewhere
         CGPathAddRect(pathRef, nil, indentedBounds);
@@ -172,13 +175,15 @@ CGFloat sectionHeaderHeight = 60.0f;
     newLayer.fillColor = [UIColor whiteColor].CGColor;
 
     // cell shadow
-//    newLayer.masksToBounds = NO;
-//    newLayer.shadowOffset = CGSizeMake(0, 3);
-//    newLayer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
-//    newLayer.shadowRadius = 2.0f;
-//    newLayer.shadowOpacity = 0.35f;
-//    newLayer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
-    
+    if (addShadow) {
+        newLayer.masksToBounds = NO;
+        newLayer.shadowOffset = CGSizeMake(0, 3);
+        newLayer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
+        newLayer.shadowRadius = 2.0f;
+        newLayer.shadowOpacity = 0.35f;
+        newLayer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
+    }
+
     if (addSeparatorLine == YES) {
         CGFloat lineHeight = (1.0f / [UIScreen mainScreen].scale);
         CGRect separatorRect = CGRectMake(CGRectGetMinX(indentedBounds)+5, indentedBounds.size.height-lineHeight, indentedBounds.size.width-5, lineHeight);
@@ -195,20 +200,20 @@ CGFloat sectionHeaderHeight = 60.0f;
     
     cell.backgroundView = roundedShadowView;
     
-//        // shadow: start
-//        CALayer *layer = roundedShadowView.layer;
-//        layer.masksToBounds = NO;
-//        
-//        layer.shadowOffset = CGSizeMake(0, 3);
-//        layer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
-//        layer.shadowRadius = 2.0f;
-//        layer.shadowOpacity = 0.35f;
-//        layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
-//        
-//        CGColorRef bColor = roundedShadowView.backgroundColor.CGColor;
-//        roundedShadowView.backgroundColor = [UIColor whiteColor]; // @IC nil;
-//        layer.backgroundColor = bColor;
-//        // shadow: end
+//  // shadow: start
+//  CALayer *layer = roundedShadowView.layer;
+//  layer.masksToBounds = NO;
+//
+//  layer.shadowOffset = CGSizeMake(0, 3);
+//  layer.shadowColor = [[UIColor blackColor] CGColor]; // TODO
+//  layer.shadowRadius = 2.0f;
+//  layer.shadowOpacity = 0.35f;
+//  layer.shadowPath = [[UIBezierPath bezierPathWithRoundedRect:indentedBounds cornerRadius:cornerRadius] CGPath];
+//
+//  CGColorRef bColor = roundedShadowView.backgroundColor.CGColor;
+//  roundedShadowView.backgroundColor = [UIColor whiteColor]; // @IC nil;
+//  layer.backgroundColor = bColor;
+//  // shadow: end
 }
 
 @end
