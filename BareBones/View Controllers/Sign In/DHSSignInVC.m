@@ -8,6 +8,7 @@
 
 #import "DHSSignInVC.h"
 #import "DHSColorPool.h"
+#import "DHSAocVC.h"
 
 @interface DHSSignInVC ()
 
@@ -23,6 +24,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)signInButtonAction:(id)sender {
+    DHSAocVC *aocVC = [DHSAocVC new];
+    aocVC.modalTransitionStyle = UIModalPresentationPopover;
+//    [self.navigationController pushViewController:aocVC animated:YES];
+    [self presentViewController:aocVC animated:YES completion:nil];
+    
+}
+- (IBAction)notYouButtonAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
