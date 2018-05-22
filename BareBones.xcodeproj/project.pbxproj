@@ -32,6 +32,7 @@
 		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
 		5E1E150620B3BF2D00BEC739 /* ButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E150420B3BF2C00BEC739 /* ButtonsViewController.xib */; };
 		5E1E150720B3BF2D00BEC739 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150520B3BF2D00BEC739 /* ButtonsViewController.m */; };
+		5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */; };
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
@@ -91,15 +92,17 @@
 		5E1E150320B3BF2C00BEC739 /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonsViewController.h; path = BareBones/Components/ButtonsViewController.h; sourceTree = SOURCE_ROOT; };
 		5E1E150420B3BF2C00BEC739 /* ButtonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonsViewController.xib; path = BareBones/Components/ButtonsViewController.xib; sourceTree = SOURCE_ROOT; };
 		5E1E150520B3BF2D00BEC739 /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonsViewController.m; path = BareBones/Components/ButtonsViewController.m; sourceTree = SOURCE_ROOT; };
+		5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSSettingsListDelegate.m; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.m"; sourceTree = SOURCE_ROOT; };
+		5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSettingsListDelegate.h; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
 		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
 		5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSSecondaryButton.m; sourceTree = "<group>"; };
 		5EC837D520B28EF900357C88 /* DHSPrimaryNoBorderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSPrimaryNoBorderButton.h; path = BareBones/Components/DHSPrimaryNoBorderButton.h; sourceTree = SOURCE_ROOT; };
 		5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DHSPrimaryNoBorderButton.m; path = BareBones/Components/DHSPrimaryNoBorderButton.m; sourceTree = SOURCE_ROOT; };
-		5EC837D820B2A39700357C88 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		5EC837D920B2A39700357C88 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		5EC837DA20B2A39700357C88 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		5EC837D820B2A39700357C88 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../Settings/SettingsViewController.h; sourceTree = "<group>"; };
+		5EC837D920B2A39700357C88 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../Settings/SettingsViewController.m; sourceTree = "<group>"; };
+		5EC837DA20B2A39700357C88 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ../Settings/SettingsViewController.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -256,6 +259,15 @@
 			path = ButtonsDemo;
 			sourceTree = "<group>";
 		};
+		5E1E150B20B3DA6B00BEC739 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */,
+				5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +305,7 @@
 		5EC837DD20B2A3A500357C88 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E150B20B3DA6B00BEC739 /* Delegates */,
 				5EC837D820B2A39700357C88 /* SettingsViewController.h */,
 				5EC837D920B2A39700357C88 /* SettingsViewController.m */,
 				5EC837DA20B2A39700357C88 /* SettingsViewController.xib */,
@@ -500,6 +513,7 @@
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,
+				5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */,
 				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
 				5EC837DB20B2A39700357C88 /* SettingsViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,

@@ -13,10 +13,12 @@
 @end
 
 @implementation SettingsViewController
-
+NSMutableArray *settingsLabels;
+//  @[[@"Theme"], [@"History", @"Privacy", @"Terms & Conditions"], [@"Sign Out"]];
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    settingsLabels = @[@[@"Theme"], @[@"History", @"Privacy", @"Terms & Conditions"], @[@"Sign Out"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,16 +28,30 @@
 
 #pragma mark - TableView Setup Methods
 
-//- (void) setUpTableView {
-//    [self.tView registerNib:[UINib nibWithNibName:@"DHSOfficeLocatorCell" bundle:[NSBundle bundleForClass:[DHSOfficeLocatorVC class]]] forCellReuseIdentifier:@"officelocatorcell"];
+
+- (void) setUpTableView {
+//    [self.tView registerNib:[UINib nibWithNibName:@"navCell" bundle:[NSBundle bundleForClass:[DHSOfficeLocatorVC class]]] forCellReuseIdentifier:@"officelocatorcell"];
 //    self.listDelegate = [DHSOfficeLocatorListDelegate new];
 //    self.tView.dataSource = self.listDelegate;
 //    self.tView.delegate = self.listDelegate;
-//    
-//    [self.tView reloadData];
-//    
-//}
+    
+    [self.tView reloadData];
+    
+}
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [settingsLabels count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [settingsLabels[section] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [UITableViewCell new];
+    cell.textLabel.text = settingsLabels[indexPath.section][indexPath.row];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

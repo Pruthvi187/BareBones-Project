@@ -11,9 +11,10 @@
 #import "DHSAocVC.h"
 #import "DHSOfficeLocatorVC.h"
 #import "ButtonsViewController.h"
+#import "SettingsViewController.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
-
+@property (nonatomic) NSArray *tableList;
 @end
 
 @implementation DHSNavigationForTestScreensTableViewController
@@ -26,7 +27,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+self.tableList = @[@"Main Tabs", @"Sign In", @"AoC", @"Landing", @"Office Locator", @"More", @"Buttons", @"Settings"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,36 +42,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return [self.tableList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"navCell" forIndexPath:indexPath];
  
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"Main Tabs";
-            break;
-        case 1:
-            cell.textLabel.text = @"Sign In";
-            break;
-        case 2:
-            cell.textLabel.text = @"AOC";
-            break;
-        case 3:
-            cell.textLabel.text = @"Landing";
-            break;
-        case 4:
-            cell.textLabel.text = @"Office Locator";
-            break;
-        case 5:
-            cell.textLabel.text = @"More";
-            break;
-        case 6:
-            cell.textLabel.text = @"Buttons";
-            break;
-    }
- 
+    cell.textLabel.text = self.tableList[indexPath.row];
     return cell;
 }
 
@@ -114,6 +92,9 @@
         case 6:
             [self displayButtons];
             return;
+        case 7:
+            [self displaySettings];
+            return;
     }
 }
 -(void)displayButtons {
@@ -141,6 +122,11 @@
 - (void) displayLanding {
     DHSLandingVC *landingVC = [DHSLandingVC new];
     [self.navigationController pushViewController:landingVC animated:YES];
+}
+
+-(void) displaySettings {
+    SettingsViewController *settingsVC = [SettingsViewController new];
+    [self.navigationController pushViewController:settingsVC animated:YES];
 }
 
 
