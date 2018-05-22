@@ -23,29 +23,31 @@
     [super viewDidLoad];
 
     self.delegate = self.mainTabsDelegate;
-    
-    DHSLandingVC *landingVC = [DHSLandingVC new];
-    DHSOfficeLocatorVC *profileVC = [DHSOfficeLocatorVC new];
-    DHSOfficeLocatorVC *inboxVC = [DHSOfficeLocatorVC new];
-    DHSOfficeLocatorVC *assistantVC = [DHSOfficeLocatorVC new];
-    DHSOfficeLocatorVC *moreVC = [DHSOfficeLocatorVC new];
+    [self setTabBarItemsAndControllers];
+}
 
+- (void)setTabBarItemsAndControllers {
+    DHSLandingVC *landingVC = [DHSLandingVC new];
     UINavigationController *landingNC = [[UINavigationController alloc] initWithRootViewController:landingVC];
     landingNC.title = @"Home";
     landingNC.tabBarItem.image = [UIImage imageNamed:@"home"];
-
+    
+    DHSOfficeLocatorVC *profileVC = [DHSOfficeLocatorVC new];
     UINavigationController *profileNC = [[UINavigationController alloc] initWithRootViewController:profileVC];
     profileNC.title = @"Profile";
     profileNC.tabBarItem.image = [UIImage imageNamed:@"user"];
     
+    DHSOfficeLocatorVC *inboxVC = [DHSOfficeLocatorVC new];
     UINavigationController *inboxNC = [[UINavigationController alloc] initWithRootViewController:inboxVC];
     inboxNC.title = @"Inbox";
     inboxNC.tabBarItem.image = [UIImage imageNamed:@"envelope"];
     
+    DHSOfficeLocatorVC *assistantVC = [DHSOfficeLocatorVC new];
     UINavigationController *assistantNC = [[UINavigationController alloc] initWithRootViewController:assistantVC];
     assistantNC.title = @"Assistant";
     assistantNC.tabBarItem.image = [UIImage imageNamed:@"comments"];
     
+    DHSOfficeLocatorVC *moreVC = [DHSOfficeLocatorVC new];
     UINavigationController *moreNC = [[UINavigationController alloc] initWithRootViewController:moreVC];
     moreNC.title = @"More";
     moreNC.tabBarItem.image = [UIImage imageNamed:@"bars"];
@@ -57,12 +59,8 @@
     [controllerArray insertObject:inboxNC atIndex:2];
     [controllerArray insertObject:assistantNC atIndex:3];
     [controllerArray insertObject:moreNC atIndex:4];
-
-    self.viewControllers = controllerArray;
-}
-
-- (void)setTabBarItems {
     
+    self.viewControllers = controllerArray;
 }
 
 @end
