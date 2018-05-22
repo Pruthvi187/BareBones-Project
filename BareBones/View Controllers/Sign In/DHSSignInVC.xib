@@ -69,11 +69,11 @@
                         <action selector="signInButtonAction:" destination="-1" eventType="touchUpInside" id="4zo-EA-eQx"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-bJ-iSV">
-                    <rect key="frame" x="20" y="20" width="235" height="80"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-bJ-iSV">
+                    <rect key="frame" x="20" y="20" width="236" height="80"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Office Locator" translatesAutoresizingMaskIntoConstraints="NO" id="hax-Xz-IDc">
-                    <rect key="frame" x="254" y="20" width="111" height="80"/>
+                    <rect key="frame" x="260" y="20" width="111" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="Ei6-bb-0ao"/>
                         <constraint firstAttribute="width" constant="111" id="Si0-tV-PrR"/>
@@ -83,6 +83,7 @@
             <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QMn-0R-Paf" secondAttribute="trailing" constant="16" id="01n-7q-dA4"/>
+                <constraint firstAttribute="trailing" secondItem="hax-Xz-IDc" secondAttribute="trailing" constant="4" id="2kI-aM-UNr"/>
                 <constraint firstItem="QMn-0R-Paf" firstAttribute="leading" secondItem="M7q-u4-spy" secondAttribute="leading" constant="16" id="8pM-CM-q3b"/>
                 <constraint firstItem="awd-gV-Wlw" firstAttribute="top" secondItem="9U6-vJ-GVn" secondAttribute="bottom" constant="8" symbolic="YES" id="8qv-N3-fHN"/>
                 <constraint firstItem="hax-Xz-IDc" firstAttribute="centerY" secondItem="dF2-bJ-iSV" secondAttribute="centerY" id="HxN-pt-ZRZ"/>
@@ -90,7 +91,7 @@
                 <constraint firstItem="I5V-Fr-dlI" firstAttribute="leading" secondItem="QMn-0R-Paf" secondAttribute="leading" id="KMf-z6-DDX"/>
                 <constraint firstItem="awd-gV-Wlw" firstAttribute="trailing" secondItem="9U6-vJ-GVn" secondAttribute="trailing" id="Vkp-Hx-dPN"/>
                 <constraint firstItem="dF2-bJ-iSV" firstAttribute="top" secondItem="M7q-u4-spy" secondAttribute="top" constant="20" symbolic="YES" id="WCF-P4-U2l"/>
-                <constraint firstItem="hax-Xz-IDc" firstAttribute="leading" secondItem="dF2-bJ-iSV" secondAttribute="trailing" constant="-1" id="WZJ-Dg-YXo"/>
+                <constraint firstItem="hax-Xz-IDc" firstAttribute="leading" secondItem="dF2-bJ-iSV" secondAttribute="trailing" constant="4" id="WZJ-Dg-YXo"/>
                 <constraint firstItem="I5V-Fr-dlI" firstAttribute="trailing" secondItem="QMn-0R-Paf" secondAttribute="trailing" id="YC1-rF-ff5"/>
                 <constraint firstItem="dF2-bJ-iSV" firstAttribute="height" secondItem="hax-Xz-IDc" secondAttribute="height" id="bKe-Pb-21G"/>
                 <constraint firstAttribute="trailing" secondItem="9U6-vJ-GVn" secondAttribute="trailing" constant="16" id="szX-bg-o3K"/>
