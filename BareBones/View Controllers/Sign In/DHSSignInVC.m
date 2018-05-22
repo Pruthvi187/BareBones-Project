@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *logoImage;
 @property (weak, nonatomic) IBOutlet UIImageView *officeLocatorImage;
+@property (weak, nonatomic) IBOutlet UIButton *signinButton;
+@property (weak, nonatomic) IBOutlet UIButton *notYouButton;
 
 @end
 
@@ -36,7 +38,13 @@
     self.officeLocatorImage.accessibilityValue = @"Office Locator";
     
     // Dynamic font sizes
-//    self.welcomeLabel.font = [UIFont preferredFontForTextStyle:UIFon]
+//    self.welcomeLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle1];
+//    self.welcomeLabel.minimumScaleFactor = 50;
+//    self.welcomeLabel.adjustsFontForContentSizeCategory = YES;
+    [self.signinButton sizeToFit];
+//
+//    self.nameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+//    self.nameLabel.adjustsFontForContentSizeCategory = YES;
 }
 
 - (void)didReceiveMemoryWarning {
