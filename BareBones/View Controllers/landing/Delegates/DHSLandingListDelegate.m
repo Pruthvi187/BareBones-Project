@@ -46,7 +46,6 @@ CGFloat sectionHeaderHeight = 60.0f;
 //
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *sectionHeaderView;
-    
     switch (section) {
         case paymentsSection:
             [[NSBundle mainBundle] loadNibNamed:@"DHSPaymentsSectionHeader" owner:self options:nil];
@@ -55,9 +54,7 @@ CGFloat sectionHeaderHeight = 60.0f;
         case tasksSection:
             [[NSBundle mainBundle] loadNibNamed:@"DHSTasksSectionHeader" owner:self options:nil];
             sectionHeaderView = self.tasksHeaderView;
-            // add a "badge"
-            if (self.numTasks > 0) {
-                
+            if (self.numTasks > 0) { // add a badge
             }
             break;
         case appointmentSection:
