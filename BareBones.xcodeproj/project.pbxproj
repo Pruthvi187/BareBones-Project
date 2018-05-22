@@ -30,7 +30,8 @@
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DFB3D3A20B0E7F9002F346C /* DHSMainTabsBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3920B0E7F9002F346C /* DHSMainTabsBarDelegate.m */; };
 		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
-		5E41A28920B384E200DB5669 /* DHSSettingsTableviewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41A28820B384E200DB5669 /* DHSSettingsTableviewDelegate.m */; };
+		5E1E150620B3BF2D00BEC739 /* ButtonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E150420B3BF2C00BEC739 /* ButtonsViewController.xib */; };
+		5E1E150720B3BF2D00BEC739 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150520B3BF2D00BEC739 /* ButtonsViewController.m */; };
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
@@ -87,8 +88,9 @@
 		3DFB3D3920B0E7F9002F346C /* DHSMainTabsBarDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSMainTabsBarDelegate.m; sourceTree = "<group>"; };
 		3DFB3D3B20B0F471002F346C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		3DFB3D3C20B0F611002F346C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		5E41A28720B384E200DB5669 /* DHSSettingsTableviewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSSettingsTableviewDelegate.h; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsTableviewDelegate.h"; sourceTree = "<group>"; };
-		5E41A28820B384E200DB5669 /* DHSSettingsTableviewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DHSSettingsTableviewDelegate.m; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsTableviewDelegate.m"; sourceTree = "<group>"; };
+		5E1E150320B3BF2C00BEC739 /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonsViewController.h; path = BareBones/Components/ButtonsViewController.h; sourceTree = SOURCE_ROOT; };
+		5E1E150420B3BF2C00BEC739 /* ButtonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonsViewController.xib; path = BareBones/Components/ButtonsViewController.xib; sourceTree = SOURCE_ROOT; };
+		5E1E150520B3BF2D00BEC739 /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonsViewController.m; path = BareBones/Components/ButtonsViewController.m; sourceTree = SOURCE_ROOT; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
 		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
@@ -244,6 +246,16 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		5E1E150220B3BF0B00BEC739 /* ButtonsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E150320B3BF2C00BEC739 /* ButtonsViewController.h */,
+				5E1E150520B3BF2D00BEC739 /* ButtonsViewController.m */,
+				5E1E150420B3BF2C00BEC739 /* ButtonsViewController.xib */,
+			);
+			path = ButtonsDemo;
+			sourceTree = "<group>";
+		};
 		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +304,6 @@
 		AC065FBD20AE406C00746B5E = {
 			isa = PBXGroup;
 			children = (
-				5E41A28720B384E200DB5669 /* DHSSettingsTableviewDelegate.h */,
-				5E41A28820B384E200DB5669 /* DHSSettingsTableviewDelegate.m */,
 				AC065FC820AE406C00746B5E /* BareBones */,
 				AC065FC720AE406C00746B5E /* Products */,
 			);
@@ -340,6 +350,7 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E150220B3BF0B00BEC739 /* ButtonsDemo */,
 				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
@@ -455,6 +466,7 @@
 				3DBF743720AFD344006D795A /* DHSAppointmentCell.xib in Resources */,
 				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
+				5E1E150620B3BF2D00BEC739 /* ButtonsViewController.xib in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
 				AC065FD120AE406C00746B5E /* Main.storyboard in Resources */,
 				3DBF741520AFC943006D795A /* DHSMainTabsTabBarController.xib in Resources */,
@@ -477,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1E150720B3BF2D00BEC739 /* ButtonsViewController.m in Sources */,
 				3DFB3D3A20B0E7F9002F346C /* DHSMainTabsBarDelegate.m in Sources */,
 				3DBF741420AFC943006D795A /* DHSMainTabsTabBarController.m in Sources */,
 				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
@@ -484,7 +497,6 @@
 				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
 				5EC837C920B25D0000357C88 /* DHSButton.m in Sources */,
 				3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */,
-				5E41A28920B384E200DB5669 /* DHSSettingsTableviewDelegate.m in Sources */,
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,

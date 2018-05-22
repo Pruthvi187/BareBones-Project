@@ -10,6 +10,7 @@
 #import "DHSSignInVC.h"
 #import "DHSAocVC.h"
 #import "DHSOfficeLocatorVC.h"
+#import "ButtonsViewController.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
 
@@ -40,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,6 +65,10 @@
             break;
         case 5:
             cell.textLabel.text = @"More";
+            break;
+        case 6:
+            cell.textLabel.text = @"Buttons";
+            break;
     }
  
     return cell;
@@ -106,7 +111,14 @@
             
         case 5: // More
             return;
+        case 6:
+            [self displayButtons];
+            return;
     }
+}
+-(void)displayButtons {
+    ButtonsViewController *buttons = [ButtonsViewController new];
+    [self.navigationController pushViewController:buttons animated:YES];
 }
 
 - (void) displaySigninVC {
