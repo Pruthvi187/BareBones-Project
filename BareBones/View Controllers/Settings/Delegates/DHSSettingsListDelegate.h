@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "DHSBaseTableDelegate.h"
 
-@interface DHSLandingListDelegate : DHSBaseTableDelegate
-@property (nonatomic) NSInteger numTasks;
+@interface DHSSettingsListDelegate : DHSBaseTableDelegate
+
 @end

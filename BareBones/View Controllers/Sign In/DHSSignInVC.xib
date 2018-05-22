@@ -11,7 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSSignInVC">
             <connections>
+                <outlet property="logoImage" destination="dF2-bJ-iSV" id="UDe-6C-nGO"/>
+                <outlet property="nameLabel" destination="QMn-0R-Paf" id="x9s-o1-XsV"/>
+                <outlet property="notYouButton" destination="awd-gV-Wlw" id="9WM-dh-LdX"/>
+                <outlet property="officeLocatorImage" destination="hax-Xz-IDc" id="D6H-Vr-3Wf"/>
+                <outlet property="signinButton" destination="9U6-vJ-GVn" id="uM0-6c-D2Y"/>
                 <outlet property="view" destination="M7q-u4-spy" id="yQf-1M-rCK"/>
+                <outlet property="welcomeLabel" destination="I5V-Fr-dlI" id="uIx-Ay-Co1"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,20 +25,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5V-Fr-dlI">
-                    <rect key="frame" x="16" y="253.5" width="343" height="48"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aoc-image-1" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-db-ZAm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5V-Fr-dlI">
+                    <rect key="frame" x="16" y="239.5" width="343" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMn-0R-Paf">
-                    <rect key="frame" x="16" y="309.5" width="343" height="48"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMn-0R-Paf">
+                    <rect key="frame" x="16" y="305" width="343" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awd-gV-Wlw">
-                    <rect key="frame" x="16" y="617" width="343" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awd-gV-Wlw">
+                    <rect key="frame" x="16" y="595" width="343" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="VR2-sb-T27"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <state key="normal" title="Not you? Sign in as someone else">
                         <color key="titleColor" red="0.066666666669999999" green="0.19215686269999999" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -40,12 +53,13 @@
                         <action selector="notYouButtonAction:" destination="-1" eventType="touchUpInside" id="U7N-ow-FEg"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-vJ-GVn">
-                    <rect key="frame" x="16" y="557" width="343" height="52"/>
+                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="52" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-vJ-GVn">
+                    <rect key="frame" x="16" y="535" width="343" height="52"/>
                     <color key="backgroundColor" red="0.066666666669999999" green="0.19215686269999999" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="52" id="VwS-Kp-6Lc"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="Riy-Ka-dvq"/>
                     </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <state key="normal" title="Sign in as Jane">
                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -58,11 +72,11 @@
                         <action selector="signInButtonAction:" destination="-1" eventType="touchUpInside" id="4zo-EA-eQx"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-bJ-iSV">
-                    <rect key="frame" x="20" y="20" width="235" height="80"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dF2-bJ-iSV">
+                    <rect key="frame" x="20" y="20" width="236" height="80"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Office Locator" translatesAutoresizingMaskIntoConstraints="NO" id="hax-Xz-IDc">
-                    <rect key="frame" x="254" y="20" width="111" height="80"/>
+                    <rect key="frame" x="260" y="20" width="111" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="Ei6-bb-0ao"/>
                         <constraint firstAttribute="width" constant="111" id="Si0-tV-PrR"/>
@@ -72,28 +86,34 @@
             <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QMn-0R-Paf" secondAttribute="trailing" constant="16" id="01n-7q-dA4"/>
+                <constraint firstAttribute="trailing" secondItem="hax-Xz-IDc" secondAttribute="trailing" constant="4" id="2kI-aM-UNr"/>
                 <constraint firstItem="QMn-0R-Paf" firstAttribute="leading" secondItem="M7q-u4-spy" secondAttribute="leading" constant="16" id="8pM-CM-q3b"/>
                 <constraint firstItem="awd-gV-Wlw" firstAttribute="top" secondItem="9U6-vJ-GVn" secondAttribute="bottom" constant="8" symbolic="YES" id="8qv-N3-fHN"/>
+                <constraint firstItem="TgL-db-ZAm" firstAttribute="leading" secondItem="M7q-u4-spy" secondAttribute="leading" id="Glm-dP-iai"/>
                 <constraint firstItem="hax-Xz-IDc" firstAttribute="centerY" secondItem="dF2-bJ-iSV" secondAttribute="centerY" id="HxN-pt-ZRZ"/>
                 <constraint firstItem="dF2-bJ-iSV" firstAttribute="leading" secondItem="M7q-u4-spy" secondAttribute="leading" constant="20" symbolic="YES" id="K7v-0t-tLW"/>
                 <constraint firstItem="I5V-Fr-dlI" firstAttribute="leading" secondItem="QMn-0R-Paf" secondAttribute="leading" id="KMf-z6-DDX"/>
                 <constraint firstItem="awd-gV-Wlw" firstAttribute="trailing" secondItem="9U6-vJ-GVn" secondAttribute="trailing" id="Vkp-Hx-dPN"/>
+                <constraint firstItem="TgL-db-ZAm" firstAttribute="top" secondItem="M7q-u4-spy" secondAttribute="top" id="W2B-1p-etK"/>
                 <constraint firstItem="dF2-bJ-iSV" firstAttribute="top" secondItem="M7q-u4-spy" secondAttribute="top" constant="20" symbolic="YES" id="WCF-P4-U2l"/>
-                <constraint firstItem="hax-Xz-IDc" firstAttribute="leading" secondItem="dF2-bJ-iSV" secondAttribute="trailing" constant="-1" id="WZJ-Dg-YXo"/>
+                <constraint firstItem="hax-Xz-IDc" firstAttribute="leading" secondItem="dF2-bJ-iSV" secondAttribute="trailing" constant="4" id="WZJ-Dg-YXo"/>
                 <constraint firstItem="I5V-Fr-dlI" firstAttribute="trailing" secondItem="QMn-0R-Paf" secondAttribute="trailing" id="YC1-rF-ff5"/>
                 <constraint firstItem="dF2-bJ-iSV" firstAttribute="height" secondItem="hax-Xz-IDc" secondAttribute="height" id="bKe-Pb-21G"/>
+                <constraint firstAttribute="bottom" secondItem="TgL-db-ZAm" secondAttribute="bottom" id="seC-Ac-CTy"/>
                 <constraint firstAttribute="trailing" secondItem="9U6-vJ-GVn" secondAttribute="trailing" constant="16" id="szX-bg-o3K"/>
                 <constraint firstItem="QMn-0R-Paf" firstAttribute="top" secondItem="I5V-Fr-dlI" secondAttribute="bottom" constant="8" symbolic="YES" id="uEd-hS-QF6"/>
+                <constraint firstAttribute="trailing" secondItem="TgL-db-ZAm" secondAttribute="trailing" id="uUl-9c-eaF"/>
                 <constraint firstItem="QMn-0R-Paf" firstAttribute="centerY" secondItem="M7q-u4-spy" secondAttribute="centerY" id="vB9-da-iiX"/>
                 <constraint firstAttribute="bottom" secondItem="awd-gV-Wlw" secondAttribute="bottom" constant="20" symbolic="YES" id="xT6-k8-q1X"/>
                 <constraint firstItem="9U6-vJ-GVn" firstAttribute="leading" secondItem="M7q-u4-spy" secondAttribute="leading" constant="16" id="yKV-Cs-riD"/>
                 <constraint firstItem="awd-gV-Wlw" firstAttribute="leading" secondItem="9U6-vJ-GVn" secondAttribute="leading" id="zwe-Mo-RQf"/>
             </constraints>
-            <point key="canvasLocation" x="72" y="-207"/>
+            <point key="canvasLocation" x="71.5" y="-207.5"/>
         </view>
     </objects>
     <resources>
         <image name="Office Locator" width="78" height="29"/>
+        <image name="aoc-image-1" width="375" height="667"/>
         <image name="logo" width="235" height="58"/>
     </resources>
 </document>

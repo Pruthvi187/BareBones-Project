@@ -7,8 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "DHSBaseTableDelegate.h"
 
-@interface DHSLandingListDelegate : DHSBaseTableDelegate
-@property (nonatomic) NSInteger numTasks;
+@interface DHSBaseTableDelegate : NSObject<UITableViewDataSource, UITableViewDelegate>
+
 @end

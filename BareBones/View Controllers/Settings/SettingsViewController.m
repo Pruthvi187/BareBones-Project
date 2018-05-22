@@ -7,34 +7,36 @@
 //
 
 #import "SettingsViewController.h"
+#import "DHSSettingsListDelegate.h"
 
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tView;
+@property (nonatomic, strong) DHSSettingsListDelegate *listDelegate;
 @end
 
 @implementation SettingsViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setUpTableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - TableView Setup Methods
 
-//- (void) setUpTableView {
-//    [self.tView registerNib:[UINib nibWithNibName:@"DHSOfficeLocatorCell" bundle:[NSBundle bundleForClass:[DHSOfficeLocatorVC class]]] forCellReuseIdentifier:@"officelocatorcell"];
-//    self.listDelegate = [DHSOfficeLocatorListDelegate new];
-//    self.tView.dataSource = self.listDelegate;
-//    self.tView.delegate = self.listDelegate;
-//    
-//    [self.tView reloadData];
-//    
-//}
+
+- (void) setUpTableView {
+//    [self.tView registerNib:[UINib nibWithNibName:@"navCell" bundle:[NSBundle bundleForClass:[DHSOfficeLocatorVC class]]] forCellReuseIdentifier:@"officelocatorcell"];
+    self.listDelegate = [DHSSettingsListDelegate new];
+    self.tView.dataSource = self.listDelegate;
+    self.tView.delegate = self.listDelegate;
+    
+    [self.tView reloadData];
+    
+}
 
 /*
 #pragma mark - Navigation

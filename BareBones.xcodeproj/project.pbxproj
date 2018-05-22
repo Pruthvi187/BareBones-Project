@@ -29,6 +29,10 @@
 		3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF743C20AFD402006D795A /* DHSFrequentlyUsedCell.m */; };
 		3DC3E5D520AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3E5D320AE656100451FE7 /* DHSNavigationForTestScreensTableViewController.m */; };
 		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
+		5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */; };
+		5E1E150E20B3E82C00BEC739 /* DHSBaseTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */; };
+		5E1E151220B3F2B200BEC739 /* DHSThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */; };
+		5E1E151320B3F2B200BEC739 /* DHSThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */; };
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
@@ -84,6 +88,13 @@
 		3DFB3D3820B0E7F9002F346C /* DHSMainTabsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSMainTabsDelegate.h; sourceTree = "<group>"; };
 		3DFB3D3B20B0F471002F346C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		3DFB3D3C20B0F611002F346C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSSettingsListDelegate.m; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.m"; sourceTree = SOURCE_ROOT; };
+		5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSettingsListDelegate.h; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.h"; sourceTree = SOURCE_ROOT; };
+		5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSBaseTableDelegate.m; sourceTree = "<group>"; };
+		5E1E150D20B3E82B00BEC739 /* DHSBaseTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSBaseTableDelegate.h; sourceTree = "<group>"; };
+		5E1E150F20B3F2B200BEC739 /* DHSThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSThemeViewController.h; sourceTree = "<group>"; };
+		5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSThemeViewController.m; sourceTree = "<group>"; };
+		5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSThemeViewController.xib; sourceTree = "<group>"; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
 		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
@@ -238,6 +249,26 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		5E1E150B20B3DA6B00BEC739 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */,
+				5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5E1E151420B3F2C800BEC739 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E150F20B3F2B200BEC739 /* DHSThemeViewController.h */,
+				5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */,
+				5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */,
+			);
+			name = Theme;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,12 +306,13 @@
 		5EC837DD20B2A3A500357C88 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E151420B3F2C800BEC739 /* Theme */,
+				5E1E150B20B3DA6B00BEC739 /* Delegates */,
 				5EC837D820B2A39700357C88 /* SettingsViewController.h */,
 				5EC837D920B2A39700357C88 /* SettingsViewController.m */,
 				5EC837DA20B2A39700357C88 /* SettingsViewController.xib */,
 			);
-			name = Settings;
-			path = "New Group";
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		AC065FBD20AE406C00746B5E = {
@@ -332,6 +364,8 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E150D20B3E82B00BEC739 /* DHSBaseTableDelegate.h */,
+				5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */,
 				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
@@ -441,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1E151320B3F2B200BEC739 /* DHSThemeViewController.xib in Resources */,
 				3DBF743D20AFD403006D795A /* DHSFrequentlyUsedCell.xib in Resources */,
 				5EC837DC20B2A39700357C88 /* SettingsViewController.xib in Resources */,
 				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
@@ -471,13 +506,16 @@
 			files = (
 				3DBF741420AFC943006D795A /* DHSMainTabsTabBarController.m in Sources */,
 				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
+				5E1E150E20B3E82C00BEC739 /* DHSBaseTableDelegate.m in Sources */,
 				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
 				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
 				5EC837C920B25D0000357C88 /* DHSButton.m in Sources */,
 				3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */,
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
+				5E1E151220B3F2B200BEC739 /* DHSThemeViewController.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,
+				5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */,
 				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
 				5EC837DB20B2A39700357C88 /* SettingsViewController.m in Sources */,
 				AC065FE720AE4ECE00746B5E /* DHSColorPool.m in Sources */,
@@ -631,11 +669,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KWN4YPXHT;
+				DEVELOPMENT_TEAM = TZ32KD8MT9;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henly.ios.BareBonesProject.BareBones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henly.ios.BareBonesProject.BareBones-aj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -646,11 +684,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KWN4YPXHT;
+				DEVELOPMENT_TEAM = TZ32KD8MT9;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henly.ios.BareBonesProject.BareBones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henly.ios.BareBonesProject.BareBones-aj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

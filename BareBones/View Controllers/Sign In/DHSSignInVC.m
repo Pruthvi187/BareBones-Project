@@ -11,6 +11,12 @@
 #import "DHSAocVC.h"
 
 @interface DHSSignInVC ()
+@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImage;
+@property (weak, nonatomic) IBOutlet UIImageView *officeLocatorImage;
+@property (weak, nonatomic) IBOutlet UIButton *signinButton;
+@property (weak, nonatomic) IBOutlet UIButton *notYouButton;
 
 @end
 
@@ -18,7 +24,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[[DHSColorPool defaultColorPool] primaryColor]];
+    [self applyAccessibility];
+    
+}
+
+- (void)applyAccessibility {
+    // add accessibility to images
+    self.logoImage.isAccessibilityElement = YES;
+    self.logoImage.accessibilityValue = @"Express Plus Centrelink Logo";
+    
+    self.officeLocatorImage.isAccessibilityElement = YES;
+    self.officeLocatorImage.accessibilityValue = @"Office Locator";
+    
 }
 
 - (void)didReceiveMemoryWarning {
