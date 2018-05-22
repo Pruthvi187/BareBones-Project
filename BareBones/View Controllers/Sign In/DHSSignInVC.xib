@@ -11,7 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSSignInVC">
             <connections>
+                <outlet property="logoImage" destination="dF2-bJ-iSV" id="UDe-6C-nGO"/>
+                <outlet property="nameLabel" destination="QMn-0R-Paf" id="x9s-o1-XsV"/>
+                <outlet property="notYouButton" destination="awd-gV-Wlw" id="9WM-dh-LdX"/>
+                <outlet property="officeLocatorImage" destination="hax-Xz-IDc" id="D6H-Vr-3Wf"/>
+                <outlet property="signinButton" destination="9U6-vJ-GVn" id="uM0-6c-D2Y"/>
                 <outlet property="view" destination="M7q-u4-spy" id="yQf-1M-rCK"/>
+                <outlet property="welcomeLabel" destination="I5V-Fr-dlI" id="uIx-Ay-Co1"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,20 +25,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5V-Fr-dlI">
-                    <rect key="frame" x="16" y="253.5" width="343" height="48"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5V-Fr-dlI">
+                    <rect key="frame" x="16" y="239.5" width="343" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMn-0R-Paf">
-                    <rect key="frame" x="16" y="309.5" width="343" height="48"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMn-0R-Paf">
+                    <rect key="frame" x="16" y="305" width="343" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awd-gV-Wlw">
-                    <rect key="frame" x="16" y="617" width="343" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="33" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awd-gV-Wlw">
+                    <rect key="frame" x="16" y="595" width="343" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="VR2-sb-T27"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <state key="normal" title="Not you? Sign in as someone else">
                         <color key="titleColor" red="0.066666666669999999" green="0.19215686269999999" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -40,12 +50,13 @@
                         <action selector="notYouButtonAction:" destination="-1" eventType="touchUpInside" id="U7N-ow-FEg"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-vJ-GVn">
-                    <rect key="frame" x="16" y="557" width="343" height="52"/>
+                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="52" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-vJ-GVn">
+                    <rect key="frame" x="16" y="535" width="343" height="52"/>
                     <color key="backgroundColor" red="0.066666666669999999" green="0.19215686269999999" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="52" id="VwS-Kp-6Lc"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="Riy-Ka-dvq"/>
                     </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <state key="normal" title="Sign in as Jane">
                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>

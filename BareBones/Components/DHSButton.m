@@ -31,10 +31,6 @@
 }
 
 - (void) _setup {
-    CGRect buttonFrame = self.frame;
-    buttonFrame.size = CGSizeMake(148, 48);
-    self.frame = buttonFrame;
-    
     self.layer.borderColor = DHSColorPool.defaultColorPool.whiteColor.CGColor;
     self.layer.backgroundColor = DHSColorPool.defaultColorPool.primaryColor.CGColor;
     self.layer.cornerRadius = 4.0;

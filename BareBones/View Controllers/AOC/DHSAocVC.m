@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *continueButton;
 @property (weak, nonatomic) IBOutlet UIView *textBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UILabel *acknowledgeLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *acknowledgeLabel2;
 
 @end
 
@@ -20,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textBackground.backgroundColor = DHSColorPool.defaultColorPool.primaryColor;
-    
+    [self applyFontStyles];
     // TODO: update the background image view for the theme.
 //    self.backgroundImageView.image = theme_image;
 }
@@ -32,6 +34,23 @@
 
 - (IBAction)continueButtonAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)applyFontStyles {
+    UIFontDescriptor *descriptor = [self.acknowledgeLabel1.font.fontDescriptor fontDescriptorWithSymbolicTraits:UIFontDescriptorTraitItalic | UIFontDescriptorTraitBold];
+    self.acknowledgeLabel1.font = [UIFont fontWithDescriptor:descriptor size:0];
+    self.acknowledgeLabel2.font = [UIFont fontWithDescriptor:descriptor size:0];
+}
+
+- (IBAction)showOption1:(id)sender {
+    self.backgroundImageView.image = [UIImage imageNamed:@"aoc-image-1"];
+}
+
+- (IBAction)showOption2:(id)sender {
+    self.backgroundImageView.image = [UIImage imageNamed:@"aoc-image-2"];
+}
+- (IBAction)showOption3:(id)sender {
+    self.backgroundImageView.image = [UIImage imageNamed:@"aoc-image-3"];
 }
 
 /*
