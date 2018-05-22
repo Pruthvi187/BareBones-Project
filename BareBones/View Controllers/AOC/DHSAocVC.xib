@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSAocVC">
             <connections>
+                <outlet property="acknowledgeLabel1" destination="fqa-PA-8Yh" id="dnR-Bc-aOn"/>
+                <outlet property="acknowledgeLabel2" destination="EXC-ia-L7W" id="g92-hd-rig"/>
                 <outlet property="backgroundImageView" destination="FxJ-SD-3aR" id="aeI-oc-1q3"/>
-                <outlet property="continueButton" destination="pdX-59-dPf" id="Jrs-bu-JMT"/>
+                <outlet property="continueButton" destination="tnF-pv-OiZ" id="ssY-5N-uhq"/>
                 <outlet property="textBackground" destination="LAd-Jo-fq0" id="0XD-JK-wlu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,65 +24,129 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Baban_IND_Art_DHS story" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-SD-3aR">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="aoc-image-3" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-SD-3aR">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-Jo-fq0">
-                    <rect key="frame" x="0.0" y="183" width="375" height="283"/>
+                    <rect key="frame" x="0.0" y="188.5" width="375" height="290"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UP-FS-Jzv">
+                            <rect key="frame" x="20" y="8" width="335" height="274"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="274" directionalLockEnabled="YES" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-DU-fXY">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="274"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-ia-L7W">
+                                            <rect key="frame" x="8" y="42" width="319" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Xux-RI-dAF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="The Department of Human Services acknowledges the Traditional Custodians of the lands we live on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-PA-8Yh">
+                                            <rect key="frame" x="8" y="8" width="319" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="USA-ZZ-knf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnF-pv-OiZ" customClass="DHSButton">
+                                            <rect key="frame" x="86" y="71" width="162" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="lyw-Xb-xPQ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ufW-u6-NRf"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <state key="normal" title="Continue"/>
+                                            <connections>
+                                                <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="Bej-sr-avx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="tnF-pv-OiZ" firstAttribute="top" secondItem="EXC-ia-L7W" secondAttribute="bottom" constant="24" id="0yo-1q-bDB"/>
+                                        <constraint firstItem="EXC-ia-L7W" firstAttribute="leading" secondItem="sbl-DU-fXY" secondAttribute="leading" constant="20" symbolic="YES" id="D8y-HJ-gSL"/>
+                                        <constraint firstItem="EXC-ia-L7W" firstAttribute="top" secondItem="fqa-PA-8Yh" secondAttribute="bottom" constant="24" id="e33-50-cEi"/>
+                                        <constraint firstItem="fqa-PA-8Yh" firstAttribute="top" secondItem="sbl-DU-fXY" secondAttribute="top" constant="24" id="feg-OX-kRF"/>
+                                        <constraint firstItem="fqa-PA-8Yh" firstAttribute="leading" secondItem="sbl-DU-fXY" secondAttribute="leading" constant="20" symbolic="YES" id="ger-AV-4Ta"/>
+                                        <constraint firstItem="tnF-pv-OiZ" firstAttribute="centerX" secondItem="sbl-DU-fXY" secondAttribute="centerX" id="lJt-Pk-NgG"/>
+                                        <constraint firstAttribute="trailing" secondItem="EXC-ia-L7W" secondAttribute="trailing" constant="20" symbolic="YES" id="sGu-tZ-dsX"/>
+                                        <constraint firstAttribute="height" constant="274" id="u9Z-Z1-pOh"/>
+                                        <constraint firstAttribute="bottom" secondItem="tnF-pv-OiZ" secondAttribute="bottom" constant="20" symbolic="YES" id="vAP-1i-wIN"/>
+                                        <constraint firstAttribute="trailing" secondItem="fqa-PA-8Yh" secondAttribute="trailing" constant="20" symbolic="YES" id="wdf-4L-pu9"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="gLg-DX-LNF"/>
+                                    </connections>
+                                </scrollView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="sbl-DU-fXY" secondAttribute="bottom" id="UPc-ZW-GDD"/>
+                                <constraint firstAttribute="height" constant="274" id="iun-vc-Kxq"/>
+                                <constraint firstItem="sbl-DU-fXY" firstAttribute="leading" secondItem="3UP-FS-Jzv" secondAttribute="leading" id="nYk-fd-id6"/>
+                                <constraint firstAttribute="trailing" secondItem="sbl-DU-fXY" secondAttribute="trailing" id="oVv-DA-HuF"/>
+                                <constraint firstItem="sbl-DU-fXY" firstAttribute="top" secondItem="3UP-FS-Jzv" secondAttribute="top" id="yZr-BA-Gfu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" red="0.0" green="0.43137254901960786" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3UP-FS-Jzv" secondAttribute="trailing" constant="20" symbolic="YES" id="04I-2p-i2C"/>
+                        <constraint firstAttribute="height" constant="290" id="Ab6-p9-xDE"/>
+                        <constraint firstItem="3UP-FS-Jzv" firstAttribute="leading" secondItem="LAd-Jo-fq0" secondAttribute="leading" constant="20" symbolic="YES" id="Gdg-aH-5sm"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="The Department of Human Services acknowledges the Traditional Custodians of the lands we live on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8W-Dt-gsX">
-                    <rect key="frame" x="48" y="208.5" width="279" height="78"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="78" id="NHs-eY-DfH"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdX-59-dPf" customClass="DHSButton">
-                    <rect key="frame" x="123" y="396" width="128" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="JhS-W9-6e9"/>
-                        <constraint firstAttribute="width" constant="128" id="nyv-ht-oci"/>
-                    </constraints>
-                    <state key="normal" title="Continue"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psK-eD-SC5" customClass="DHSButton">
+                    <rect key="frame" x="143" y="37" width="60" height="30"/>
+                    <state key="normal" title="Option 3"/>
                     <connections>
-                        <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="Euv-Pp-Til"/>
+                        <action selector="showOption3:" destination="-1" eventType="touchUpInside" id="5xK-Lq-LLc"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="335" placeholderIntrinsicHeight="21" text="We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi9-16-bWj">
-                    <rect key="frame" x="48" y="294" width="279" height="78"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="78" id="Bx6-1H-KFt"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOp-LD-dSa" customClass="DHSButton">
+                    <rect key="frame" x="76" y="37" width="59" height="30"/>
+                    <state key="normal" title="Option 2"/>
+                    <connections>
+                        <action selector="showOption2:" destination="-1" eventType="touchUpInside" id="5cm-sv-cEt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHa-av-sce" customClass="DHSButton">
+                    <rect key="frame" x="11" y="37" width="57" height="30"/>
+                    <state key="normal" title="Option 1"/>
+                    <connections>
+                        <action selector="showOption1:" destination="-1" eventType="touchUpInside" id="F98-oF-Pqc"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="LAd-Jo-fq0" secondAttribute="trailing" id="3jl-6Q-hzh"/>
-                <constraint firstItem="Wi9-16-bWj" firstAttribute="top" secondItem="y8W-Dt-gsX" secondAttribute="bottom" constant="8" id="3ou-M1-MMQ"/>
-                <constraint firstItem="LAd-Jo-fq0" firstAttribute="top" secondItem="y8W-Dt-gsX" secondAttribute="bottom" constant="-103.5" id="6ha-IK-1Uc"/>
+                <constraint firstItem="iOp-LD-dSa" firstAttribute="top" secondItem="aHa-av-sce" secondAttribute="top" id="5bn-Ic-9Vu"/>
+                <constraint firstItem="LAd-Jo-fq0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6nc-IM-Xgy"/>
+                <constraint firstItem="LAd-Jo-fq0" firstAttribute="centerX" secondItem="FxJ-SD-3aR" secondAttribute="centerX" id="9a8-wV-n3B"/>
                 <constraint firstItem="FxJ-SD-3aR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EM0-Vn-HF6"/>
-                <constraint firstItem="Wi9-16-bWj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Fzg-rH-Pbc"/>
-                <constraint firstAttribute="trailing" secondItem="Wi9-16-bWj" secondAttribute="trailing" constant="48" id="KKg-Ah-kTf"/>
+                <constraint firstItem="3UP-FS-Jzv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gv1-R5-bYt"/>
+                <constraint firstItem="psK-eD-SC5" firstAttribute="leading" secondItem="iOp-LD-dSa" secondAttribute="trailing" constant="8" symbolic="YES" id="OL1-2D-WOO"/>
+                <constraint firstAttribute="trailing" secondItem="LAd-Jo-fq0" secondAttribute="trailing" id="R5R-ER-Apm"/>
+                <constraint firstItem="LAd-Jo-fq0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SyH-cb-eSU"/>
                 <constraint firstItem="LAd-Jo-fq0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uig-9g-Ovf"/>
-                <constraint firstItem="y8W-Dt-gsX" firstAttribute="trailing" secondItem="Wi9-16-bWj" secondAttribute="trailing" id="WRz-1O-ZEz"/>
                 <constraint firstAttribute="bottom" secondItem="FxJ-SD-3aR" secondAttribute="bottom" id="X0y-W6-sgA"/>
-                <constraint firstItem="Wi9-16-bWj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="XEg-in-BZd"/>
                 <constraint firstItem="FxJ-SD-3aR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="ZA0-so-gqX"/>
-                <constraint firstItem="pdX-59-dPf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZoQ-gf-dGf"/>
-                <constraint firstItem="pdX-59-dPf" firstAttribute="top" secondItem="LAd-Jo-fq0" secondAttribute="bottom" constant="-70" id="ofN-JZ-vJz"/>
-                <constraint firstItem="y8W-Dt-gsX" firstAttribute="leading" secondItem="Wi9-16-bWj" secondAttribute="leading" id="ooO-OK-j7F"/>
-                <constraint firstItem="pdX-59-dPf" firstAttribute="top" secondItem="Wi9-16-bWj" secondAttribute="bottom" constant="23.5" id="xGi-V6-eKR"/>
+                <constraint firstItem="psK-eD-SC5" firstAttribute="top" secondItem="iOp-LD-dSa" secondAttribute="top" id="ah5-bd-hhL"/>
+                <constraint firstItem="aHa-av-sce" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="37" id="gc4-YP-lDE"/>
+                <constraint firstItem="aHa-av-sce" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="kax-mD-Nb7"/>
+                <constraint firstItem="iOp-LD-dSa" firstAttribute="leading" secondItem="aHa-av-sce" secondAttribute="trailing" constant="8" symbolic="YES" id="qQk-S5-VF1"/>
                 <constraint firstAttribute="trailing" secondItem="FxJ-SD-3aR" secondAttribute="trailing" id="zwV-R1-cCQ"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
     <resources>
-        <image name="Baban_IND_Art_DHS story" width="375" height="667"/>
+        <image name="aoc-image-3" width="375" height="667"/>
     </resources>
 </document>
