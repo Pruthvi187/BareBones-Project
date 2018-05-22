@@ -27,6 +27,11 @@
 }
 
 - (void)setTabBarItemsAndControllers {
+    UIColor *navColour = [UIColor colorWithRed:0.0f / 255.0f green:121.0f / 255.0f blue:202.0f / 255.0f alpha:1.0f]; // 0079CA
+    [[UINavigationBar appearance] setBarTintColor: navColour];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
     DHSLandingVC *landingVC = [DHSLandingVC new];
     UINavigationController *landingNC = [[UINavigationController alloc] initWithRootViewController:landingVC];
     landingNC.title = @"Home";
