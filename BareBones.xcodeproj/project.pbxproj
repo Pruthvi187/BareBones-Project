@@ -32,6 +32,8 @@
 		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
 		5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */; };
 		5E1E150E20B3E82C00BEC739 /* DHSBaseTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */; };
+		5E1E151220B3F2B200BEC739 /* DHSThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */; };
+		5E1E151320B3F2B200BEC739 /* DHSThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */; };
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
@@ -92,15 +94,18 @@
 		5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSettingsListDelegate.h; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSBaseTableDelegate.m; sourceTree = "<group>"; };
 		5E1E150D20B3E82B00BEC739 /* DHSBaseTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSBaseTableDelegate.h; sourceTree = "<group>"; };
+		5E1E150F20B3F2B200BEC739 /* DHSThemeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSThemeViewController.h; sourceTree = "<group>"; };
+		5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSThemeViewController.m; sourceTree = "<group>"; };
+		5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSThemeViewController.xib; sourceTree = "<group>"; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
 		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
 		5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSSecondaryButton.m; sourceTree = "<group>"; };
 		5EC837D520B28EF900357C88 /* DHSPrimaryNoBorderButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSPrimaryNoBorderButton.h; path = BareBones/Components/DHSPrimaryNoBorderButton.h; sourceTree = SOURCE_ROOT; };
 		5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DHSPrimaryNoBorderButton.m; path = BareBones/Components/DHSPrimaryNoBorderButton.m; sourceTree = SOURCE_ROOT; };
-		5EC837D820B2A39700357C88 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../Settings/SettingsViewController.h; sourceTree = "<group>"; };
-		5EC837D920B2A39700357C88 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../Settings/SettingsViewController.m; sourceTree = "<group>"; };
-		5EC837DA20B2A39700357C88 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ../Settings/SettingsViewController.xib; sourceTree = "<group>"; };
+		5EC837D820B2A39700357C88 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5EC837D920B2A39700357C88 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		5EC837DA20B2A39700357C88 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		AC065FC620AE406C00746B5E /* BareBones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareBones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC065FC920AE406C00746B5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC065FCA20AE406C00746B5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -256,6 +261,17 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		5E1E151420B3F2C800BEC739 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				5E1E150F20B3F2B200BEC739 /* DHSThemeViewController.h */,
+				5E1E151020B3F2B200BEC739 /* DHSThemeViewController.m */,
+				5E1E151120B3F2B200BEC739 /* DHSThemeViewController.xib */,
+			);
+			name = Theme;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		5EC7D97B20AE6AF300A5BC42 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,13 +309,13 @@
 		5EC837DD20B2A3A500357C88 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E151420B3F2C800BEC739 /* Theme */,
 				5E1E150B20B3DA6B00BEC739 /* Delegates */,
 				5EC837D820B2A39700357C88 /* SettingsViewController.h */,
 				5EC837D920B2A39700357C88 /* SettingsViewController.m */,
 				5EC837DA20B2A39700357C88 /* SettingsViewController.xib */,
 			);
-			name = Settings;
-			path = "New Group";
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		AC065FBD20AE406C00746B5E = {
@@ -462,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1E151320B3F2B200BEC739 /* DHSThemeViewController.xib in Resources */,
 				3DBF743D20AFD403006D795A /* DHSFrequentlyUsedCell.xib in Resources */,
 				5EC837DC20B2A39700357C88 /* SettingsViewController.xib in Resources */,
 				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
@@ -500,6 +517,7 @@
 				3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */,
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
+				5E1E151220B3F2B200BEC739 /* DHSThemeViewController.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,
 				5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */,
 				3DBF740920AFC883006D795A /* DHSSignInVC.m in Sources */,
@@ -655,11 +673,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KWN4YPXHT;
+				DEVELOPMENT_TEAM = TZ32KD8MT9;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henly.ios.BareBonesProject.BareBones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henly.ios.BareBonesProject.BareBones-aj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -670,11 +688,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6KWN4YPXHT;
+				DEVELOPMENT_TEAM = TZ32KD8MT9;
 				INFOPLIST_FILE = BareBones/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.henly.ios.BareBonesProject.BareBones;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henly.ios.BareBonesProject.BareBones-aj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

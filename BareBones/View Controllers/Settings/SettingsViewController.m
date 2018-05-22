@@ -7,24 +7,22 @@
 //
 
 #import "SettingsViewController.h"
+#import "DHSSettingsListDelegate.h"
 
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tView;
-@property (nonatomic, strong) DHSLandingListDelegate *listDelegate;
+@property (nonatomic, strong) DHSSettingsListDelegate *listDelegate;
 @end
 
 @implementation SettingsViewController
-NSMutableArray *settingsLabels;
-//  @[[@"Theme"], [@"History", @"Privacy", @"Terms & Conditions"], [@"Sign Out"]];
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    settingsLabels = @[@[@"Theme"], @[@"History", @"Privacy", @"Terms & Conditions"], @[@"Sign Out"]];
+    [self setUpTableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - TableView Setup Methods
@@ -32,9 +30,9 @@ NSMutableArray *settingsLabels;
 
 - (void) setUpTableView {
 //    [self.tView registerNib:[UINib nibWithNibName:@"navCell" bundle:[NSBundle bundleForClass:[DHSOfficeLocatorVC class]]] forCellReuseIdentifier:@"officelocatorcell"];
-//    self.listDelegate = [DHSOfficeLocatorListDelegate new];
-//    self.tView.dataSource = self.listDelegate;
-//    self.tView.delegate = self.listDelegate;
+    self.listDelegate = [DHSSettingsListDelegate new];
+    self.tView.dataSource = self.listDelegate;
+    self.tView.delegate = self.listDelegate;
     
     [self.tView reloadData];
     

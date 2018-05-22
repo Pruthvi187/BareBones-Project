@@ -7,30 +7,24 @@
 //
 
 #import "DHSSettingsListDelegate.h"
-#import "DHSPaymentsCell.h"
-#import "DHSTaskCell.h"
-#import "DHSAppointmentCell.h"
-#import "DHSFrequentlyUsedCell.h"
 
-typedef NS_ENUM(NSInteger, SectionType) {
-    paymentsSection,
-    tasksSection,
-    appointmentSection,
-    frequentlyUsedSection
-};
 
 @interface DHSSettingsListDelegate()
-
+@property (nonatomic) NSMutableArray *settingsLabels;
 @end
 
 @implementation DHSSettingsListDelegate
-NSMutableArray *settingsLabels;
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        settingsLabels = @[@[@"Theme"], @[@"History", @"Privacy", @"Terms & Conditions"], @[@"Sign Out"]];
+        const NSArray *a1 = @[@"Theme"];
+        const NSArray *a2 = @[@"History", @"Privacy", @"Terms & Conditions"];
+        const NSArray *a3 = @[@"Sign Out"];
+        
+        self.settingsLabels = [NSMutableArray arrayWithObjects:a1, a2, a3, nil];
+        
     }
     return self;
 }
@@ -38,18 +32,19 @@ NSMutableArray *settingsLabels;
 #pragma mark - UITableViewDataSource
 
 #pragma mark - UITableViewDelegate
-
+    
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [settingsLabels count];
+    return [self.settingsLabels count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [settingsLabels[section] count];
+    return [self.settingsLabels[section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [UITableViewCell new];
-    cell.textLabel.text = settingsLabels[indexPath.section][indexPath.row];
+    cell.textLabel.text = self.settingsLabels[indexPath.section][indexPath.row];
     return cell;
 }
 @end
+    
