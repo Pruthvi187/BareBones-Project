@@ -10,7 +10,6 @@
 #import "DHSSignInVC.h"
 #import "DHSAocVC.h"
 #import "DHSOfficeLocatorVC.h"
-#import "ButtonsViewController.h"
 #import "SettingsViewController.h"
 
 @interface DHSNavigationForTestScreensTableViewController ()
@@ -27,7 +26,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-self.tableList = @[@"Main Tabs", @"Sign In", @"AoC", @"Landing", @"Office Locator", @"More", @"Buttons", @"Settings"];
+self.tableList = @[@"Main Tabs", @"Sign In", @"AoC", @"Landing", @"Office Locator", @"More", @"Settings"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,16 +89,9 @@ self.tableList = @[@"Main Tabs", @"Sign In", @"AoC", @"Landing", @"Office Locato
         case 5: // More
             return;
         case 6:
-            [self displayButtons];
-            return;
-        case 7:
             [self displaySettings];
             return;
     }
-}
--(void)displayButtons {
-    ButtonsViewController *buttons = [ButtonsViewController new];
-    [self.navigationController pushViewController:buttons animated:YES];
 }
 
 - (void) displaySigninVC {
