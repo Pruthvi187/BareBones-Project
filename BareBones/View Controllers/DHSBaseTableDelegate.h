@@ -7,8 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "DHSBaseTableDelegate.h"
 
-@interface DHSSettingsListDelegate : DHSBaseTableDelegate
+@interface DHSBaseTableDelegate : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 @end

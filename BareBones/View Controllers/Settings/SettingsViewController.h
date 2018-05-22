@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DHSBaseTableDelegate.h"
 
-@interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface SettingsViewController : UIViewController
 
 @end

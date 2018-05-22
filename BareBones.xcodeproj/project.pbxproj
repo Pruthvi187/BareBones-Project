@@ -31,6 +31,7 @@
 		3DFB3D3A20B0E7F9002F346C /* DHSMainTabsBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3920B0E7F9002F346C /* DHSMainTabsBarDelegate.m */; };
 		3DFB3D3D20B0F611002F346C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB3D3C20B0F611002F346C /* Constants.m */; };
 		5E1E150A20B3DA6400BEC739 /* DHSSettingsListDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */; };
+		5E1E150E20B3E82C00BEC739 /* DHSBaseTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */; };
 		5EC837C920B25D0000357C88 /* DHSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837C820B25D0000357C88 /* DHSButton.m */; };
 		5EC837D420B28CC600357C88 /* DHSSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D320B28CC600357C88 /* DHSSecondaryButton.m */; };
 		5EC837D720B28EF900357C88 /* DHSPrimaryNoBorderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC837D620B28EF900357C88 /* DHSPrimaryNoBorderButton.m */; };
@@ -89,6 +90,8 @@
 		3DFB3D3C20B0F611002F346C /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		5E1E150820B3DA6400BEC739 /* DHSSettingsListDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSSettingsListDelegate.m; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.m"; sourceTree = SOURCE_ROOT; };
 		5E1E150920B3DA6400BEC739 /* DHSSettingsListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHSSettingsListDelegate.h; path = "BareBones/View Controllers/Settings/Delegates/DHSSettingsListDelegate.h"; sourceTree = SOURCE_ROOT; };
+		5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSBaseTableDelegate.m; sourceTree = "<group>"; };
+		5E1E150D20B3E82B00BEC739 /* DHSBaseTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSBaseTableDelegate.h; sourceTree = "<group>"; };
 		5EC837C720B25D0000357C88 /* DHSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DHSButton.h; path = ../Components/DHSButton.h; sourceTree = "<group>"; };
 		5EC837C820B25D0000357C88 /* DHSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHSButton.m; path = ../Components/DHSButton.m; sourceTree = "<group>"; };
 		5EC837D220B28CC600357C88 /* DHSSecondaryButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSSecondaryButton.h; sourceTree = "<group>"; };
@@ -348,6 +351,8 @@
 		AC065FE820AE51BD00746B5E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E1E150D20B3E82B00BEC739 /* DHSBaseTableDelegate.h */,
+				5E1E150C20B3E82B00BEC739 /* DHSBaseTableDelegate.m */,
 				AC26C52E20AE7FDA001415E8 /* Activity Modal */,
 				5EC7D98620AE6F8B00A5BC42 /* AOC */,
 				3DBF741C20AFCCDF006D795A /* Landing */,
@@ -488,6 +493,7 @@
 				3DFB3D3A20B0E7F9002F346C /* DHSMainTabsBarDelegate.m in Sources */,
 				3DBF741420AFC943006D795A /* DHSMainTabsTabBarController.m in Sources */,
 				3DBF740E20AFC8A8006D795A /* DHSAocVC.m in Sources */,
+				5E1E150E20B3E82C00BEC739 /* DHSBaseTableDelegate.m in Sources */,
 				AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */,
 				AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */,
 				5EC837C920B25D0000357C88 /* DHSButton.m in Sources */,

@@ -10,6 +10,7 @@
 
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tView;
+@property (nonatomic, strong) DHSLandingListDelegate *listDelegate;
 @end
 
 @implementation SettingsViewController
@@ -39,19 +40,6 @@ NSMutableArray *settingsLabels;
     
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [settingsLabels count];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [settingsLabels[section] count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [UITableViewCell new];
-    cell.textLabel.text = settingsLabels[indexPath.section][indexPath.row];
-    return cell;
-}
 /*
 #pragma mark - Navigation
 
