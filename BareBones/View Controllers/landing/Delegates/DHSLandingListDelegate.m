@@ -29,6 +29,10 @@ typedef NS_ENUM(NSInteger, SectionType) {
 @implementation DHSLandingListDelegate
 CGFloat sectionHeaderHeight = 60.0f;
 
+- (IBAction)showVPH:(id)sender {
+    NSLog(@"showVPH()");
+}
+
 #pragma mark - UITableViewDataSource
 
 #pragma mark - UITableViewDelegate

@@ -10,7 +10,7 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSMainTabsTabBarController"/>
-        <tabBarController nibName="DHSLandingVC" id="RA8-Z8-k0J">
+        <tabBarController nibName="" id="RA8-Z8-k0J">
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wN-EX-AXp">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -24,7 +24,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QTg-06-z3s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0mh-A3-ZBp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
