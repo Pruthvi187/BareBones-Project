@@ -7,6 +7,7 @@
 //
 
 #import "DHSAppointmentCell.h"
+#import "Constants.h"
 
 @implementation DHSAppointmentCell
 
@@ -23,6 +24,8 @@
 
 #pragma mark - IBActions
 - (IBAction)startDirections:(id)sender {
+    
+     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_VIEW_APPOINTMENT_TASK object:self];
 }
 
 @end

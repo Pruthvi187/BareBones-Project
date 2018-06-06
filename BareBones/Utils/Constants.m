@@ -9,3 +9,4 @@
 #import <Foundation/Foundation.h>
 
 NSString *const NOTIF_VIEW_TASK = @"NOTIF_VIEW_TASK";
+NSString *const NOTIF_VIEW_APPOINTMENT_TASK = @"NOTIF_VIEW_APPOINTMENT_TASK";

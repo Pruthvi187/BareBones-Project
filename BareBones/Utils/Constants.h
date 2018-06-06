@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 
 extern NSString *const NOTIF_VIEW_TASK;
+extern NSString *const NOTIF_VIEW_APPOINTMENT_TASK;
 

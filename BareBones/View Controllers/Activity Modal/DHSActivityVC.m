@@ -37,7 +37,6 @@ static NSString *nextAppointmentText = @"Next Appointment";
     [self.view setBackgroundColor:[[DHSColorPool defaultColorPool] modalPopOverBGColor]];
 
     [self setUpViewDetails];
-    self.defaultActivityModal.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,7 +81,15 @@ static NSString *nextAppointmentText = @"Next Appointment";
 
 #pragma mark - Display Appointment Modal
 
+- (void) toggleActivityModal:(BOOL)hidden {
+    
+    // Hide the default
+    self.defaultActivityModal.hidden = hidden;
+}
+
 - (void) showAppointmentDetails {
+    
+    [self toggleActivityModal:YES];
     
     // Set up and add the new VC as a subview to the containerview
     self.appointmentModalVC = [DHSAppointmentModalVC new];

@@ -25,6 +25,7 @@
     [self createCustomNavRightButtons];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayTaskAsModal:) name:NOTIF_VIEW_TASK object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayAppointmentAsModal:) name:NOTIF_VIEW_APPOINTMENT_TASK object:nil];
 }
 
 - (void) dealloc {
@@ -59,6 +60,16 @@
 #pragma mark - Tasks
 
 - (void) displayTaskAsModal: (NSNotification*) notification {
+    [self displayActivityModal];
+}
+
+- (void) displayAppointmentAsModal: (NSNotification*) notification {
+    [self displayActivityModal];
+    [self.activityVC showAppointmentDetails];
+}
+
+- (void) displayActivityModal {
+    
     self.activityVC = [DHSActivityVC new];
     self.activityVC.modalCloseDelegate = self;
     [self.activityVC.view setFrame:self.view.bounds];
@@ -66,6 +77,7 @@
     [self.activityVC didMoveToParentViewController:self];
     
     [self.view addSubview:self.activityVC.view];
+    
 }
 
 #pragma mark - TableView Setup Methods
