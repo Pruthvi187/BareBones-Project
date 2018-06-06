@@ -13,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSActivityVC">
             <connections>
                 <outlet property="activitylabel" destination="e55-7i-6wD" id="roA-Pv-ogy"/>
+                <outlet property="containerView" destination="iAC-Fc-O50" id="3ZB-D0-xLW"/>
+                <outlet property="defaultActivityModal" destination="3fm-wE-ZcQ" id="RAw-LZ-zxP"/>
                 <outlet property="priorityIcon" destination="3I9-Ju-qzO" id="FMX-BD-cEp"/>
                 <outlet property="priorityLabel" destination="kuN-tA-DvX" id="BDq-N0-hYM"/>
                 <outlet property="taskActivityDetail" destination="ICq-VL-xs8" id="aWs-Kc-9FE"/>
@@ -55,62 +57,82 @@
                                 <constraint firstItem="x5D-je-815" firstAttribute="leading" secondItem="bho-cG-AiW" secondAttribute="leading" constant="10" id="vgz-yi-cUK"/>
                             </constraints>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Priority Icon" translatesAutoresizingMaskIntoConstraints="NO" id="3I9-Ju-qzO">
-                            <rect key="frame" x="27" y="101" width="15" height="15"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAC-Fc-O50" userLabel="ContainerView">
+                            <rect key="frame" x="0.0" y="80" width="337.5" height="253.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fm-wE-ZcQ" userLabel="Default Activity Modal">
+                            <rect key="frame" x="0.0" y="80" width="337.5" height="253.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Priority Icon" translatesAutoresizingMaskIntoConstraints="NO" id="3I9-Ju-qzO">
+                                    <rect key="frame" x="28.5" y="21" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="wh8-K7-aiK"/>
+                                        <constraint firstAttribute="width" constant="15" id="ysy-Po-iT3"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date Tomorrow - 20 March 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuN-tA-DvX">
+                                    <rect key="frame" x="48.5" y="20" width="243.5" height="17"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.83137254901960778" green="0.031372549019607843" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICq-VL-xs8">
+                                    <rect key="frame" x="23" y="57" width="294.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-fa-Afv" userLabel="Start Task Button">
+                                    <rect key="frame" x="92.5" y="159.5" width="154" height="39"/>
+                                    <state key="normal" image="start_task"/>
+                                    <connections>
+                                        <action selector="startTask:" destination="-1" eventType="touchUpInside" id="pY7-Lm-sTw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2N-YR-ryn">
+                                    <rect key="frame" x="111" y="213.5" width="117" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="iGg-HS-RCB"/>
+                                    </constraints>
+                                    <state key="normal" title="Remove this task">
+                                        <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="removeThisTask:" destination="-1" eventType="touchUpInside" id="1Nf-WB-NlJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="15" id="wh8-K7-aiK"/>
-                                <constraint firstAttribute="width" constant="15" id="ysy-Po-iT3"/>
+                                <constraint firstItem="ocG-fa-Afv" firstAttribute="centerX" secondItem="3fm-wE-ZcQ" secondAttribute="centerX" id="15s-Kh-lSX"/>
+                                <constraint firstItem="kuN-tA-DvX" firstAttribute="leading" secondItem="3I9-Ju-qzO" secondAttribute="trailing" constant="5" id="7U1-CT-WY5"/>
+                                <constraint firstItem="ICq-VL-xs8" firstAttribute="top" secondItem="kuN-tA-DvX" secondAttribute="bottom" constant="20" id="JmK-KI-ka9"/>
+                                <constraint firstAttribute="trailing" secondItem="ICq-VL-xs8" secondAttribute="trailing" constant="20" id="Mv2-Vn-1da"/>
+                                <constraint firstAttribute="bottom" secondItem="P2N-YR-ryn" secondAttribute="bottom" constant="20" id="NWP-Jg-6RN"/>
+                                <constraint firstItem="ICq-VL-xs8" firstAttribute="leading" secondItem="3fm-wE-ZcQ" secondAttribute="leading" constant="23" id="VVn-2k-i0E"/>
+                                <constraint firstItem="P2N-YR-ryn" firstAttribute="centerX" secondItem="3fm-wE-ZcQ" secondAttribute="centerX" id="XS1-1l-J73"/>
+                                <constraint firstItem="kuN-tA-DvX" firstAttribute="top" secondItem="3fm-wE-ZcQ" secondAttribute="top" constant="20" id="ag7-Lg-CCT"/>
+                                <constraint firstItem="P2N-YR-ryn" firstAttribute="top" secondItem="ocG-fa-Afv" secondAttribute="bottom" constant="15" id="dc3-1A-9tI"/>
+                                <constraint firstItem="ocG-fa-Afv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ICq-VL-xs8" secondAttribute="bottom" constant="20" id="fft-i6-pXX"/>
+                                <constraint firstItem="ICq-VL-xs8" firstAttribute="centerX" secondItem="3fm-wE-ZcQ" secondAttribute="centerX" constant="1.5" id="xDM-0E-KAR"/>
+                                <constraint firstItem="3I9-Ju-qzO" firstAttribute="centerY" secondItem="kuN-tA-DvX" secondAttribute="centerY" id="ymS-Fb-bNS"/>
+                                <constraint firstItem="kuN-tA-DvX" firstAttribute="centerX" secondItem="3fm-wE-ZcQ" secondAttribute="centerX" constant="1.5" id="ywF-tz-VjG"/>
                             </constraints>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date Tomorrow - 20 March 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuN-tA-DvX">
-                            <rect key="frame" x="47" y="100" width="243.5" height="17"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                            <color key="textColor" red="0.83137254901960778" green="0.031372549019607843" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICq-VL-xs8">
-                            <rect key="frame" x="30" y="137" width="277.5" height="16.5"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-fa-Afv" userLabel="Start Task Button">
-                            <rect key="frame" x="91" y="229.5" width="154" height="39"/>
-                            <state key="normal" image="start_task"/>
-                            <connections>
-                                <action selector="startTask:" destination="-1" eventType="touchUpInside" id="pY7-Lm-sTw"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2N-YR-ryn">
-                            <rect key="frame" x="109.5" y="283.5" width="117" height="20"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="20" id="iGg-HS-RCB"/>
-                            </constraints>
-                            <state key="normal" title="Remove this task">
-                                <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="removeThisTask:" destination="-1" eventType="touchUpInside" id="1Nf-WB-NlJ"/>
-                            </connections>
-                        </button>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="ICq-VL-xs8" firstAttribute="centerX" secondItem="DfR-jK-d2W" secondAttribute="centerX" id="0cX-GI-1o4"/>
-                        <constraint firstItem="ICq-VL-xs8" firstAttribute="leading" secondItem="DfR-jK-d2W" secondAttribute="leading" constant="30" id="79S-3G-p2F"/>
-                        <constraint firstItem="kuN-tA-DvX" firstAttribute="centerX" secondItem="DfR-jK-d2W" secondAttribute="centerX" id="Gug-4R-Cm5"/>
-                        <constraint firstItem="P2N-YR-ryn" firstAttribute="top" secondItem="ocG-fa-Afv" secondAttribute="bottom" constant="15" id="RwS-Xo-O32"/>
-                        <constraint firstItem="P2N-YR-ryn" firstAttribute="centerX" secondItem="DfR-jK-d2W" secondAttribute="centerX" id="SO3-Pb-URh"/>
-                        <constraint firstAttribute="trailing" secondItem="ICq-VL-xs8" secondAttribute="trailing" constant="30" id="Wcg-qt-I30"/>
-                        <constraint firstItem="kuN-tA-DvX" firstAttribute="leading" secondItem="3I9-Ju-qzO" secondAttribute="trailing" constant="5" id="Y74-Di-WxU"/>
-                        <constraint firstItem="ocG-fa-Afv" firstAttribute="centerX" secondItem="DfR-jK-d2W" secondAttribute="centerX" id="Ylw-63-Oqf"/>
-                        <constraint firstItem="kuN-tA-DvX" firstAttribute="top" secondItem="bho-cG-AiW" secondAttribute="bottom" constant="20" id="Zbh-t9-T7A"/>
+                        <constraint firstAttribute="trailing" secondItem="iAC-Fc-O50" secondAttribute="trailing" id="Hi0-uS-dKa"/>
+                        <constraint firstAttribute="bottom" secondItem="iAC-Fc-O50" secondAttribute="bottom" id="MKj-zm-654"/>
+                        <constraint firstItem="iAC-Fc-O50" firstAttribute="leading" secondItem="DfR-jK-d2W" secondAttribute="leading" id="YOg-FU-AGr"/>
+                        <constraint firstAttribute="bottom" secondItem="3fm-wE-ZcQ" secondAttribute="bottom" id="aZb-pE-Ojy"/>
                         <constraint firstItem="bho-cG-AiW" firstAttribute="leading" secondItem="DfR-jK-d2W" secondAttribute="leading" id="bEO-Cr-dL2"/>
-                        <constraint firstItem="ocG-fa-Afv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ICq-VL-xs8" secondAttribute="bottom" constant="20" id="cS3-7u-dnK"/>
-                        <constraint firstAttribute="bottom" secondItem="P2N-YR-ryn" secondAttribute="bottom" constant="30" id="daF-Qb-EP6"/>
-                        <constraint firstItem="ICq-VL-xs8" firstAttribute="top" secondItem="kuN-tA-DvX" secondAttribute="bottom" constant="20" id="mUF-gJ-2q9"/>
+                        <constraint firstItem="3fm-wE-ZcQ" firstAttribute="leading" secondItem="DfR-jK-d2W" secondAttribute="leading" id="bNn-to-zXa"/>
+                        <constraint firstItem="iAC-Fc-O50" firstAttribute="top" secondItem="bho-cG-AiW" secondAttribute="bottom" id="cYP-Fw-xh7"/>
+                        <constraint firstItem="3fm-wE-ZcQ" firstAttribute="top" secondItem="bho-cG-AiW" secondAttribute="bottom" id="fh8-Dv-p9M"/>
                         <constraint firstAttribute="trailing" secondItem="bho-cG-AiW" secondAttribute="trailing" id="q8o-fR-v1T"/>
-                        <constraint firstItem="3I9-Ju-qzO" firstAttribute="centerY" secondItem="kuN-tA-DvX" secondAttribute="centerY" id="ylL-tr-jGg"/>
+                        <constraint firstAttribute="trailing" secondItem="3fm-wE-ZcQ" secondAttribute="trailing" id="wIV-V5-HWJ"/>
                         <constraint firstItem="bho-cG-AiW" firstAttribute="top" secondItem="DfR-jK-d2W" secondAttribute="top" id="zXm-VR-wCX"/>
                     </constraints>
                 </view>

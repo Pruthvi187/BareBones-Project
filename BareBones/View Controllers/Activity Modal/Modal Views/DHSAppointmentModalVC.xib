@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHSAppointmentModalVC">
+            <connections>
+                <outlet property="appointmentDetailsLabel" destination="9uk-6k-Iy6" id="Biu-1f-lCc"/>
+                <outlet property="appointmentHeaderLabel" destination="Rx5-VD-Wl7" id="IxK-5T-01j"/>
+                <outlet property="appointmentTimelabel" destination="psO-iJ-6FC" id="e5g-24-d2M"/>
+                <outlet property="centrelinkNameLabel" destination="F4o-Rf-PaZ" id="8yJ-aM-Rxm"/>
+                <outlet property="contantDetailsLabel" destination="5jk-Nx-XNl" id="oMh-BY-PBO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Claim Appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rx5-VD-Wl7">
+                    <rect key="frame" x="121.5" y="20" width="132" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="0.29803921568627451" green="0.41568627450980389" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uk-6k-Iy6">
+                    <rect key="frame" x="30" y="59" width="315" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4o-Rf-PaZ">
+                    <rect key="frame" x="30" y="116" width="315" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKk-nc-Ubv">
+                    <rect key="frame" x="131" y="166" width="113" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Add to Calendar  " image="calendar_icon">
+                        <color key="titleColor" red="0.0" green="0.47450980392156861" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addAppointmentToCalendar:" destination="-1" eventType="touchUpInside" id="3rA-G6-Gpj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-8d-4Te" userLabel="Reschedule Button">
+                    <rect key="frame" x="91.5" y="206" width="192" height="39"/>
+                    <state key="normal" image="reschedule_btn"/>
+                    <connections>
+                        <action selector="rescheduleAppointment:" destination="-1" eventType="touchUpInside" id="iM9-eL-KdQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzZ-kS-d9r" userLabel="Cancel Appointment Button">
+                    <rect key="frame" x="91" y="265" width="192" height="39"/>
+                    <state key="normal" image="cancel_appt_btn"/>
+                    <connections>
+                        <action selector="cancelAppointment:" destination="-1" eventType="touchUpInside" id="ljn-Rc-vYH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zos-m7-MGF">
+                    <rect key="frame" x="139.5" y="319" width="95" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <state key="normal" title="View more details">
+                        <color key="titleColor" red="0.0" green="0.47450980390000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="viewMoreDetails:" destination="-1" eventType="touchUpInside" id="MUF-Ol-Nti"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psO-iJ-6FC">
+                    <rect key="frame" x="30" y="79" width="315" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-Nx-XNl">
+                    <rect key="frame" x="30" y="132" width="315" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9uk-6k-Iy6" firstAttribute="centerX" secondItem="Rx5-VD-Wl7" secondAttribute="centerX" id="0Or-Sy-95g"/>
+                <constraint firstItem="F4o-Rf-PaZ" firstAttribute="leading" secondItem="9uk-6k-Iy6" secondAttribute="leading" id="1Qw-NV-zkz"/>
+                <constraint firstItem="psO-iJ-6FC" firstAttribute="trailing" secondItem="9uk-6k-Iy6" secondAttribute="trailing" id="311-v1-PLk"/>
+                <constraint firstItem="5jk-Nx-XNl" firstAttribute="top" secondItem="F4o-Rf-PaZ" secondAttribute="bottom" constant="2" id="3CA-SB-O0t"/>
+                <constraint firstItem="9uk-6k-Iy6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="5a2-R9-NRo"/>
+                <constraint firstItem="yKk-nc-Ubv" firstAttribute="top" secondItem="5jk-Nx-XNl" secondAttribute="bottom" constant="20" id="99v-fe-13r"/>
+                <constraint firstItem="yKk-nc-Ubv" firstAttribute="centerX" secondItem="F4o-Rf-PaZ" secondAttribute="centerX" id="Ega-dX-LbY"/>
+                <constraint firstItem="9uk-6k-Iy6" firstAttribute="top" secondItem="Rx5-VD-Wl7" secondAttribute="bottom" constant="20" id="IVT-5t-hmm"/>
+                <constraint firstItem="iTb-8d-4Te" firstAttribute="top" secondItem="yKk-nc-Ubv" secondAttribute="bottom" constant="20" id="Jup-Gv-wOx"/>
+                <constraint firstItem="psO-iJ-6FC" firstAttribute="top" secondItem="9uk-6k-Iy6" secondAttribute="bottom" constant="3" id="MeO-yd-wgF"/>
+                <constraint firstItem="fzZ-kS-d9r" firstAttribute="centerX" secondItem="iTb-8d-4Te" secondAttribute="centerX" id="Pu0-TX-d8l"/>
+                <constraint firstItem="zos-m7-MGF" firstAttribute="centerX" secondItem="fzZ-kS-d9r" secondAttribute="centerX" id="V0S-9r-fuC"/>
+                <constraint firstItem="Rx5-VD-Wl7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aie-at-F0y"/>
+                <constraint firstItem="iTb-8d-4Te" firstAttribute="centerX" secondItem="yKk-nc-Ubv" secondAttribute="centerX" id="cjl-P8-cTb"/>
+                <constraint firstItem="fzZ-kS-d9r" firstAttribute="top" secondItem="iTb-8d-4Te" secondAttribute="bottom" constant="20" id="emJ-ZE-9RS"/>
+                <constraint firstItem="F4o-Rf-PaZ" firstAttribute="top" secondItem="psO-iJ-6FC" secondAttribute="bottom" constant="20" id="fLu-PR-y7Q"/>
+                <constraint firstItem="F4o-Rf-PaZ" firstAttribute="trailing" secondItem="9uk-6k-Iy6" secondAttribute="trailing" id="iij-XB-KFd"/>
+                <constraint firstItem="psO-iJ-6FC" firstAttribute="leading" secondItem="9uk-6k-Iy6" secondAttribute="leading" id="n6Z-bS-uaY"/>
+                <constraint firstItem="zos-m7-MGF" firstAttribute="top" secondItem="fzZ-kS-d9r" secondAttribute="bottom" constant="15" id="naf-oZ-Q9b"/>
+                <constraint firstItem="F4o-Rf-PaZ" firstAttribute="centerX" secondItem="9uk-6k-Iy6" secondAttribute="centerX" id="oXF-dT-NYW"/>
+                <constraint firstItem="Rx5-VD-Wl7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="pUM-SN-R8N"/>
+                <constraint firstItem="5jk-Nx-XNl" firstAttribute="trailing" secondItem="F4o-Rf-PaZ" secondAttribute="trailing" id="uuP-bC-0jv"/>
+                <constraint firstItem="5jk-Nx-XNl" firstAttribute="leading" secondItem="F4o-Rf-PaZ" secondAttribute="leading" id="zd5-HS-BlU"/>
+                <constraint firstAttribute="trailing" secondItem="9uk-6k-Iy6" secondAttribute="trailing" constant="30" id="zuv-nR-caR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar_icon" width="18" height="20"/>
+        <image name="cancel_appt_btn" width="192" height="39"/>
+        <image name="reschedule_btn" width="192" height="39"/>
+    </resources>
+</document>

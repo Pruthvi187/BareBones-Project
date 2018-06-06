@@ -51,6 +51,8 @@
 		AC26C54220AE823E001415E8 /* DHSOfficeLocatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */; };
 		AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */; };
 		AC26C54620AE88B9001415E8 /* DHSActivityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC26C54520AE88B9001415E8 /* DHSActivityVC.m */; };
+		ACA4D19B20C791DD0012825D /* DHSAppointmentModalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4D19920C791DD0012825D /* DHSAppointmentModalVC.m */; };
+		ACA4D19C20C791DD0012825D /* DHSAppointmentModalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA4D19A20C791DD0012825D /* DHSAppointmentModalVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +127,9 @@
 		AC26C54020AE823E001415E8 /* DHSOfficeLocatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSOfficeLocatorCell.m; sourceTree = "<group>"; };
 		AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSOfficeLocatorCell.xib; sourceTree = "<group>"; };
 		AC26C54520AE88B9001415E8 /* DHSActivityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSActivityVC.m; sourceTree = "<group>"; };
+		ACA4D19820C791DD0012825D /* DHSAppointmentModalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHSAppointmentModalVC.h; sourceTree = "<group>"; };
+		ACA4D19920C791DD0012825D /* DHSAppointmentModalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHSAppointmentModalVC.m; sourceTree = "<group>"; };
+		ACA4D19A20C791DD0012825D /* DHSAppointmentModalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DHSAppointmentModalVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +384,7 @@
 		AC26C52E20AE7FDA001415E8 /* Activity Modal */ = {
 			isa = PBXGroup;
 			children = (
+				ACA4D19720C7919F0012825D /* Modal Views */,
 				AC065FE920AE524800746B5E /* DHSActivityVC.h */,
 				AC26C54520AE88B9001415E8 /* DHSActivityVC.m */,
 				AC065FEB20AE524800746B5E /* DHSActivityVC.xib */,
@@ -415,6 +421,16 @@
 				AC26C54120AE823E001415E8 /* DHSOfficeLocatorCell.xib */,
 			);
 			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		ACA4D19720C7919F0012825D /* Modal Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4D19820C791DD0012825D /* DHSAppointmentModalVC.h */,
+				ACA4D19920C791DD0012825D /* DHSAppointmentModalVC.m */,
+				ACA4D19A20C791DD0012825D /* DHSAppointmentModalVC.xib */,
+			);
+			path = "Modal Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +496,9 @@
 				5EC837DC20B2A39700357C88 /* SettingsViewController.xib in Resources */,
 				3DBF740A20AFC883006D795A /* DHSSignInVC.xib in Resources */,
 				3DBF743720AFD344006D795A /* DHSAppointmentCell.xib in Resources */,
+				5EC7D98520AE6F8300A5BC42 /* DHSAocVC.xib in Resources */,
+				5EC7D97A20AE6AE800A5BC42 /* DHSSignInVC.xib in Resources */,
+				ACA4D19C20C791DD0012825D /* DHSAppointmentModalVC.xib in Resources */,
 				AC26C54320AE823E001415E8 /* DHSOfficeLocatorCell.xib in Resources */,
 				AC065FD620AE406F00746B5E /* LaunchScreen.storyboard in Resources */,
 				AC065FD320AE406F00746B5E /* Assets.xcassets in Resources */,
@@ -512,6 +531,7 @@
 				5EC837C920B25D0000357C88 /* DHSButton.m in Sources */,
 				3DBF743E20AFD403006D795A /* DHSFrequentlyUsedCell.m in Sources */,
 				3DBF742B20AFCCDF006D795A /* DHSLandingListDelegate.m in Sources */,
+				ACA4D19B20C791DD0012825D /* DHSAppointmentModalVC.m in Sources */,
 				AC26C53820AE80BF001415E8 /* DHSOfficeLocatorVC.m in Sources */,
 				5E1E151220B3F2B200BEC739 /* DHSThemeViewController.m in Sources */,
 				3DBF742820AFCCDF006D795A /* DHSPaymentsCell.m in Sources */,

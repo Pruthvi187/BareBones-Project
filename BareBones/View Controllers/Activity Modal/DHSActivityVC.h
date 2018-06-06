@@ -16,5 +16,7 @@
 
 @property (weak, nonatomic) id<DHSRemoveModalVCDelegate> modalCloseDelegate;
 
+// Methods to display appointment details VC as a modal
+- (void) showAppointmentDetails;
 
 @end

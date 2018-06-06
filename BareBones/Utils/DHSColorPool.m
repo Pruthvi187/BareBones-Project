@@ -35,6 +35,7 @@ static DHSColorPool * _sharedPool;
     _urgentRedColor = [UIColor colorWithRed:212.0f / 255.0f green:8.0f / 255.0f blue:33.0f / 255.0f alpha:1.0f];
     _modalPopOverBGColor = [UIColor colorWithRed:0.0f / 255.0f green:0.0f / 255.0f blue:0.0f / 255.0f alpha:0.85f];
     _nonUrgentGrayColor =  [UIColor colorWithRed:74.0f / 255.0f green:74.0f / 255.0f blue:74.0f / 255.0f alpha:0.79f];
+    _lightBlueColor = [UIColor colorWithRed:76.0f / 255.0f green:106.0f / 255.0f blue:144.0f / 255.0f alpha:1.0f];
     _settingsBoldFontname = @"BentonSans-Medium";
     _whiteColor = [UIColor whiteColor];
     

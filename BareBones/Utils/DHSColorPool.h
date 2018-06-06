@@ -21,6 +21,7 @@
 @property (nonatomic, strong, readonly) UIColor *nonUrgentGrayColor;
 @property (nonatomic, strong, readonly) UIColor *modalPopOverBGColor;
 @property (nonatomic, strong, readonly) UIColor *whiteColor;
+@property (nonatomic, strong, readonly) UIColor *lightBlueColor;
 
 #pragma mark - UIFont Definitions
 
