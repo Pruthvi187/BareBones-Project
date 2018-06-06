@@ -10,4 +10,6 @@
 
 @interface DHSAppointmentModalVC : UIViewController
 
+- (void) showMissedAppointment;
+
 @end

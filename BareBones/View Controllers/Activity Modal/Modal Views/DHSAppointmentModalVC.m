@@ -20,6 +20,11 @@ static NSString *centrelinkName = @"Centrelink Woden";
 @property (weak, nonatomic) IBOutlet UILabel *contantDetailsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *appointmentTimelabel;
 @property (weak, nonatomic) IBOutlet UILabel *centrelinkNameLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnMoreDetails;
+@property (weak, nonatomic) IBOutlet UIButton *btnCancelAppointment;
+@property (weak, nonatomic) IBOutlet UIButton *btnRescheduleAppointment;
+@property (weak, nonatomic) IBOutlet UIButton *missedAppointmentButton;
+@property (weak, nonatomic) IBOutlet UIButton *btnAddToCalendar;
 
 
 @end
@@ -61,6 +66,18 @@ static NSString *centrelinkName = @"Centrelink Woden";
     [self.appointmentTimelabel setText:appointmentTime];
     [self.centrelinkNameLabel setText:centrelinkName];
     [self.contantDetailsLabel setText:contantDetails];
+    
+}
+
+#pragma mark - Missed Appointment Details
+
+- (void) showMissedAppointment {
+    
+    self.btnMoreDetails.hidden = YES;
+    self.btnCancelAppointment.hidden = YES;
+    self.btnAddToCalendar.hidden = YES;
+    
+    self.missedAppointmentButton.hidden = NO;
     
 }
 

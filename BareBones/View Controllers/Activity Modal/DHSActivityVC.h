@@ -18,5 +18,6 @@
 
 // Methods to display appointment details VC as a modal
 - (void) showAppointmentDetails;
+- (void) showMissedAppointmentDetails;
 
 @end

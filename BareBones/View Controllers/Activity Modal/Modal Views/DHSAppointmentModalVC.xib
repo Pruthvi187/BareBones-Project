@@ -14,8 +14,13 @@
                 <outlet property="appointmentDetailsLabel" destination="9uk-6k-Iy6" id="Biu-1f-lCc"/>
                 <outlet property="appointmentHeaderLabel" destination="Rx5-VD-Wl7" id="IxK-5T-01j"/>
                 <outlet property="appointmentTimelabel" destination="psO-iJ-6FC" id="e5g-24-d2M"/>
+                <outlet property="btnAddToCalendar" destination="yKk-nc-Ubv" id="EBv-z4-Pz4"/>
+                <outlet property="btnCancelAppointment" destination="fzZ-kS-d9r" id="56X-vH-zfF"/>
+                <outlet property="btnMoreDetails" destination="zos-m7-MGF" id="FKx-KJ-PTN"/>
+                <outlet property="btnRescheduleAppointment" destination="iTb-8d-4Te" id="bSk-Za-Rr8"/>
                 <outlet property="centrelinkNameLabel" destination="F4o-Rf-PaZ" id="8yJ-aM-Rxm"/>
                 <outlet property="contantDetailsLabel" destination="5jk-Nx-XNl" id="oMh-BY-PBO"/>
+                <outlet property="missedAppointmentButton" destination="fBi-Jg-kB6" id="30Z-hA-Xjy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -89,6 +94,14 @@
                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBi-Jg-kB6">
+                    <rect key="frame" x="30" y="161" width="315" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="Missed appointment, please reschedule" image="orange_circle">
+                        <color key="titleColor" red="0.67843137254901964" green="0.37254901960784315" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -97,10 +110,14 @@
                 <constraint firstItem="psO-iJ-6FC" firstAttribute="trailing" secondItem="9uk-6k-Iy6" secondAttribute="trailing" id="311-v1-PLk"/>
                 <constraint firstItem="5jk-Nx-XNl" firstAttribute="top" secondItem="F4o-Rf-PaZ" secondAttribute="bottom" constant="2" id="3CA-SB-O0t"/>
                 <constraint firstItem="9uk-6k-Iy6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="5a2-R9-NRo"/>
+                <constraint firstItem="fBi-Jg-kB6" firstAttribute="top" secondItem="5jk-Nx-XNl" secondAttribute="bottom" constant="15" id="8vf-J2-ZaB"/>
                 <constraint firstItem="yKk-nc-Ubv" firstAttribute="top" secondItem="5jk-Nx-XNl" secondAttribute="bottom" constant="20" id="99v-fe-13r"/>
+                <constraint firstItem="fBi-Jg-kB6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bc9-EP-0RN"/>
+                <constraint firstItem="fBi-Jg-kB6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="DB7-WJ-dai"/>
                 <constraint firstItem="yKk-nc-Ubv" firstAttribute="centerX" secondItem="F4o-Rf-PaZ" secondAttribute="centerX" id="Ega-dX-LbY"/>
                 <constraint firstItem="9uk-6k-Iy6" firstAttribute="top" secondItem="Rx5-VD-Wl7" secondAttribute="bottom" constant="20" id="IVT-5t-hmm"/>
                 <constraint firstItem="iTb-8d-4Te" firstAttribute="top" secondItem="yKk-nc-Ubv" secondAttribute="bottom" constant="20" id="Jup-Gv-wOx"/>
+                <constraint firstAttribute="trailing" secondItem="fBi-Jg-kB6" secondAttribute="trailing" constant="30" id="KIx-C3-uXf"/>
                 <constraint firstItem="psO-iJ-6FC" firstAttribute="top" secondItem="9uk-6k-Iy6" secondAttribute="bottom" constant="3" id="MeO-yd-wgF"/>
                 <constraint firstItem="fzZ-kS-d9r" firstAttribute="centerX" secondItem="iTb-8d-4Te" secondAttribute="centerX" id="Pu0-TX-d8l"/>
                 <constraint firstItem="zos-m7-MGF" firstAttribute="centerX" secondItem="fzZ-kS-d9r" secondAttribute="centerX" id="V0S-9r-fuC"/>
@@ -122,6 +139,7 @@
     <resources>
         <image name="calendar_icon" width="18" height="20"/>
         <image name="cancel_appt_btn" width="192" height="39"/>
+        <image name="orange_circle" width="20" height="20"/>
         <image name="reschedule_btn" width="192" height="39"/>
     </resources>
 </document>

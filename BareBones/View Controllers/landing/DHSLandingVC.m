@@ -65,7 +65,12 @@
 
 - (void) displayAppointmentAsModal: (NSNotification*) notification {
     [self displayActivityModal];
+    
+    //Display normal appointment
     [self.activityVC showAppointmentDetails];
+    
+    //Display Missed appointments
+    //[self.activityVC showMissedAppointmentDetails];
 }
 
 - (void) displayActivityModal {

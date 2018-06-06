@@ -13,6 +13,7 @@
 static NSString *activityText = @"Advise non-lodgement of tax return";
 static NSString *activityDetailText = @"Your tax return is due soon and we need to know if you are lodging a tax return for this financial year.\n You may not be required to lodge a tax return if your income is below the tax-free threshold.\nThis applies to 2017 - 2018 Financial Year ";
 static NSString *nextAppointmentText = @"Next Appointment";
+static NSString *missedAppointmentText = @"Missed Appointment";
 
 @protocol DHSRemoveModalVCDelegate;
 
@@ -91,13 +92,30 @@ static NSString *nextAppointmentText = @"Next Appointment";
 - (void) showAppointmentDetails {
     
     [self toggleActivityModal:YES];
+    
+    [self createAppointmentModal:CGRectMake(self.defaultActivityModal.bounds.origin.x, self.defaultActivityModal.bounds.origin.y, self.defaultActivityModal.bounds.size.width, self.defaultActivityModal.bounds.size.height + 80)];
+    [self.activitylabel setText:nextAppointmentText];
 
+   
+}
+
+- (void) showMissedAppointmentDetails {
+    
+    [self toggleActivityModal:YES];
+    
+    [self createAppointmentModal:self.defaultActivityModal.bounds];
+    [self.activitylabel setText:missedAppointmentText];
+    [self.appointmentModalVC showMissedAppointment];
+}
+
+- (void) createAppointmentModal:(CGRect)bounds {
+    
     // Set up and add the new VC as a subview to the containerview
+
     self.appointmentModalVC = [DHSAppointmentModalVC new];
-    [self.appointmentModalVC.view setFrame:CGRectMake(self.defaultActivityModal.bounds.origin.x, self.defaultActivityModal.bounds.origin.y, self.defaultActivityModal.bounds.size.width, self.defaultActivityModal.bounds.size.height + 80)];
+    [self.appointmentModalVC.view setFrame:bounds];
     [self addChildViewController:self.appointmentModalVC];
     [self.appointmentModalVC didMoveToParentViewController:self];
-    [self.activitylabel setText:nextAppointmentText];
     [self.containerView addSubview:self.appointmentModalVC.view];
     
 }
