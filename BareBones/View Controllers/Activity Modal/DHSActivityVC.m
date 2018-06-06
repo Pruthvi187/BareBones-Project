@@ -85,12 +85,13 @@ static NSString *nextAppointmentText = @"Next Appointment";
     
     // Hide the default
     self.defaultActivityModal.hidden = hidden;
+    
 }
 
 - (void) showAppointmentDetails {
     
     [self toggleActivityModal:YES];
-    
+
     // Set up and add the new VC as a subview to the containerview
     self.appointmentModalVC = [DHSAppointmentModalVC new];
     [self.appointmentModalVC.view setFrame:CGRectMake(self.defaultActivityModal.bounds.origin.x, self.defaultActivityModal.bounds.origin.y, self.defaultActivityModal.bounds.size.width, self.defaultActivityModal.bounds.size.height + 80)];
